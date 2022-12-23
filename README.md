@@ -1,7 +1,6 @@
 # nvim
 
 
-qweqweqwe
 leader = ;
 
 套件

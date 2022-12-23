@@ -1,3 +1,9 @@
+
+
+vim.g.mapleader = ' ' 
+
+
+
 --Vimspector 
 vim.cmd([[
 nmap <F9> <cmd>call vimspector#Launch()<cr>

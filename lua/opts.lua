@@ -11,7 +11,7 @@ set signcolumn=yes
 set nu
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
---vim.wo.foldmethod = 'expr'
+vim.wo.foldmethod = 'expr'
 --vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
 
