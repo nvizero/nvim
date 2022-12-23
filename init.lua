@@ -121,3 +121,4 @@ require('nvim-treesitter.configs').setup {
 ---------個人KEY設定 
 require("nvimtree")
 require("keys")
+require("format")
