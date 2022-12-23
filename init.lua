@@ -7,6 +7,9 @@ require('onedark').setup {
 require('onedark').load()
 local rt = require("rust-tools")
 
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.relativenumber = true
 rt.setup({
     server = {
         on_attach = function(_, bufnr)
