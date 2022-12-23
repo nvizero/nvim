@@ -126,4 +126,11 @@ return require('packer').startup(function()
     use 'nvim-lua/plenary.nvim'
     use 'kdheepak/lazygit.nvim'
     use "lukas-reineke/lsp-format.nvim"
+    use {
+	    's1n7ax/nvim-terminal',
+	    config = function()
+		    vim.o.hidden = true
+		    require('nvim-terminal').setup()
+	    end,
+    }
 end)
