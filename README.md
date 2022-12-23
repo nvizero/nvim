@@ -3,11 +3,13 @@
 
 leader = <Space>
 
-套件
+##套件
 Lazy Git
 Nvim Tree
+Termina
 
-Language 
+
+##Language 
 php,go,rust
 
 參考
