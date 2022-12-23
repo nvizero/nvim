@@ -1,7 +1,7 @@
 # nvim
 
 
-leader = ;
+leader = <Space>
 
 套件
 Lazy Git
@@ -9,3 +9,10 @@ Nvim Tree
 
 Language 
 php,go,rust
+
+參考
+##Golang
+https://amikai.github.io/2021/08/16/go_neovim_env_0.5/
+
+##Rust
+https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/#nice-look--feel
