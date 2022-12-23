@@ -32,3 +32,20 @@ vim.keymap.set('n', '<leader>fg', ':lua require(\'telescope.builtin\').live_grep
 vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_files()<cr>',opt )
 -------Lazy Git
 vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>',opt )
+
+vim.cmd([[
+noremap <UP> <NOP>
+noremap <DOWN> <NOP>
+noremap <LEFT> <NOP>
+noremap <RIGHT> <NOP>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
+]])
+--
+vim.keymap.set('i', '<S-l>', '<RIGHT>' , opt)
+vim.keymap.set('i', '<S-h>', '<LEFT>' , opt)
+vim.keymap.set('i', '<S-k>', '<UP>' , opt)
+vim.keymap.set('i', '<S-j>', '<DOWN>' , opt)
+--" previous and next buffer
