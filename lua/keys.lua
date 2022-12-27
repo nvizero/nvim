@@ -50,8 +50,8 @@ inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 ]])
 --
-vim.keymap.set('i', '<S-l>', '<RIGHT>' , opt)
-vim.keymap.set('i', '<S-h>', '<LEFT>' , opt)
-vim.keymap.set('i', '<S-k>', '<UP>' , opt)
-vim.keymap.set('i', '<S-j>', '<DOWN>' , opt)
+vim.keymap.set('i', '<C-l>', '<RIGHT>' , opt)
+vim.keymap.set('i', '<C-h>', '<LEFT>' , opt)
+vim.keymap.set('i', '<C-k>', '<UP>' , opt)
+vim.keymap.set('i', '<C-j>', '<DOWN>' , opt)
 --" previous and next buffer
