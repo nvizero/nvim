@@ -1,5 +1,3 @@
-
-
 vim.g.mapleader = ' ' 
 
 
@@ -28,9 +26,8 @@ vim.keymap.set('n', '<S-l>', '<Cmd>BufferNext<CR>' , opt)
 vim.keymap.set('n', '<S-c>', '<Cmd>BufferClose<CR>' , opt)
 
 vim.keymap.set('n', '<S-r>', ':GoRun<CR>' , opt)
-vim.keymap.set('n', '<S-m>', '<C-w>>x5' , opt)
-vim.keymap.set('n', '<S-n>', '<C-w><x5' , opt)
-vim.keymap.set('n', '<S-n>', '<C-w><x5' , opt)
+vim.keymap.set('n', '<C-.>', '<C-w>>x5' , opt)
+vim.keymap.set('n', '<C-,>', '<C-w><x5' , opt)
 --vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
 
 
