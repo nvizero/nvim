@@ -9,6 +9,7 @@ vim.api.nvim_set_option('updatetime', 300)
 vim.cmd([[
 set signcolumn=yes
 set nu
+set nohidden
 set clipboard+=unnamedplus
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
@@ -43,3 +44,6 @@ require("mason").setup({
         }
     }
 })
+
+
+
