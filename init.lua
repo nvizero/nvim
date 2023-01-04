@@ -48,6 +48,7 @@ vim.diagnostic.config({
     },
 })
 vim.cmd([[
+set foldmethod=manual
 set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
