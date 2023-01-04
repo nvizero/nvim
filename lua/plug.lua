@@ -148,7 +148,7 @@ return require('packer').startup(function()
 		use {'othree/html5.vim'}
 		use {'pangloss/vim-javascript'}
 		use {'evanleck/vim-svelte'}
-    use {'vim-polyglot'}
+		use {'sheerun/vim-polyglot'}
 		use({
 			"nvim-neotest/neotest",
 			requires = {
