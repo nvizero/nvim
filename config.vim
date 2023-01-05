@@ -23,11 +23,12 @@ call plug#end()
 
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
-colorscheme minimalist
+"
+"colorscheme minimalist
 
 
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsExpandTrigger="<c-w>"
+let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " PHP7
 let g:ultisnips_php_scalar_types = 1
@@ -64,4 +65,3 @@ let g:ale_fixers = {
   \ 'php': ['phpcbf', 'php_cs_fixer', 'remove_trailing_lines', 'trim_whitespace'],
   \}
 let g:ale_fix_on_save = 1
-
