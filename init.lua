@@ -127,3 +127,5 @@ require('nvim-treesitter.configs').setup {
 require("nvimtree")
 require("keys")
 require("format")
+
+vim.cmd [[source config.vim]]
