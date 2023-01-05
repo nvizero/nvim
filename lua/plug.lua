@@ -142,8 +142,6 @@ return require('packer').startup(function()
 			}
 		}
 		use { "williamboman/mason.nvim" }
-		use {'lvht/phpcd.vim'}
-		use {'phpvim/phpcd.vim'}
 		use {'vim-scripts/progressbar-widget'}
 		use {'othree/html5.vim'}
 		use {'pangloss/vim-javascript'}

@@ -128,4 +128,4 @@ require("nvimtree")
 require("keys")
 require("format")
 
-vim.cmd [[source config.vim]]
+vim.cmd [[source $HOME/.config/nvim/config.vim]]
