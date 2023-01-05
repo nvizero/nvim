@@ -20,6 +20,7 @@ rt.setup({
         end,
     },
 })
+vim.cmd [[source $HOME/.config/nvim/config.vim]]
 -- LSP Diagnostics Options Setup
 local sign = function(opts)
     vim.fn.sign_define(opts.name, {
@@ -128,4 +129,3 @@ require("nvimtree")
 require("keys")
 require("format")
 
-vim.cmd [[source $HOME/.config/nvim/config.vim]]
