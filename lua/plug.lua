@@ -64,7 +64,7 @@ return require('packer').startup(function()
     }
     use 'nvim-tree/nvim-web-devicons'
     use {
-	'romgrk/barbar.nvim',
+	  'romgrk/barbar.nvim',
       	wants = 'nvim-web-devicons'
     }
     use {
@@ -111,28 +111,22 @@ return require('packer').startup(function()
 				    return t "<CR>"
 			    end
 		    end
-
 		    vim.api.nvim_set_keymap("i", "<tab>", "<C-R>=v:lua.tab_complete()<CR>" ,{silent = true, noremap = true})
 		    vim.api.nvim_set_keymap("i", "<s-tab>", "<C-R>=v:lua.s_tab_complete()<CR>" ,{silent = true, noremap = true})
 		    vim.api.nvim_set_keymap('i', '<enter>', '<C-R>=v:lua.enter_key()<CR>' ,{silent = true, noremap = true})
-
 	    end
     }
-
-    use "lukas-reineke/indent-blankline.nvim" 
+    --terminal
+		use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+			require("toggleterm").setup()
+	  end}
+    use "lukas-reineke/indent-blankline.nvim"
     use "junegunn/fzf"
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'kdheepak/lazygit.nvim'
     use "lukas-reineke/lsp-format.nvim"
-    use {
-	    's1n7ax/nvim-terminal',
-	    config = function()
-		    vim.o.hidden = true
-		    require('nvim-terminal').setup()
-	    end,
-    }
 		use {
 			"nvim-neotest/neotest",
 			requires = {
