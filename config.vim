@@ -28,7 +28,7 @@ call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 "
-colorscheme minimalist
+"colorscheme minimalist
 
 
 let g:UltiSnipsExpandTrigger="<c-w>"
