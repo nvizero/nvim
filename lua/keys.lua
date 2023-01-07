@@ -1,8 +1,8 @@
-vim.g.mapleader = ' ' 
+vim.g.mapleader = ' '
 
 
 
---Vimspector 
+--Vimspector
 vim.cmd([[
 nmap <F9> <cmd>call vimspector#Launch()<cr>
 nmap <F5> <cmd>call vimspector#StepOver()<cr>
@@ -25,7 +25,6 @@ vim.keymap.set('n', '<S-h>', '<Cmd>BufferPrevious<CR>' , opt)
 vim.keymap.set('n', '<S-l>', '<Cmd>BufferNext<CR>' , opt)
 vim.keymap.set('n', '<S-c>', '<Cmd>BufferClose<CR>' , opt)
 
-vim.keymap.set('n', '<S-r>', ':GoRun<CR>' , opt)
 vim.keymap.set('n', '<C-.>', '<C-w>>x5' , opt)
 vim.keymap.set('n', '<C-,>', '<C-w><x5' , opt)
 --vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
