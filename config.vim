@@ -20,9 +20,8 @@ Plug 'StanAngeloff/php.vim', {'for': 'php'}
 
 Plug 'w0rp/ale'
 
-
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
-Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php'}
+
 call plug#end()
 
 " set the colorsheme
@@ -36,6 +35,8 @@ let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " PHP7
 let g:ultisnips_php_scalar_types = 1
+
+autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
 
 
 augroup ncm2

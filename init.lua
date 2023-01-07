@@ -128,4 +128,5 @@ require("nvimtree")
 require("keys")
 require("format")
 require("term")
+require("golang")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]
