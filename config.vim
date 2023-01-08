@@ -8,7 +8,6 @@ Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'pangloss/vim-javascript'
-
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
@@ -27,7 +26,7 @@ call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 "
-"colorscheme minimalist
+colorscheme minimalist
 
 
 let g:UltiSnipsExpandTrigger="<c-w>"
