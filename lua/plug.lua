@@ -135,12 +135,14 @@ return require('packer').startup(function()
 				"antoinemadec/FixCursorHold.nvim"
 			}
 		}
-		use { "williamboman/mason.nvim" }
 		use {'vim-scripts/progressbar-widget'}
 		use {'othree/html5.vim'}
 		use {'pangloss/vim-javascript'}
 		use {'evanleck/vim-svelte'}
 		use {'sheerun/vim-polyglot'}
+	  use {'williamboman/mason.nvim'}
+    use {'williamboman/mason-lspconfig.nvim'}
+
 		use({
 			"nvim-neotest/neotest",
 			requires = {
