@@ -34,6 +34,7 @@ vim.keymap.set('n', '<leader>fg', ':lua require(\'telescope.builtin\').live_grep
 vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_files()<cr>',opt )
 -------Lazy Git
 vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>',opt )
+vim.keymap.set('n', '<leader>fd', ':Autoformat<CR>',opt )
 
 vim.cmd([[
 noremap <UP> <NOP>

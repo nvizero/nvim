@@ -16,7 +16,7 @@ Plug 'phpactor/ncm2-phpactor', {'for': 'php'}
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips' | Plug 'phux/vim-snippets'
 Plug 'StanAngeloff/php.vim', {'for': 'php'}
-
+Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 "------------------------ COC ------------------------
