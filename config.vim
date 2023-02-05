@@ -117,7 +117,10 @@ nnoremap <m-m> :call phpactor#ContextMenu()<cr>
 
 nnoremap gd :call phpactor#GotoDefinition()<CR>
 nnoremap gr :call phpactor#FindReferences()<CR>
-
+let g:go_debug_windows = {
+      \ 'vars':       'rightbelow 60vnew',
+      \ 'stack':      'rightbelow 10new',
+\ }
 " Extract method from selection
 vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
 " extract variable
@@ -126,3 +129,4 @@ nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>
 " extract interface
 nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
 runtime config/format.vim
+runtime config/go.vim
