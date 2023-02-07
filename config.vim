@@ -27,11 +27,11 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
 " vim-tsx will do all the coloring for jsx in the .tsx file
-Plug 'ianks/vim-tsx'
+"Plug 'ianks/vim-tsx'
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
 " typescript-vim will do all the coloring for typescript keywords
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
 "Plug 'dikiaap/minimalist'
@@ -57,8 +57,10 @@ call plug#end()
 let g:rehash256 = 1
 let g:molokai_original = 1
 colorscheme molokai
-
-
+set guioptions-=e
+hi TabLine guifg=#fadfc2 guibg=#7d8e7b gui=underline
+hi TabLineSel guifg=#ffffff guibg=#ef114a gui=bold,italic
+hi TabLineFill guifg=#2dbd1e guibg=#ffffff
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
 let g:UltiSnipsExpandTrigger="<c-w>"
