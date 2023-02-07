@@ -4,6 +4,7 @@ return require('packer').startup(function()
     -- other plugins...
     use 'simrat39/rust-tools.nvim'
     use 'neovim/nvim-lspconfig'
+    use 'kabouzeid/nvim-lspinstall'
     use {
 	    'neovim/nvim-lspconfig',
 	    config = function()

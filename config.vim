@@ -37,6 +37,9 @@ Plug 'leafgarland/typescript-vim'
 " most importantly you need a good color scheme to write good code :D
 Plug 'dikiaap/minimalist'
 
+Plug 'hrsh7th/nvim-cmp'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'folke/trouble.nvim'
 
 
 
@@ -124,5 +127,5 @@ vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>
 nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>
 " extract interface
 nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
+"runtime config/go.vim
 runtime config/format.vim
-runtime config/go.vim
