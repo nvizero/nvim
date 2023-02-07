@@ -118,7 +118,6 @@ nnoremap <leader>rnp :call PhpCreateProperty()<CR>
 nnoremap <leader>rdu :call PhpDetectUnusedUseStatements()<CR>
 nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>
 
-
 " context-aware menu with all functions (ALT-m)
 nnoremap <m-m> :call phpactor#ContextMenu()<cr>
 
@@ -134,3 +133,4 @@ nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
 "runtime config/go.vim
 runtime config/format.vim
 runtime config/normal.vim
+runtime config/golang.vim
