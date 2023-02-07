@@ -68,7 +68,6 @@ return require('packer').startup(function()
 			'romgrk/barbar.nvim',
 			wants = 'nvim-web-devicons'
 		}
-		use { 'fatih/vim-go'}
 		use {
 			'fatih/vim-go',
 			run = ':GoUpdateBinaries',
