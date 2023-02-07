@@ -23,7 +23,6 @@ Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 " coc for tslinting, auto complete and prettier
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " coc extensions
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
@@ -35,22 +34,27 @@ Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
-Plug 'dikiaap/minimalist'
+"Plug 'dikiaap/minimalist'
 
 Plug 'hrsh7th/nvim-cmp'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
 
-
+Plug 'fatih/molokai'
 
 call plug#end()
 
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
-"
-colorscheme minimalist
+" colorscheme minimalist
 
+let g:rehash256 = 1
+let g:molokai_original = 1
+colorscheme molokai
+
+
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
 let g:UltiSnipsExpandTrigger="<c-w>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
@@ -129,3 +133,4 @@ nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>
 nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
 "runtime config/go.vim
 runtime config/format.vim
+runtime config/normal.vim
