@@ -68,6 +68,7 @@ return require('packer').startup(function()
 			'romgrk/barbar.nvim',
 			wants = 'nvim-web-devicons'
 		}
+		use { 'fatih/vim-go'}
 		use {
 			'fatih/vim-go',
 			run = ':GoUpdateBinaries',
@@ -128,14 +129,6 @@ return require('packer').startup(function()
 		use 'nvim-lua/plenary.nvim'
 		use 'kdheepak/lazygit.nvim'
 		use "lukas-reineke/lsp-format.nvim"
-		use {
-			"nvim-neotest/neotest",
-			requires = {
-				"nvim-lua/plenary.nvim",
-				"nvim-treesitter/nvim-treesitter",
-				"antoinemadec/FixCursorHold.nvim"
-			}
-		}
 		use {'vim-scripts/progressbar-widget'}
 		use {'othree/html5.vim'}
 		use {'pangloss/vim-javascript'}
@@ -148,6 +141,9 @@ return require('packer').startup(function()
 				"nvim-neotest/neotest",
 				requires = {
 					"nvim-neotest/neotest-go",
+					"nvim-lua/plenary.nvim",
+					"nvim-treesitter/nvim-treesitter",
+					"antoinemadec/FixCursorHold.nvim"
 					-- Your other test adapters here
 				},
 				config = function()

@@ -1,10 +1,6 @@
 require("plugins")
 require("plug")
 require("opts")
-require('onedark').setup {
-    style = 'deep'
-}
-require('onedark').load()
 local rt = require("rust-tools")
 
 vim.opt.shiftwidth = 2

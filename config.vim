@@ -40,9 +40,14 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
-
+"theme
 Plug 'fatih/molokai'
 
+"golang
+Plug 'fatih/vim-go'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'SirVer/ultisnips'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " set the colorsheme
@@ -134,3 +139,4 @@ nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
 runtime config/format.vim
 runtime config/normal.vim
 runtime config/golang.vim
+"runtime config/setting.vim
