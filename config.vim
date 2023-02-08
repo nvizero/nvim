@@ -59,10 +59,6 @@ let g:molokai_original = 1
 colorscheme molokai
 set guioptions-=e
 
-" tabtar
-hi TabLine guifg=#fadfc2 guibg=#7d8e7b gui=underline
-hi TabLineSel guifg=#ffffff guibg=#6c698a gui=bold,italic
-hi TabLineFill guifg=#2dbd1e guibg=#ffffff
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
 let g:UltiSnipsExpandTrigger="<c-w>"
