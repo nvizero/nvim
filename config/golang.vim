@@ -5,33 +5,34 @@
             \ 'out':        'botright 5new',
   \ }
 
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+"autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 "let g:go_term_mode = "vsplit"
-let g:go_term_enabled = 1
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <leader>rs <Plug>(go-run-split)
 au FileType go nmap <leader>rv <Plug>(go-run-vertical)
 
+let g:go_term_enabled = 1
 let g:go_term_mode = "vsplit"
-
+let g:go_term_height = 30
+let g:go_term_width = 50
+let g:go_term_reuse = 1
 """""""""""""""""""""
 "      Plugins      "
 """""""""""""""""""""
 
 " vim-go
-let g:go_fmt_command = "goimports"
-let g:go_autodetect_gopath = 1
-let g:go_list_type = "quickfix"
-"
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 4
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_generate_tags = 1
+"let g:go_fmt_command = "goimports"
+"let g:go_autodetect_gopath = 1
+"let g:go_list_type = "quickfix"
+"let g:go_highlight_types = 2
+"let g:go_highlight_fields = 4
+"let g:go_highlight_functions = 1
+"let g:go_highlight_function_calls = 1
+"let g:go_highlight_extra_types = 1
+"let g:go_highlight_generate_tags = 1
 "
 "" Open :GoDeclsDir with ctrl-g
 "nmap <C-g> :GoDeclsDir<cr>
