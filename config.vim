@@ -23,7 +23,7 @@ Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 " coc for tslinting, auto complete and prettier
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " coc extensions
-
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
 " vim-tsx will do all the coloring for jsx in the .tsx file
@@ -83,7 +83,6 @@ inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\<CR>", 
 " cycle through completion entries with tab/shift+tab
 inoremap <expr> <TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
 inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
-
 
 " disable linting while typing
 let g:ale_lint_on_text_changed = 'never'
