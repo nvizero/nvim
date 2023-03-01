@@ -1,7 +1,6 @@
 set encoding=UTF-8
 set number
 syntax on
-
 " VimPlug plugin manager
 call plug#begin()
 Plug 'https://github.com/ap/vim-css-color'
@@ -139,3 +138,4 @@ runtime config/format.vim
 runtime config/normal.vim
 runtime config/golang.vim
 "runtime config/setting.vim
+hi Visual  guifg=White guibg=LightBlue gui=none
