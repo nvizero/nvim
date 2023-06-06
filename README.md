@@ -9,7 +9,7 @@ Nvim Tree
 Termina
 
 
-##Language 
+##Language
 php,go,rust
 
 參考
@@ -21,3 +21,7 @@ https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/
 
 ##Termina
 https://github.com/s1n7ax/nvim-terminal
+
+
+###nvovim怎麼安裝 vim plugin
+https://www.baeldung.com/linux/vim-install-neovim-plugins
