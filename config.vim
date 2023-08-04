@@ -13,7 +13,6 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips' | Plug 'phux/vim-snippets'
-Plug 'StanAngeloff/php.vim', {'for': 'php'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 "------------------------ COC ------------------------
@@ -62,9 +61,6 @@ let g:UltiSnipsExpandTrigger="<c-w>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " PHP7
-let g:ultisnips_php_scalar_types = 1
-
-autocmd FileType php setlocal omnifunc=phpcd#CompletePHP
 
 
 augroup ncm2
