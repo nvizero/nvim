@@ -99,34 +99,6 @@ command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>
 
 
-let g:vim_php_refactoring_default_property_visibility = 'private'
-let g:vim_php_refactoring_default_method_visibility = 'private'
-let g:vim_php_refactoring_auto_validate_visibility = 1
-let g:vim_php_refactoring_phpdoc = "pdv#DocumentCurrentLine"
-
-let g:vim_php_refactoring_use_default_mapping = 0
-nnoremap <leader>rlv :call PhpRenameLocalVariable()<CR>
-nnoremap <leader>rcv :call PhpRenameClassVariable()<CR>
-nnoremap <leader>rrm :call PhpRenameMethod()<CR>
-nnoremap <leader>reu :call PhpExtractUse()<CR>
-vnoremap <leader>rec :call PhpExtractConst()<CR>
-nnoremap <leader>rep :call PhpExtractClassProperty()<CR>
-nnoremap <leader>rnp :call PhpCreateProperty()<CR>
-nnoremap <leader>rdu :call PhpDetectUnusedUseStatements()<CR>
-nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>
-
-" context-aware menu with all functions (ALT-m)
-nnoremap <m-m> :call phpactor#ContextMenu()<cr>
-
-nnoremap gd :call phpactor#GotoDefinition()<CR>
-nnoremap gr :call phpactor#FindReferences()<CR>
-" Extract method from selection
-vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
-" extract variable
-vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>
-nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>
-" extract interface
-nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>
 "runtime config/go.vim
 runtime config/format.vim
 runtime config/normal.vim
