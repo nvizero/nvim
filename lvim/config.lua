@@ -13,6 +13,17 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 4
 vim.opt.relativenumber = true
 
+
+vim.keymap.set('n', '<S-r>', ':GoRun<CR>')
+vim.keymap.set('n', '<S-t>', ':GoTest<CR>')
+vim.keymap.set('n', '<F2>', ':GoRun<CR>')
+vim.keymap.set('n', '<F3>', ':GoDebugStart<CR>')
+vim.keymap.set('n', '<F4>', ':GoDebugStop<CR>')
+
+
+--vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
+
+
 -- general
 lvim.log.level = "info"
 lvim.format_on_save = {
@@ -91,7 +102,7 @@ lvim.builtin.treesitter.auto_install = true
 lvim.plugins = {
   {
     'fatih/vim-go',
-  }
+  },
   --     {
   --       "folke/trouble.nvim",
   --       cmd = "TroubleToggle",
