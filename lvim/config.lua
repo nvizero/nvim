@@ -14,11 +14,6 @@ vim.opt.tabstop = 4
 vim.opt.relativenumber = true
 
 
-vim.keymap.set('n', '<S-r>', ':GoRun<CR>')
-vim.keymap.set('n', '<S-t>', ':GoTest<CR>')
-vim.keymap.set('n', '<F2>', ':GoRun<CR>')
-vim.keymap.set('n', '<F3>', ':GoDebugStart<CR>')
-vim.keymap.set('n', '<F4>', ':GoDebugStop<CR>')
 
 
 --vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
@@ -37,8 +32,20 @@ lvim.format_on_save = {
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
 lvim.leader = "space"
 -- add your own keymapping
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+-- vim.keymap.set('n', '<S-r>', ':GoRun')
+-- vim.keymap.set('n', '<S-t>', ':GoTest<CR>')
+-- vim.keymap.set('n', '<F2>', ':GoRun<CR>')
+-- vim.keymap.set('n', '<F3>', ':GoDebugStart<CR>')
+-- vim.keymap.set('n', '<F4>', ':GoDebugStop<CR>')
 
+
+
+-- lvim.keys.normal_mode["<S-r>"] = ":GoRun<cr>"
+-- lvim.keys.normal_mode["<S-t>"] = ":GoTest<cr>"
+--
+lvim.keys.normal_mode["<C-.>"] = "<C-w>>"
+lvim.keys.normal_mode["<C-,>"] = "<C-w><"
+lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
