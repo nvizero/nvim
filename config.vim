@@ -44,6 +44,7 @@ Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " set the colorsheme
