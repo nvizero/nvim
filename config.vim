@@ -37,7 +37,8 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
 "theme
-Plug 'fatih/molokai'
+Plug 'NLKNguyen/papercolor-theme'
+"Plug 'fatih/molokai'
 
 "golang
 Plug 'fatih/vim-go'
@@ -50,10 +51,13 @@ call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 " colorscheme minimalist
+" theme setting
+set background=dark
+colorscheme PaperColor
 
-let g:rehash256 = 1
-let g:molokai_original = 1
-colorscheme molokai
+"let g:rehash256 = 1
+"let g:molokai_original = 1
+"colorscheme molokai
 set guioptions-=e
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
