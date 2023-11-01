@@ -40,6 +40,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 
 "php
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'ludovicchabant/vim-gutentags'     " Automatic ctags
 Plug 'SirVer/ultisnips'                 " Snippets. Also a dependency of pdv (the way we have it configured)
 "Plug 'honza/vim-snippets'               " Large snippets library for multiple languages
