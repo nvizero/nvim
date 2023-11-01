@@ -4,26 +4,13 @@ syntax on
 " VimPlug plugin manager
 call plug#begin('~/.local/share/nvim/site/plugged')
 "call plug#begin()
-Plug 'https://github.com/ap/vim-css-color'
-Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-Plug 'https://github.com/neoclide/coc.nvim'
-Plug 'pangloss/vim-javascript'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php'}
-Plug 'phpactor/ncm2-phpactor', {'for': 'php'}
-Plug 'ncm2/ncm2-ultisnips'
-Plug 'SirVer/ultisnips' | Plug 'phux/vim-snippets'
-Plug 'StanAngeloff/php.vim', {'for': 'php'}
-Plug 'Chiel92/vim-autoformat'
-Plug 'w0rp/ale'
-Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
+"Plug 'https://github.com/ap/vim-css-color'
+"Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+
 "------------------------ COC ------------------------
 " coc for tslinting, auto complete and prettier
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " coc extensions
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
 " vim-tsx will do all the coloring for jsx in the .tsx file
@@ -43,11 +30,40 @@ Plug 'folke/trouble.nvim'
 "theme
 Plug 'fatih/molokai'
 
-"golang
-Plug 'fatih/vim-go'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'SirVer/ultisnips'
-Plug 'ctrlpvim/ctrlp.vim'
+
+"old
+Plug 'https://github.com/neoclide/coc.nvim'
+Plug 'pangloss/vim-javascript'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'StanAngeloff/php.vim', {'for': 'php'}
+Plug 'Chiel92/vim-autoformat'
+Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
+
+"php
+Plug 'ludovicchabant/vim-gutentags'     " Automatic ctags
+Plug 'SirVer/ultisnips'                 " Snippets. Also a dependency of pdv (the way we have it configured)
+"Plug 'honza/vim-snippets'               " Large snippets library for multiple languages
+Plug 'tobyS/vmustache'                  " Templating system (required for pdv)
+Plug 'tobyS/pdv'                        " Auto generating php docblocks
+Plug 'vim-airline/vim-airline'          " Vim status line
+Plug 'vim-airline/vim-airline-themes'   " Vim status line themes
+Plug 'ncm2/ncm2'                        " Autocompletion engine
+Plug 'ncm2/ncm2-bufword'                " Basic word completion? testing
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'roxma/nvim-yarp'                  " Yet Another Remote Plugin Framework (dependency of ncm2)
+Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'} " PHP introspection and refactor tools
+Plug 'phpactor/ncm2-phpactor'           " Phpactor integration for ncm2 (autocomplete)
+Plug 'morhetz/gruvbox'                  " Vim colorscheme
+Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy file search and more
+Plug 'tpope/vim-fugitive'               " Git integration
+Plug 'mhinz/vim-signify'                " Git integration inline
+Plug 'stephpy/vim-php-cs-fixer'         " Coding standards fixer
+Plug 'janko-m/vim-test'                 " Run unit tests
+Plug 'tpope/vim-dispatch'               " Dispatch tasks (only using it for unit tests)
+"Plug 'bling/vim-bufferline'             " Show buffers in status bar
+Plug 'w0rp/ale'                         " Asynchronous code linter and anylysis
+Plug 'scrooloose/nerdtree'              " File/directory Tree explorer
+
 call plug#end()
 
 " set the colorsheme

@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
+<Leader>ee	config.vim	/^nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>$/;"	m
+<Leader>ee	config.vim	/^vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>$/;"	m
+<Leader>em	config.vim	/^vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>$/;"	m
+<Leader>rei	config.vim	/^nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>$/;"	m
+<TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
+<c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
+<leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
+<leader>rcv	config.vim	/^nnoremap <leader>rcv :call PhpRenameClassVariable()<CR>$/;"	m
+<leader>rdu	config.vim	/^nnoremap <leader>rdu :call PhpDetectUnusedUseStatements()<CR>$/;"	m
+<leader>rec	config.vim	/^vnoremap <leader>rec :call PhpExtractConst()<CR>$/;"	m
+<leader>rep	config.vim	/^nnoremap <leader>rep :call PhpExtractClassProperty()<CR>$/;"	m
+<leader>reu	config.vim	/^nnoremap <leader>reu :call PhpExtractUse()<CR>$/;"	m
+<leader>rlv	config.vim	/^nnoremap <leader>rlv :call PhpRenameLocalVariable()<CR>$/;"	m
+<leader>rnp	config.vim	/^nnoremap <leader>rnp :call PhpCreateProperty()<CR>$/;"	m
+<leader>rrm	config.vim	/^nnoremap <leader>rrm :call PhpRenameMethod()<CR>$/;"	m
+<leader>rsg	config.vim	/^nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>$/;"	m
+<m-m>	config.vim	/^nnoremap <m-m> :call phpactor#ContextMenu()<cr>$/;"	m
+<s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
+Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+_G.enter_key 	lua/plug.lua	/^				_G.enter_key = function()$/;"	f
+_G.s_tab_complete 	lua/plug.lua	/^				_G.s_tab_complete = function()$/;"	f
+_G.tab_complete 	lua/plug.lua	/^				_G.tab_complete = function()$/;"	f
+config 	lua/plug.lua	/^				config = function()$/;"	f
+config 	lua/plug.lua	/^		config = function()$/;"	f
+expand 	init.lua	/^        expand = function(args)$/;"	f
+format 	init.lua	/^        format = function(entry, item)$/;"	f
+format 	lua/plug.lua	/^								format = function(diagnostic)$/;"	f
+g:UltiSnipsExpandTrigger	config.vim	/^let g:UltiSnipsExpandTrigger="<c-w>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-b>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	config.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-e>"$/;"	v
+g:ale_echo_msg_format	config.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
+g:ale_fix_on_save	config.vim	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_fixers	config.vim	/^let g:ale_fixers = {$/;"	v
+g:ale_keep_list_window_open	config.vim	/^let g:ale_keep_list_window_open=0$/;"	v
+g:ale_lint_on_enter	config.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	config.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_list_window_size	config.vim	/^let g:ale_list_window_size = 5$/;"	v
+g:ale_open_list	config.vim	/^let g:ale_open_list = 1$/;"	v
+g:ale_php_phpcbf_standard	config.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	v
+g:ale_php_phpcs_standard	config.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
+g:ale_php_phpmd_ruleset	config.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
+g:ale_set_quickfix	config.vim	/^let g:ale_set_quickfix=0$/;"	v
+g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
+g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
+g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
+g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
+g:go_term_mode	config/golang.vim	/^let g:go_term_mode = "vsplit"$/;"	v
+g:go_term_reuse	config/golang.vim	/^let g:go_term_reuse = 1$/;"	v
+g:go_term_width	config/golang.vim	/^let g:go_term_width = 50$/;"	v
+g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
+g:molokai_original	config.vim	/^let g:molokai_original = 1$/;"	v
+g:rehash256	config.vim	/^let g:rehash256 = 1$/;"	v
+g:ultisnips_php_scalar_types	config.vim	/^let g:ultisnips_php_scalar_types = 1$/;"	v
+g:vim_php_refactoring_auto_validate_visibility	config.vim	/^let g:vim_php_refactoring_auto_validate_visibility = 1$/;"	v
+g:vim_php_refactoring_default_method_visibility	config.vim	/^let g:vim_php_refactoring_default_method_visibility = 'private'$/;"	v
+g:vim_php_refactoring_default_property_visibility	config.vim	/^let g:vim_php_refactoring_default_property_visibility = 'private'$/;"	v
+g:vim_php_refactoring_phpdoc	config.vim	/^let g:vim_php_refactoring_phpdoc = "pdv#DocumentCurrentLine"$/;"	v
+g:vim_php_refactoring_use_default_mapping	config.vim	/^let g:vim_php_refactoring_use_default_mapping = 0$/;"	v
+gd	config.vim	/^nnoremap gd :call phpactor#GotoDefinition()<CR>$/;"	m
+gr	config.vim	/^nnoremap gr :call phpactor#FindReferences()<CR>$/;"	m
+local check_back_space 	lua/plug.lua	/^				local check_back_space = function()$/;"	f
+local sign 	init.lua	/^local sign = function(opts)$/;"	f
+local t 	lua/plug.lua	/^				local t = function(str)$/;"	f
+ncm2	config.vim	/^augroup ncm2$/;"	a
+on_attach 	init.lua	/^        on_attach = function(_, bufnr)$/;"	f
+open_fn 	lua/plugins.lua	/^      open_fn = function()$/;"	f
+setup 	lua/plug.lua	/^			setup = function()$/;"	f
+signs 	lua/plug.lua	/^					signs = function(bufnr, client_id)$/;"	f
+use {"akinsho/toggleterm.nvim", tag 	lua/plug.lua	/^		use {"akinsho\/toggleterm.nvim", tag = '*', config = function()$/;"	f
+{ name 	init.lua	/^        { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized$/;"	f
