@@ -3,6 +3,7 @@
  `lvim` is the global options object
 ]]
 
+<?phpecho "Hello, World?>
 -- vim options
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
@@ -98,4 +99,3 @@ lvim.builtin.treesitter.auto_install = true
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
-
