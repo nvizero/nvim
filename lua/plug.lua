@@ -4,14 +4,14 @@ return require('packer').startup(function()
 	-- other plugins...
 	use 'simrat39/rust-tools.nvim'
 	use 'kabouzeid/nvim-lspinstall'
-	use {
+	use({
         "jackMort/ChatGPT.nvim",
         config = function() require("chatgpt").setup({}) end,
         requires = {
             "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim",
             "nvim-telescope/telescope.nvim"
         }
-  }
+  })
 	use {
 		'neovim/nvim-lspconfig',
 		config = function()
