@@ -5,7 +5,6 @@ syntax on
 call plug#begin('~/.local/share/nvim/site/plugged')
 "call plug#begin()
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'pangloss/vim-javascript'
 Plug 'ncm2/ncm2'
@@ -37,6 +36,7 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
 "theme
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 "Plug 'fatih/molokai'
 
 "golang
@@ -98,7 +98,7 @@ runtime config/golang.vim
 
 
 
-nmap <F8> :TagbarToggle<CR>
+nmap <F9> :TagbarToggle<CR>
 
 
 

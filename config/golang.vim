@@ -52,7 +52,7 @@ let g:go_term_reuse = 1
 "	autocmd FileType go nmap <leader>t  <Plug>(go-test)
 "
 "	" :GoRun
-"	autocmd FileType go nmap <leader>r  <Plug>(go-run)
+"autocmd FileType go nmap <leader>r  <Plug>(go-run)
 "
 "	" :GoDoc
 "	autocmd FileType go nmap <Leader>d <Plug>(go-doc)
