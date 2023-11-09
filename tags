@@ -9,6 +9,13 @@
 <Leader>ee	config.vim	/^vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>$/;"	m
 <Leader>em	config.vim	/^vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>$/;"	m
 <Leader>rei	config.vim	/^nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>$/;"	m
+<M-Bslash>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-Bslash> <Plug>(copilot-suggest)$/;"	m
+<M-[>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-[> <Plug>(copilot-previous)$/;"	m
+<M-]>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-]> <Plug>(copilot-next)$/;"	m
+<Plug>(copilot-dismiss)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-dismiss)     <Cmd>call copilot#Dismiss()<CR>$/;"	m
+<Plug>(copilot-next)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-next)     <Cmd>call copilot#Next()<CR>$/;"	m
+<Plug>(copilot-previous)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-previous) <Cmd>call copilot#Previous()<CR>$/;"	m
+<Plug>(copilot-suggest)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-suggest)  <Cmd>call copilot#Suggest()<CR>$/;"	m
 <TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
 <c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
 <leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
@@ -22,13 +29,159 @@
 <leader>rrm	config.vim	/^nnoremap <leader>rrm :call PhpRenameMethod()<CR>$/;"	m
 <leader>rsg	config.vim	/^nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>$/;"	m
 <m-m>	config.vim	/^nnoremap <m-m> :call phpactor#ContextMenu()<cr>$/;"	m
+<nowait><expr>	pack/github/start/copilot.vim/plugin/copilot.vim	/^    imap <silent><script><nowait><expr> <C-]> copilot#Dismiss() . "\\<C-]>"$/;"	m
 <s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
+Advance	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Advance(count, context, ...) abort$/;"	f
+AgentCall	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentCall(method, params, ...) dict abort$/;"	f
+AgentCancel	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentCancel(request) dict abort$/;"	f
+AgentClose	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentClose() dict abort$/;"	f
+AgentNotify	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentNotify(method, params) dict abort$/;"	f
+AgentRequest	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentRequest(method, params, ...) dict abort$/;"	f
+AgentStartupError	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentStartupError() dict abort$/;"	f
+BrowserCallback	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:BrowserCallback(into, code) abort$/;"	f
+BufReadCmd	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! s:BufReadCmd() abort$/;"	f
+BufferDisabled	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:BufferDisabled() abort$/;"	f
+BufferText	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:BufferText(bufnr) abort$/;"	f
+Callback	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:Callback(request, type, callback, timer) abort$/;"	f
+ClearPreview	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:ClearPreview() abort$/;"	f
+CloseBuffer	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:CloseBuffer(bufnr) abort$/;"	f
+ColorScheme	pack/github/start/copilot.vim/plugin/copilot.vim	/^function! s:ColorScheme() abort$/;"	f
+Command	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:Command() abort$/;"	f
+Copilot	pack/github/start/copilot.vim/plugin/copilot.vim	/^command! -bang -nargs=? -range=-1 -complete=customlist,copilot#CommandComplete Copilot exe copilot#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)$/;"	c
+DispatchMessage	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:DispatchMessage(agent, handler, id, params, ...) abort$/;"	f
+Echo	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Echo(msg) abort$/;"	f
+EditorConfiguration	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:EditorConfiguration() abort$/;"	f
+EnabledStatusMessage	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:EnabledStatusMessage() abort$/;"	f
+Event	pack/github/start/copilot.vim/plugin/copilot.vim	/^function! s:Event(type) abort$/;"	f
+GetCapabilitiesError	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:GetCapabilitiesError(error, agent) abort$/;"	f
+GetCapabilitiesResult	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:GetCapabilitiesResult(result, agent) abort$/;"	f
+GetNodeVersion	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:GetNodeVersion(command) abort$/;"	f
+GetSuggestionsCycling	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:GetSuggestionsCycling(callback) abort$/;"	f
+GetSuggestionsCyclingCallback	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:GetSuggestionsCyclingCallback(context, result) abort$/;"	f
+HandleTriggerResult	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:HandleTriggerResult(result) abort$/;"	f
+HideDuringCompletion	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:HideDuringCompletion() abort$/;"	f
+Initialize	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! s:Initialize(state) abort$/;"	f
+Jobs	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! s:Jobs(job_or_jobs) abort$/;"	f
+Kill	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:Kill(agent, ...) abort$/;"	f
+LogSend	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:LogSend(request, line) abort$/;"	f
+LspClose	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:LspClose() dict abort$/;"	f
+LspNotify	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:LspNotify(method, params) dict abort$/;"	f
+LspRequest	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:LspRequest(method, params, ...) dict abort$/;"	f
+MapTab	pack/github/start/copilot.vim/plugin/copilot.vim	/^function! s:MapTab() abort$/;"	f
+NodeVersionWarning	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:NodeVersionWarning() abort$/;"	f
+NvimCallback	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! s:NvimCallback(cb, job, data, type) dict abort$/;"	f
+NvimExitCallback	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! s:NvimExitCallback(out_cb, err_cb, exit_cb, job, data, type) dict abort$/;"	f
+OnErr	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:OnErr(agent, line) abort$/;"	f
+OnExit	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:OnExit(agent, code) abort$/;"	f
+OnMessage	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:OnMessage(agent, body, ...) abort$/;"	f
+OnOut	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:OnOut(agent, state, data) abort$/;"	f
+OnResponse	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:OnResponse(agent, response, ...) abort$/;"	f
+Reject	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Reject(bufnr) abort$/;"	f
+RelativePath	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^function! s:RelativePath(absolute) abort$/;"	f
+Render	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! s:Render(panel_id) abort$/;"	f
+RequestAgent	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:RequestAgent() dict abort$/;"	f
+RequestAwait	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:RequestAwait() dict abort$/;"	f
+RequestCancel	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:RequestCancel() dict abort$/;"	f
+RequestWait	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:RequestWait() dict abort$/;"	f
+Running	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Running() abort$/;"	f
+Send	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:Send(agent, request) abort$/;"	f
+SetUpRequest	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:SetUpRequest(agent, id, method, params, ...) abort$/;"	f
 Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+Solutions	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! s:Solutions(state) abort$/;"	f
+Start	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Start() abort$/;"	f
+StatusNotification	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:StatusNotification(params, ...) abort$/;"	f
+Stop	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Stop() abort$/;"	f
+SuggestionTextWithAdjustments	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:SuggestionTextWithAdjustments() abort$/;"	f
+Trigger	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Trigger(bufnr, timer) abort$/;"	f
+UpdateEditorConfiguration	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:UpdateEditorConfiguration() abort$/;"	f
+UpdatePreview	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:UpdatePreview() abort$/;"	f
+UriFromBufnr	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:UriFromBufnr(bufnr) abort$/;"	f
+UrlDecode	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:UrlDecode(str) abort$/;"	f
+UrlEncode	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:UrlEncode(str) abort$/;"	f
+VerifySetup	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:VerifySetup() abort$/;"	f
+VimCloseCallback	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! s:VimCloseCallback(result, exit_cb, job) abort$/;"	f
+VimExitCallback	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! s:VimExitCallback(result, exit_cb, job, data) abort$/;"	f
+_, id 	pack/github/start/copilot.vim/lua/_copilot.lua	/^  _, id = client.request(method, params, function(err, result)$/;"	f
+_, id 	pack/github/start/copilot.vim/lua/_copilot.lua	/^  _, id = client.rpc.request(method, params, function(err, result)$/;"	f
 _G.enter_key 	lua/plug.lua	/^				_G.enter_key = function()$/;"	f
 _G.s_tab_complete 	lua/plug.lua	/^				_G.s_tab_complete = function()$/;"	f
 _G.tab_complete 	lua/plug.lua	/^				_G.tab_complete = function()$/;"	f
+b:current_syntax	pack/github/start/copilot.vim/syntax/copilot.vim	/^let b:current_syntax = "copilot"$/;"	v
+commands.disable	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.disable(opts) abort$/;"	f
+commands.enable	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.enable(opts) abort$/;"	f
+commands.feedback	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.feedback(opts) abort$/;"	f
+commands.help	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.help(opts) abort$/;"	f
+commands.panel	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.panel(opts) abort$/;"	f
+commands.restart	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.restart(opts) abort$/;"	f
+commands.setup	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.setup(opts) abort$/;"	f
+commands.signout	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.signout(opts) abort$/;"	f
+commands.status	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.status(opts) abort$/;"	f
+commands.version	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:commands.version(opts) abort$/;"	f
 config 	lua/plug.lua	/^				config = function()$/;"	f
 config 	lua/plug.lua	/^		config = function()$/;"	f
+copilot#Accept	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Accept(...) abort$/;"	f
+copilot#Agent	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Agent() abort$/;"	f
+copilot#Browser	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Browser() abort$/;"	f
+copilot#Call	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Call(method, params, ...) abort$/;"	f
+copilot#Clear	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Clear() abort$/;"	f
+copilot#Command	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Command(line1, line2, range, bang, mods, arg) abort$/;"	f
+copilot#CommandComplete	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#CommandComplete(arg, lead, pos) abort$/;"	f
+copilot#Complete	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Complete(...) abort$/;"	f
+copilot#Dismiss	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Dismiss() abort$/;"	f
+copilot#Enabled	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Enabled() abort$/;"	f
+copilot#GetDisplayedSuggestion	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#GetDisplayedSuggestion() abort$/;"	f
+copilot#Init	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Init(...) abort$/;"	f
+copilot#IsMapped	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#IsMapped() abort$/;"	f
+copilot#Next	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Next() abort$/;"	f
+copilot#Notify	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Notify(method, params, ...) abort$/;"	f
+copilot#NvimNs	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#NvimNs() abort$/;"	f
+copilot#OnBufUnload	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnBufUnload() abort$/;"	f
+copilot#OnCompleteChanged	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnCompleteChanged() abort$/;"	f
+copilot#OnCursorMovedI	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnCursorMovedI() abort$/;"	f
+copilot#OnInsertEnter	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnInsertEnter() abort$/;"	f
+copilot#OnInsertLeave	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnInsertLeave() abort$/;"	f
+copilot#OnVimLeavePre	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#OnVimLeavePre() abort$/;"	f
+copilot#Previous	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Previous() abort$/;"	f
+copilot#Request	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Request(method, params, ...) abort$/;"	f
+copilot#RunningAgent	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#RunningAgent() abort$/;"	f
+copilot#Schedule	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Schedule(...) abort$/;"	f
+copilot#Suggest	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#Suggest() abort$/;"	f
+copilot#TextQueuedForInsertion	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! copilot#TextQueuedForInsertion() abort$/;"	f
+copilot#agent#Cancel	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#Cancel(request) abort$/;"	f
+copilot#agent#EditorInfo	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#EditorInfo() abort$/;"	f
+copilot#agent#Error	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#Error(request, callback) abort$/;"	f
+copilot#agent#LspExit	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#LspExit(agent_id, code, signal) abort$/;"	f
+copilot#agent#LspHandle	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#LspHandle(agent_id, response) abort$/;"	f
+copilot#agent#LspInit	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#LspInit(agent_id, initialize_result) abort$/;"	f
+copilot#agent#LspResponse	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#LspResponse(agent_id, opts, ...) abort$/;"	f
+copilot#agent#New	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#New(...) abort$/;"	f
+copilot#agent#Result	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! copilot#agent#Result(request, callback) abort$/;"	f
+copilot#doc#Get	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^function! copilot#doc#Get() abort$/;"	f
+copilot#doc#LanguageForFileType	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^function copilot#doc#LanguageForFileType(filetype) abort$/;"	f
+copilot#doc#Params	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^function! copilot#doc#Params(...) abort$/;"	f
+copilot#doc#UTF16ToByteIdx	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^  function! copilot#doc#UTF16ToByteIdx(str, utf16_idx) abort$/;"	f
+copilot#doc#UTF16Width	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^function copilot#doc#UTF16Width(str) abort$/;"	f
+copilot#job#Nop	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function copilot#job#Nop(...) abort$/;"	f
+copilot#job#Stop	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! copilot#job#Stop(job) abort$/;"	f
+copilot#job#Stream	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! copilot#job#Stream(argv, out_cb, err_cb, ...) abort$/;"	f
+copilot#job#Wait	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^function! copilot#job#Wait(jobs) abort$/;"	f
+copilot#logger#Debug	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Debug(...) abort$/;"	f
+copilot#logger#Error	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Error(...) abort$/;"	f
+copilot#logger#Exception	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Exception() abort$/;"	f
+copilot#logger#File	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#File() abort$/;"	f
+copilot#logger#Info	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Info(...) abort$/;"	f
+copilot#logger#Raw	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Raw(level, message) abort$/;"	f
+copilot#logger#Trace	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Trace(...) abort$/;"	f
+copilot#logger#Warn	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^function! copilot#logger#Warn(...) abort$/;"	f
+copilot#panel#Accept	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! copilot#panel#Accept(...) abort$/;"	f
+copilot#panel#Open	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! copilot#panel#Open(opts) abort$/;"	f
+copilot#panel#Solution	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! copilot#panel#Solution(params, ...) abort$/;"	f
+copilot#panel#SolutionsDone	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! copilot#panel#SolutionsDone(params, ...) abort$/;"	f
+copilot.lsp_request 	pack/github/start/copilot.vim/lua/_copilot.lua	/^copilot.lsp_request = function(client_id, method, params)$/;"	f
+copilot.lsp_start_client 	pack/github/start/copilot.vim/lua/_copilot.lua	/^copilot.lsp_start_client = function(cmd, handler_names)$/;"	f
+copilot.rpc_notify 	pack/github/start/copilot.vim/lua/_copilot.lua	/^copilot.rpc_notify = function(client_id, method, params)$/;"	f
+copilot.rpc_request 	pack/github/start/copilot.vim/lua/_copilot.lua	/^copilot.rpc_request = function(client_id, method, params)$/;"	f
+copilot_agent	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^augroup copilot_agent$/;"	a
 expand 	init.lua	/^        expand = function(args)$/;"	f
 format 	init.lua	/^        format = function(entry, item)$/;"	f
 format 	lua/plug.lua	/^								format = function(diagnostic)$/;"	f
@@ -47,6 +200,12 @@ g:ale_php_phpcbf_standard	config.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	
 g:ale_php_phpcs_standard	config.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
 g:ale_php_phpmd_ruleset	config.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
 g:ale_set_quickfix	config.vim	/^let g:ale_set_quickfix=0$/;"	v
+g:autoloaded_copilot	pack/github/start/copilot.vim/autoload/copilot.vim	/^let g:autoloaded_copilot = 1$/;"	v
+g:autoloaded_copilot_agent	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let g:autoloaded_copilot_agent = 1$/;"	v
+g:autoloaded_copilot_job	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^let g:autoloaded_copilot_job = 1$/;"	v
+g:autoloaded_copilot_log	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^let g:autoloaded_copilot_log = 1$/;"	v
+g:autoloaded_copilot_panel	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^let g:autoloaded_copilot_panel = 1$/;"	v
+g:autoloaded_copilot_prompt	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^let g:autoloaded_copilot_prompt = 1$/;"	v
 g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
 g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
 g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
@@ -54,6 +213,7 @@ g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
 g:go_term_mode	config/golang.vim	/^let g:go_term_mode = "vsplit"$/;"	v
 g:go_term_reuse	config/golang.vim	/^let g:go_term_reuse = 1$/;"	v
 g:go_term_width	config/golang.vim	/^let g:go_term_width = 50$/;"	v
+g:loaded_copilot	pack/github/start/copilot.vim/plugin/copilot.vim	/^let g:loaded_copilot = 1$/;"	v
 g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
 g:molokai_original	config.vim	/^let g:molokai_original = 1$/;"	v
 g:rehash256	config.vim	/^let g:rehash256 = 1$/;"	v
@@ -64,14 +224,54 @@ g:vim_php_refactoring_default_property_visibility	config.vim	/^let g:vim_php_ref
 g:vim_php_refactoring_phpdoc	config.vim	/^let g:vim_php_refactoring_phpdoc = "pdv#DocumentCurrentLine"$/;"	v
 g:vim_php_refactoring_use_default_mapping	config.vim	/^let g:vim_php_refactoring_use_default_mapping = 0$/;"	v
 gd	config.vim	/^nnoremap gd :call phpactor#GotoDefinition()<CR>$/;"	m
+get_language_id 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    get_language_id = function(bufnr, filetype)$/;"	f
+github_copilot	pack/github/start/copilot.vim/plugin/copilot.vim	/^augroup github_copilot$/;"	a
+github_copilot_panel	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^augroup github_copilot_panel$/;"	a
 gr	config.vim	/^nnoremap gr :call phpactor#FindReferences()<CR>$/;"	m
+handlers[name] 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    handlers[name] = function(err, result)$/;"	f
+if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
 local check_back_space 	lua/plug.lua	/^				local check_back_space = function()$/;"	f
+local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
 local sign 	init.lua	/^local sign = function(opts)$/;"	f
 local t 	lua/plug.lua	/^				local t = function(str)$/;"	f
 ncm2	config.vim	/^augroup ncm2$/;"	a
 on_attach 	init.lua	/^        on_attach = function(_, bufnr)$/;"	f
+on_exit 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    on_exit = function(code, signal, client_id)$/;"	f
+on_init 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    on_init = function(client, initialize_result)$/;"	f
 open_fn 	lua/plugins.lua	/^      open_fn = function()$/;"	f
+s:annot_hlgroup	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:annot_hlgroup = 'CopilotAnnotation'$/;"	v
+s:chansend	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:chansend = function(exists('*chansend') ? 'chansend' : 'ch_sendraw')$/;"	v
+s:commands	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:commands = {}$/;"	v
+s:commands	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:commands.auth = s:commands.setup$/;"	v
+s:dir	pack/github/start/copilot.vim/plugin/copilot.vim	/^let s:dir = expand('<sfile>:h:h')$/;"	v
+s:error_exit	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:error_exit = -1$/;"	v
+s:feedback_url	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:feedback_url = 'https:\/\/github.com\/orgs\/community\/discussions\/categories\/copilot'$/;"	v
+s:filetype_defaults	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:filetype_defaults = {$/;"	v
+s:has_ghost_text	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:has_ghost_text = s:has_nvim_ghost_text || s:has_vim_ghost_text$/;"	v
+s:has_nvim_ghost_text	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:has_nvim_ghost_text = has('nvim-0.6') && exists('*nvim_buf_get_mark')$/;"	v
+s:has_vim_ghost_text	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:has_vim_ghost_text = has('patch-' . s:vim_minimum_version) && has('textprop')$/;"	v
+s:hlgroup	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:hlgroup = 'CopilotSuggestion'$/;"	v
+s:id	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^  let s:id = 0$/;"	v
+s:instances	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^  let s:instances = {}$/;"	v
+s:job_stop	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^let s:job_stop = exists('*job_stop') ? 'job_stop' : 'jobstop'$/;"	v
+s:jobstop	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:jobstop = function(exists('*jobstop') ? 'jobstop' : 'job_stop')$/;"	v
+s:language_normalization_map	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^let s:language_normalization_map = {$/;"	v
+s:log_file	pack/github/start/copilot.vim/autoload/copilot/logger.vim	/^  let s:log_file = tempname() . '-copilot.log'$/;"	v
+s:panel_id	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^  let s:panel_id = 0$/;"	v
+s:plugin_version	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:plugin_version = '1.11.4'$/;"	v
+s:restore_encoding	pack/github/start/copilot.vim/plugin/copilot.vim	/^      let s:restore_encoding = 1$/;"	v
+s:root	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:root = expand('<sfile>:h:h:h')$/;"	v
+s:separator	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^let s:separator = repeat('─', 72)$/;"	v
+s:slash	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let s:slash = exists('+shellslash') ? '\\' : '\/'$/;"	v
+s:slash	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^let s:slash = exists('+shellslash') ? '\\' : '\/'$/;"	v
+s:sleep	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^let s:sleep = has('patch-8.2.2366') ? 'sleep! 1m' : 'sleep 1m'$/;"	v
+s:subtype	pack/github/start/copilot.vim/syntax/copilot.vim	/^let s:subtype = matchstr(&l:filetype, '\\<copilot\\.\\zs[[:alnum:]_-]\\+')$/;"	v
+s:vim_minimum_version	pack/github/start/copilot.vim/autoload/copilot.vim	/^let s:vim_minimum_version = '9.0.0185'$/;"	v
+save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
 setup 	lua/plug.lua	/^			setup = function()$/;"	f
 signs 	lua/plug.lua	/^					signs = function(bufnr, client_id)$/;"	f
+time 	plugin/packer_compiled.lua	/^  time = function(chunk, start) end$/;"	f
+time 	plugin/packer_compiled.lua	/^  time = function(chunk, start)$/;"	f
+try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
 use {"akinsho/toggleterm.nvim", tag 	lua/plug.lua	/^		use {"akinsho\/toggleterm.nvim", tag = '*', config = function()$/;"	f
 { name 	init.lua	/^        { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized$/;"	f
