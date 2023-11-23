@@ -5,7 +5,7 @@ syntax on
 call plug#begin('~/.local/share/nvim/site/plugged')
 "call plug#begin()
 "Plug 'https://github.com/ap/vim-css-color'
-"Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 
 "------------------------ COC ------------------------
 " coc for tslinting, auto complete and prettier
@@ -28,7 +28,7 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
 "theme
-Plug 'fatih/molokai'
+"Plug 'fatih/molokai'
 
 
 "old
@@ -69,7 +69,7 @@ call plug#end()
 
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
-" colorscheme minimalist
+colorscheme minimalist
 
 let g:rehash256 = 1
 let g:molokai_original = 1
