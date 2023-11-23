@@ -8,7 +8,7 @@ return require('packer').startup(function()
 	use {
 		'neovim/nvim-lspconfig',
 		config = function()
-			require('lspconfig').gopls.setup{}
+			--require('lspconfig').gopls.setup{}
 			diagnostic_config = {
 				-- Enable underline, use default values
 				underline = true,
@@ -121,7 +121,7 @@ return require('packer').startup(function()
 		use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 			require("toggleterm").setup()
 		end}
-		use "lukas-reineke/indent-blankline.nvim"
+		--use "lukas-reineke/indent-blankline.nvim"
 		use "junegunn/fzf"
 		use 'nvim-telescope/telescope.nvim'
 		use 'nvim-lua/popup.nvim'
