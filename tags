@@ -4,11 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-<CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
-<Leader>ee	config.vim	/^nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>$/;"	m
-<Leader>ee	config.vim	/^vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>$/;"	m
-<Leader>em	config.vim	/^vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>$/;"	m
-<Leader>rei	config.vim	/^nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>$/;"	m
+<CR>	config/php.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
+<Leader>ee	config/php.vim	/^nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>$/;"	m
+<Leader>ee	config/php.vim	/^vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>$/;"	m
+<Leader>em	config/php.vim	/^vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>$/;"	m
+<Leader>rei	config/php.vim	/^nnoremap <silent><Leader>rei :call phpactor#ClassInflect()<CR>$/;"	m
 <M-Bslash>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-Bslash> <Plug>(copilot-suggest)$/;"	m
 <M-[>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-[> <Plug>(copilot-previous)$/;"	m
 <M-]>	pack/github/start/copilot.vim/plugin/copilot.vim	/^      imap <M-]> <Plug>(copilot-next)$/;"	m
@@ -16,21 +16,21 @@
 <Plug>(copilot-next)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-next)     <Cmd>call copilot#Next()<CR>$/;"	m
 <Plug>(copilot-previous)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-previous) <Cmd>call copilot#Previous()<CR>$/;"	m
 <Plug>(copilot-suggest)	pack/github/start/copilot.vim/plugin/copilot.vim	/^  imap <Plug>(copilot-suggest)  <Cmd>call copilot#Suggest()<CR>$/;"	m
-<TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
-<c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
+<TAB>	config/php.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
+<c-s>	config/php.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
 <leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
-<leader>rcv	config.vim	/^nnoremap <leader>rcv :call PhpRenameClassVariable()<CR>$/;"	m
-<leader>rdu	config.vim	/^nnoremap <leader>rdu :call PhpDetectUnusedUseStatements()<CR>$/;"	m
-<leader>rec	config.vim	/^vnoremap <leader>rec :call PhpExtractConst()<CR>$/;"	m
-<leader>rep	config.vim	/^nnoremap <leader>rep :call PhpExtractClassProperty()<CR>$/;"	m
-<leader>reu	config.vim	/^nnoremap <leader>reu :call PhpExtractUse()<CR>$/;"	m
-<leader>rlv	config.vim	/^nnoremap <leader>rlv :call PhpRenameLocalVariable()<CR>$/;"	m
-<leader>rnp	config.vim	/^nnoremap <leader>rnp :call PhpCreateProperty()<CR>$/;"	m
-<leader>rrm	config.vim	/^nnoremap <leader>rrm :call PhpRenameMethod()<CR>$/;"	m
-<leader>rsg	config.vim	/^nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>$/;"	m
-<m-m>	config.vim	/^nnoremap <m-m> :call phpactor#ContextMenu()<cr>$/;"	m
+<leader>rcv	config/php.vim	/^nnoremap <leader>rcv :call PhpRenameClassVariable()<CR>$/;"	m
+<leader>rdu	config/php.vim	/^nnoremap <leader>rdu :call PhpDetectUnusedUseStatements()<CR>$/;"	m
+<leader>rec	config/php.vim	/^vnoremap <leader>rec :call PhpExtractConst()<CR>$/;"	m
+<leader>rep	config/php.vim	/^nnoremap <leader>rep :call PhpExtractClassProperty()<CR>$/;"	m
+<leader>reu	config/php.vim	/^nnoremap <leader>reu :call PhpExtractUse()<CR>$/;"	m
+<leader>rlv	config/php.vim	/^nnoremap <leader>rlv :call PhpRenameLocalVariable()<CR>$/;"	m
+<leader>rnp	config/php.vim	/^nnoremap <leader>rnp :call PhpCreateProperty()<CR>$/;"	m
+<leader>rrm	config/php.vim	/^nnoremap <leader>rrm :call PhpRenameMethod()<CR>$/;"	m
+<leader>rsg	config/php.vim	/^nnoremap <leader>rsg :call PhpCreateSettersAndGetters()<CR>$/;"	m
+<m-m>	config/php.vim	/^nnoremap <m-m> :call phpactor#ContextMenu()<cr>$/;"	m
 <nowait><expr>	pack/github/start/copilot.vim/plugin/copilot.vim	/^    imap <silent><script><nowait><expr> <C-]> copilot#Dismiss() . "\\<C-]>"$/;"	m
-<s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
+<s-tab>	config/php.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
 Advance	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Advance(count, context, ...) abort$/;"	f
 AgentCall	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentCall(method, params, ...) dict abort$/;"	f
 AgentCancel	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:AgentCancel(request) dict abort$/;"	f
@@ -86,7 +86,7 @@ RequestWait	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function!
 Running	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Running() abort$/;"	f
 Send	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:Send(agent, request) abort$/;"	f
 SetUpRequest	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^function! s:SetUpRequest(agent, id, method, params, ...) abort$/;"	f
-Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+Silent	config/php.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
 Solutions	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^function! s:Solutions(state) abort$/;"	f
 Start	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:Start() abort$/;"	f
 StatusNotification	pack/github/start/copilot.vim/autoload/copilot.vim	/^function! s:StatusNotification(params, ...) abort$/;"	f
@@ -188,18 +188,18 @@ format 	lua/plug.lua	/^								format = function(diagnostic)$/;"	f
 g:UltiSnipsExpandTrigger	config.vim	/^let g:UltiSnipsExpandTrigger="<c-w>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-b>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	config.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-e>"$/;"	v
-g:ale_echo_msg_format	config.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
-g:ale_fix_on_save	config.vim	/^let g:ale_fix_on_save = 1$/;"	v
-g:ale_fixers	config.vim	/^let g:ale_fixers = {$/;"	v
-g:ale_keep_list_window_open	config.vim	/^let g:ale_keep_list_window_open=0$/;"	v
-g:ale_lint_on_enter	config.vim	/^let g:ale_lint_on_enter = 0$/;"	v
-g:ale_lint_on_text_changed	config.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
-g:ale_list_window_size	config.vim	/^let g:ale_list_window_size = 5$/;"	v
-g:ale_open_list	config.vim	/^let g:ale_open_list = 1$/;"	v
-g:ale_php_phpcbf_standard	config.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	v
-g:ale_php_phpcs_standard	config.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
-g:ale_php_phpmd_ruleset	config.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
-g:ale_set_quickfix	config.vim	/^let g:ale_set_quickfix=0$/;"	v
+g:ale_echo_msg_format	config/php.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
+g:ale_fix_on_save	config/php.vim	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_fixers	config/php.vim	/^let g:ale_fixers = {$/;"	v
+g:ale_keep_list_window_open	config/php.vim	/^let g:ale_keep_list_window_open=0$/;"	v
+g:ale_lint_on_enter	config/php.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	config/php.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_list_window_size	config/php.vim	/^let g:ale_list_window_size = 5$/;"	v
+g:ale_open_list	config/php.vim	/^let g:ale_open_list = 1$/;"	v
+g:ale_php_phpcbf_standard	config/php.vim	/^let g:ale_php_phpcbf_standard='PSR12'$/;"	v
+g:ale_php_phpcs_standard	config/php.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
+g:ale_php_phpmd_ruleset	config/php.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
+g:ale_set_quickfix	config/php.vim	/^let g:ale_set_quickfix=0$/;"	v
 g:autoloaded_copilot	pack/github/start/copilot.vim/autoload/copilot.vim	/^let g:autoloaded_copilot = 1$/;"	v
 g:autoloaded_copilot_agent	pack/github/start/copilot.vim/autoload/copilot/agent.vim	/^let g:autoloaded_copilot_agent = 1$/;"	v
 g:autoloaded_copilot_job	pack/github/start/copilot.vim/autoload/copilot/job.vim	/^let g:autoloaded_copilot_job = 1$/;"	v
@@ -217,24 +217,23 @@ g:loaded_copilot	pack/github/start/copilot.vim/plugin/copilot.vim	/^let g:loaded
 g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
 g:molokai_original	config.vim	/^let g:molokai_original = 1$/;"	v
 g:rehash256	config.vim	/^let g:rehash256 = 1$/;"	v
-g:ultisnips_php_scalar_types	config.vim	/^let g:ultisnips_php_scalar_types = 1$/;"	v
-g:vim_php_refactoring_auto_validate_visibility	config.vim	/^let g:vim_php_refactoring_auto_validate_visibility = 1$/;"	v
-g:vim_php_refactoring_default_method_visibility	config.vim	/^let g:vim_php_refactoring_default_method_visibility = 'private'$/;"	v
-g:vim_php_refactoring_default_property_visibility	config.vim	/^let g:vim_php_refactoring_default_property_visibility = 'private'$/;"	v
-g:vim_php_refactoring_phpdoc	config.vim	/^let g:vim_php_refactoring_phpdoc = "pdv#DocumentCurrentLine"$/;"	v
-g:vim_php_refactoring_use_default_mapping	config.vim	/^let g:vim_php_refactoring_use_default_mapping = 0$/;"	v
-gd	config.vim	/^nnoremap gd :call phpactor#GotoDefinition()<CR>$/;"	m
+g:ultisnips_php_scalar_types	config/php.vim	/^let g:ultisnips_php_scalar_types = 1$/;"	v
+g:vim_php_refactoring_auto_validate_visibility	config/php.vim	/^let g:vim_php_refactoring_auto_validate_visibility = 1$/;"	v
+g:vim_php_refactoring_default_method_visibility	config/php.vim	/^let g:vim_php_refactoring_default_method_visibility = 'private'$/;"	v
+g:vim_php_refactoring_default_property_visibility	config/php.vim	/^let g:vim_php_refactoring_default_property_visibility = 'private'$/;"	v
+g:vim_php_refactoring_phpdoc	config/php.vim	/^let g:vim_php_refactoring_phpdoc = "pdv#DocumentCurrentLine"$/;"	v
+g:vim_php_refactoring_use_default_mapping	config/php.vim	/^let g:vim_php_refactoring_use_default_mapping = 0$/;"	v
+gd	config/php.vim	/^nnoremap gd :call phpactor#GotoDefinition()<CR>$/;"	m
 get_language_id 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    get_language_id = function(bufnr, filetype)$/;"	f
 github_copilot	pack/github/start/copilot.vim/plugin/copilot.vim	/^augroup github_copilot$/;"	a
 github_copilot_panel	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^augroup github_copilot_panel$/;"	a
-gr	config.vim	/^nnoremap gr :call phpactor#FindReferences()<CR>$/;"	m
 handlers[name] 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    handlers[name] = function(err, result)$/;"	f
 if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
 local check_back_space 	lua/plug.lua	/^				local check_back_space = function()$/;"	f
 local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
 local sign 	init.lua	/^local sign = function(opts)$/;"	f
 local t 	lua/plug.lua	/^				local t = function(str)$/;"	f
-ncm2	config.vim	/^augroup ncm2$/;"	a
+ncm2	config/php.vim	/^augroup ncm2$/;"	a
 on_attach 	init.lua	/^        on_attach = function(_, bufnr)$/;"	f
 on_exit 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    on_exit = function(code, signal, client_id)$/;"	f
 on_init 	pack/github/start/copilot.vim/lua/_copilot.lua	/^    on_init = function(client, initialize_result)$/;"	f
