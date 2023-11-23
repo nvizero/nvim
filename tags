@@ -4,6 +4,8 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+<C-g>	config/golang.vim	/^imap <C-g> <esc>:<C-u>GoDeclsDir<cr>$/;"	m
+<C-g>	config/golang.vim	/^nmap <C-g> :GoDeclsDir<cr>$/;"	m
 <CR>	config/php.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
 <Leader>ee	config/php.vim	/^nnoremap <silent><Leader>ee :call phpactor#ExtractExpression(v:false)<CR>$/;"	m
 <Leader>ee	config/php.vim	/^vnoremap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>$/;"	m
@@ -207,7 +209,16 @@ g:autoloaded_copilot_log	pack/github/start/copilot.vim/autoload/copilot/logger.v
 g:autoloaded_copilot_panel	pack/github/start/copilot.vim/autoload/copilot/panel.vim	/^let g:autoloaded_copilot_panel = 1$/;"	v
 g:autoloaded_copilot_prompt	pack/github/start/copilot.vim/autoload/copilot/doc.vim	/^let g:autoloaded_copilot_prompt = 1$/;"	v
 g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
-g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
+g:go_autodetect_gopath	config/golang.vim	/^let g:go_autodetect_gopath = 1$/;"	v
+g:go_debug_windows	config/golang.vim	/^let g:go_debug_windows = {$/;"	v
+g:go_fmt_command	config/golang.vim	/^let g:go_fmt_command = "goimports"$/;"	v
+g:go_highlight_extra_types	config/golang.vim	/^let g:go_highlight_extra_types = 1$/;"	v
+g:go_highlight_fields	config/golang.vim	/^let g:go_highlight_fields = 4$/;"	v
+g:go_highlight_function_calls	config/golang.vim	/^let g:go_highlight_function_calls = 1$/;"	v
+g:go_highlight_functions	config/golang.vim	/^let g:go_highlight_functions = 1$/;"	v
+g:go_highlight_generate_tags	config/golang.vim	/^let g:go_highlight_generate_tags = 1$/;"	v
+g:go_highlight_types	config/golang.vim	/^let g:go_highlight_types = 2$/;"	v
+g:go_list_type	config/golang.vim	/^let g:go_list_type = "quickfix"$/;"	v
 g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
 g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
 g:go_term_mode	config/golang.vim	/^let g:go_term_mode = "vsplit"$/;"	v

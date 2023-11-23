@@ -14,7 +14,7 @@ set clipboard+=unnamedplus
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
 vim.wo.foldmethod = 'expr'
---vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
 --indent_blankline
 -- Vimspector options

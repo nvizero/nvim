@@ -8,7 +8,6 @@ return require('packer').startup(function()
 	use {
 		'neovim/nvim-lspconfig',
 		config = function()
-			require('lspconfig').gopls.setup{}
 			diagnostic_config = {
 				-- Enable underline, use default values
 				underline = true,

@@ -29,7 +29,12 @@ Plug 'folke/trouble.nvim'
 "theme
 "Plug 'dikiaap/minimalist'
 "Plug 'fatih/molokai'
-
+"golang
+Plug 'fatih/vim-go'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'SirVer/ultisnips'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/goyo.vim'
 
 "old
 Plug 'https://github.com/neoclide/coc.nvim'
@@ -80,7 +85,7 @@ let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet',
 let g:UltiSnipsExpandTrigger="<c-w>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-"runtime config/go.vim
+runtime config/go.vim
 runtime config/format.vim
 runtime config/php.vim
 runtime config/normal.vim
