@@ -16,7 +16,6 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips' | Plug 'phux/vim-snippets'
 
 Plug 'w0rp/ale'
-Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 
 
 "golang
