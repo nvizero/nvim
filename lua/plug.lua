@@ -2,8 +2,6 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
     -- other plugins...
-    use 'neovim/nvim-lspconfig'
-    use 'simrat39/rust-tools.nvim'
     use 'simrat39/rust-tools.nvim'
     use 'neovim/nvim-lspconfig'
     use 'kabouzeid/nvim-lspinstall'
