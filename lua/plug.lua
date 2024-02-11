@@ -1,9 +1,11 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+
     -- other plugins...
     use 'simrat39/rust-tools.nvim'
-    use 'neovim/nvim-lspconfig'
     use 'kabouzeid/nvim-lspinstall'
     use {
         'neovim/nvim-lspconfig',
