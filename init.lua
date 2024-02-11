@@ -117,4 +117,5 @@ require("term")
 require("golang")
 require("rust")
 require("rust-config")
+--require("custom.lspconfig")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]

@@ -137,7 +137,14 @@ return require('packer').startup(function()
     use { 'pangloss/vim-javascript' }
     use { 'evanleck/vim-svelte' }
     use { 'sheerun/vim-polyglot' }
-    use { 'williamboman/mason.nvim' }
+    use ({
+            'williamboman/mason.nvim',
+            opts = {
+                ensure_installed = {
+                    "rust-analyzer",
+                },
+            },
+        })
     use { 'williamboman/mason-lspconfig.nvim' }
 
     use({
