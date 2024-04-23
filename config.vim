@@ -21,7 +21,8 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'leafgarland/typescript-vim'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
-
+Plug 'nvim-neotest/nvim-nio'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'hrsh7th/nvim-cmp'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
