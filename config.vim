@@ -86,10 +86,12 @@ let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet',
 let g:UltiSnipsExpandTrigger="<c-w>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-runtime config/go.vim
-runtime config/format.vim
-runtime config/php.vim
-runtime config/normal.vim
-runtime config/golang.vim
-runtime config/setting.vim
+" 有可能會
+" PHP變黑
+" runtime config/go.vim
+" runtime config/format.vim
+" runtime config/php.vim
+" runtime config/normal.vim
+" runtime config/golang.vim
+" runtime config/setting.vim
 hi Visual  guifg=White guibg=LightBlue gui=none
