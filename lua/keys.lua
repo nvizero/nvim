@@ -21,33 +21,33 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', opt)
 vim.keymap.set('n', '<C-k>', '<C-w>k', opt)
 vim.keymap.set('n', '<C-l>', '<C-w>l', opt)
 
-vim.keymap.set('n', '<S-h>', '<Cmd>BufferPrevious<CR>' , opt)
-vim.keymap.set('n', '<S-l>', '<Cmd>BufferNext<CR>' , opt)
-vim.keymap.set('n', '<S-c>', '<Cmd>BufferClose<CR>' , opt)
+vim.keymap.set('n', '<S-h>', '<Cmd>BufferPrevious<CR>', opt)
+vim.keymap.set('n', '<S-l>', '<Cmd>BufferNext<CR>', opt)
+vim.keymap.set('n', '<S-c>', '<Cmd>BufferClose<CR>', opt)
 
-vim.keymap.set('n', '<C-.>', '<C-w>>x5' , opt)
-vim.keymap.set('n', '<C-,>', '<C-w><x5' , opt)
+vim.keymap.set('n', '<C-.>', '<C-w>>x5', opt)
+vim.keymap.set('n', '<C-,>', '<C-w><x5', opt)
 --vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
 
 
-vim.keymap.set('n', '<leader>fg', ':lua require(\'telescope.builtin\').live_grep()<cr>',opt )
-vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_files()<cr>',opt )
+vim.keymap.set('n', '<leader>fg', ':lua require(\'telescope.builtin\').live_grep()<cr>', opt)
+vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_files()<cr>', opt)
 -------Lazy Git
-vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>',opt )
+vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', opt)
 
-vim.cmd([[
-noremap <UP> <NOP>
-noremap <DOWN> <NOP>
-noremap <LEFT> <NOP>
-noremap <RIGHT> <NOP>
-inoremap <UP> <NOP>
-inoremap <DOWN> <NOP>
-inoremap <LEFT> <NOP>
-inoremap <RIGHT> <NOP>
-]])
+--vim.cmd([[
+--noremap <UP> <NOP>
+--noremap <DOWN> <NOP>
+--noremap <LEFT> <NOP>
+--noremap <RIGHT> <NOP>
+--inoremap <UP> <NOP>
+--inoremap <DOWN> <NOP>
+--inoremap <LEFT> <NOP>
+--inoremap <RIGHT> <NOP>
+--]])
 --
-vim.keymap.set('i', '<C-l>', '<RIGHT>' , opt)
-vim.keymap.set('i', '<C-h>', '<LEFT>' , opt)
-vim.keymap.set('i', '<C-k>', '<UP>' , opt)
-vim.keymap.set('i', '<C-j>', '<DOWN>' , opt)
+vim.keymap.set('i', '<C-l>', '<RIGHT>', opt)
+vim.keymap.set('i', '<C-h>', '<LEFT>', opt)
+vim.keymap.set('i', '<C-k>', '<UP>', opt)
+vim.keymap.set('i', '<C-j>', '<DOWN>', opt)
 --" previous and next buffer
