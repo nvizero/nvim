@@ -1,6 +1,5 @@
 require("plugins")
 require("plug")
-require("opts")
 
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
@@ -63,13 +62,13 @@ cmp.setup({
     },
     -- Installed sources:
     sources = {
-        { name = 'path' }, -- file paths
-        { name = 'nvim_lsp', keyword_length = 3 }, -- from language server
-        { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized
-        { name = 'nvim_lua', keyword_length = 2 }, -- complete neovim's Lua runtime API such vim.lsp.*
-        { name = 'buffer', keyword_length = 2 }, -- source current buffer
-        { name = 'vsnip', keyword_length = 2 }, -- nvim-cmp source for vim-vsnip
-        { name = 'calc' }, -- source for math calculation
+        { name = 'path' },                                       -- file paths
+        { name = 'nvim_lsp',               keyword_length = 3 }, -- from language server
+        { name = 'nvim_lsp_signature_help' },                    -- display function signatures with current parameter emphasized
+        { name = 'nvim_lua',               keyword_length = 2 }, -- complete neovim's Lua runtime API such vim.lsp.*
+        { name = 'buffer',                 keyword_length = 2 }, -- source current buffer
+        { name = 'vsnip',                  keyword_length = 2 }, -- nvim-cmp source for vim-vsnip
+        { name = 'calc' },                                       -- source for math calculation
     },
     window = {
         completion = cmp.config.window.bordered(),
@@ -93,7 +92,7 @@ cmp.setup({
 
 -- Treesitter Plugin Setup
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { "lua", "rust", "toml"},
+    ensure_installed = { "lua", "rust", "toml" },
     auto_install = true,
     highlight = {
         enable = true,
@@ -109,7 +108,7 @@ require('nvim-treesitter.configs').setup {
 --map('n', "t", ":FloatermToggle myfloat<CR>")
 --map('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 ---------個人KEY設定
---require('neotest').run.run(vim.fn.getcwd())
+-- require('neotest').run.run(vim.fn.getcwd())
 require("nvimtree")
 require("keys")
 require("format")
@@ -117,5 +116,6 @@ require("term")
 require("golang")
 require("rust")
 require("rust-config")
+require("opts")
 --require("custom.lspconfig")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]

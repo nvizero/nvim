@@ -121,6 +121,14 @@ return require('packer').startup(function()
             vim.api.nvim_set_keymap('i', '<enter>', '<C-R>=v:lua.enter_key()<CR>', { silent = true, noremap = true })
         end
     }
+    use {
+        "nvim-neotest/neotest",
+        requires = {
+            "nvim-neotest/nvim-nio",
+            -- 其他必要的插件
+        }
+    }
+
     --terminal
     use { "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
@@ -137,18 +145,16 @@ return require('packer').startup(function()
     use { 'pangloss/vim-javascript' }
     use { 'evanleck/vim-svelte' }
     use { 'sheerun/vim-polyglot' }
-    use ({
-            'williamboman/mason.nvim',
-            opts = {
-                ensure_installed = {
-                    "rust-analyzer",
-                },
-            },
-        })
-    use { 'williamboman/mason-lspconfig.nvim' }
-
     use({
-        "nvim-neotest/neotest",
+        'williamboman/mason.nvim',
+        opts = {
+            ensure_installed = {
+                "rust-analyzer",
+            },
+        },
+    })
+    use { 'williamboman/mason-lspconfig.nvim' }
+    use({
         requires = {
             "nvim-neotest/neotest-go",
             "nvim-lua/plenary.nvim",
