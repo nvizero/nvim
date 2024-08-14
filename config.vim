@@ -2,7 +2,7 @@ set encoding=UTF-8
 set number
 syntax on
 " VimPlug plugin manager
-call plug#begin('~/.local/share/nvim/site/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 "call plug#begin()
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
