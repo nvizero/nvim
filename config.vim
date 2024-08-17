@@ -2,11 +2,11 @@ set encoding=UTF-8
 set number
 syntax on
 " VimPlug plugin manager
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/site/plugged')
 "call plug#begin()
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-Plug 'https://github.com/neoclide/coc.nvim'
+"Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'pangloss/vim-javascript'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -17,8 +17,9 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 "------------------------ COC ------------------------
 " coc for tslinting, auto complete and prettier
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-" coc extensions
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
