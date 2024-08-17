@@ -3,6 +3,12 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     -- Debugging
     use 'mfussenegger/nvim-dap'
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 
     -- other plugins...
     use 'simrat39/rust-tools.nvim'

@@ -51,3 +51,9 @@ vim.keymap.set('i', '<C-h>', '<LEFT>', opt)
 vim.keymap.set('i', '<C-k>', '<UP>', opt)
 vim.keymap.set('i', '<C-j>', '<DOWN>', opt)
 --" previous and next buffer
+require('nvim_comment').setup({
+  create_mappings = false
+})
+
+vim.api.nvim_set_keymap('n', '<Leader>/', ':CommentToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Leader>/', ":'<,'>CommentToggle<CR>", { noremap = true, silent = true })
