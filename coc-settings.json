@@ -1,0 +1,19 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    },
+    "php": {
+      "command": "intelephense",
+      "trace.server": "verbose",
+      "filetypes": ["php"],
+      "rootPatterns": ["composer.json", ".git/"],
+      "initializationOptions": {
+        "storagePath": "/tmp/intelephense"
+      }
+    }
+  }
+}
