@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
+<TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
+<c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
+<leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
+<s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
+Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+_G.enter_key 	lua/plug.lua	/^            _G.enter_key = function()$/;"	f
+_G.s_tab_complete 	lua/plug.lua	/^            _G.s_tab_complete = function()$/;"	f
+_G.tab_complete 	lua/plug.lua	/^            _G.tab_complete = function()$/;"	f
+callback 	config.lua	/^  callback = function()$/;"	f
+config 	config.lua	/^    config = function()$/;"	f
+config 	lua/custom/plugins.lua	/^    config = function()$/;"	f
+config 	lua/plug.lua	/^        config = function()$/;"	f
+config 	lua/plugins.lua	/^        config = function(_, opts)$/;"	f
+expand 	init.lua	/^        expand = function(args)$/;"	f
+format 	init.lua	/^        format = function(entry, item)$/;"	f
+format 	lua/plug.lua	/^                    format = function(diagnostic)$/;"	f
+g:UltiSnipsExpandTrigger	config.vim	/^let g:UltiSnipsExpandTrigger="<c-w>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-b>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	config.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-e>"$/;"	v
+g:ale_echo_msg_format	config.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
+g:ale_fix_on_save	config.vim	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_fixers	config.vim	/^let g:ale_fixers = {$/;"	v
+g:ale_keep_list_window_open	config.vim	/^let g:ale_keep_list_window_open=0$/;"	v
+g:ale_lint_on_enter	config.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	config.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_list_window_size	config.vim	/^let g:ale_list_window_size = 5$/;"	v
+g:ale_open_list	config.vim	/^let g:ale_open_list = 1$/;"	v
+g:ale_php_phpcbf_standard	config.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	v
+g:ale_php_phpcs_standard	config.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
+g:ale_php_phpmd_ruleset	config.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
+g:ale_set_quickfix	config.vim	/^let g:ale_set_quickfix=0$/;"	v
+g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
+g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
+g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
+g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
+g:go_term_mode	config/golang.vim	/^let g:go_term_mode = "vsplit"$/;"	v
+g:go_term_reuse	config/golang.vim	/^let g:go_term_reuse = 1$/;"	v
+g:go_term_width	config/golang.vim	/^let g:go_term_width = 50$/;"	v
+g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
+if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
+init 	lua/plugins.lua	/^        init = function()$/;"	f
+local check_back_space 	lua/plug.lua	/^            local check_back_space = function()$/;"	f
+local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
+local sign 	init.lua	/^local sign = function(opts)$/;"	f
+local t 	lua/plug.lua	/^            local t = function(str)$/;"	f
+ncm2	config.vim	/^augroup ncm2$/;"	a
+on_attach 	lua/rust.lua	/^    on_attach = function(_, bufnr)$/;"	f
+open_fn 	lua/plugins.lua	/^        open_fn = function()$/;"	f
+opts 	lua/plugins.lua	/^        opts = function()$/;"	f
+save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+setup 	lua/plug.lua	/^        setup = function()$/;"	f
+signs 	lua/plug.lua	/^                signs = function(bufnr, client_id)$/;"	f
+time 	plugin/packer_compiled.lua	/^  time = function(chunk, start) end$/;"	f
+time 	plugin/packer_compiled.lua	/^  time = function(chunk, start)$/;"	f
+try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+use { "akinsho/toggleterm.nvim", tag 	lua/plug.lua	/^    use { "akinsho\/toggleterm.nvim", tag = '*', config = function()$/;"	f
+{ name 	init.lua	/^        { name = 'nvim_lsp_signature_help' },                    -- display function signatures with current parameter emphasized$/;"	f
