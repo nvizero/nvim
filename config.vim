@@ -15,6 +15,7 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips' | Plug 'phux/vim-snippets'
 Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale'
+Plug 'universal-ctags/ctags'
 "------------------------ COC ------------------------
 " coc for tslinting, auto complete and prettier
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -49,7 +50,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
 call plug#end()
 
-"php 
+"php
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
 Plug 'StanAngeloff/php.vim', {'for': 'php'}
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
@@ -81,11 +82,11 @@ Plug 'scrooloose/nerdtree'              " File/directory Tree explorer
 " colorscheme minimalist
 " theme setting
 set background=dark
-colorscheme PaperColor
+" colorscheme PaperColor
 
 "let g:rehash256 = 1
 "let g:molokai_original = 1
-"colorscheme molokai
+colorscheme molokai
 set guioptions-=e
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
