@@ -29,6 +29,7 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "------------------------ VIM TSX ------------------------
 " by default, if you open tsx file, neovim does not show syntax colors
 " typescript-vim will do all the coloring for typescript keywords
+
 "Plug 'leafgarland/typescript-vim'
 "------------------------ THEME ------------------------
 " most importantly you need a good color scheme to write good code :D
@@ -48,6 +49,12 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
+
+
+
+
+Plug 'preservim/tagbar'
+
 call plug#end()
 
 "php
@@ -135,6 +142,7 @@ map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>
 
 "runtime config/go.vim
 runtime config/format.vim
+runtime config/bar.vim
 runtime config/normal.vim
 runtime config/golang.vim
 "runtime config/setting.vim

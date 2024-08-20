@@ -66,6 +66,7 @@ return require('packer').startup(function()
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/vim-vsnip'
     use 'nvim-treesitter/nvim-treesitter'
+    use 'nvim-treesitter/nvim-treesitter-context'
     use 'puremourning/vimspector'
     use 'voldikss/vim-floaterm'
     use 'navarasu/onedark.nvim'
