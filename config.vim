@@ -50,12 +50,12 @@ Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
 
-
+" theme
+Plug 'joshdick/onedark.vim'
 
 
 Plug 'preservim/tagbar'
 
-call plug#end()
 
 "php
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
@@ -84,16 +84,17 @@ Plug 'tpope/vim-dispatch'               " Dispatch tasks (only using it for unit
 Plug 'w0rp/ale'                         " Asynchronous code linter and anylysis
 Plug 'scrooloose/nerdtree'              " File/directory Tree explorer
 
+call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 " colorscheme minimalist
 " theme setting
-set background=dark
-" colorscheme PaperColor
+" set background=dark
+colorscheme onedark
 
 "let g:rehash256 = 1
 "let g:molokai_original = 1
-colorscheme molokai
+" colorscheme molokai
 set guioptions-=e
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
