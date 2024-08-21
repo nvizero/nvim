@@ -58,31 +58,6 @@ Plug 'preservim/tagbar'
 
 
 "php
-Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
-Plug 'StanAngeloff/php.vim', {'for': 'php'}
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
-Plug 'stephpy/vim-php-cs-fixer'         " Coding standards fixer
-Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'} " PHP introspection and refactor tools
-Plug 'phpactor/ncm2-phpactor'           " Phpactor integration for ncm2 (autocomplete)
-Plug 'tobyS/pdv'                        " Auto generating php docblocks
-Plug 'ludovicchabant/vim-gutentags'     " Automatic ctags
-Plug 'SirVer/ultisnips'                 " Snippets. Also a dependency of pdv (the way we have it configured)
-Plug 'phux/vim-snippets'               " Large snippets library for multiple languages
-Plug 'tobyS/vmustache'                  " Templating system (required for pdv)
-Plug 'vim-airline/vim-airline'          " Vim status line
-Plug 'vim-airline/vim-airline-themes'   " Vim status line themes
-Plug 'ncm2/ncm2'                        " Autocompletion engine
-Plug 'ncm2/ncm2-bufword'                " Basic word completion? testing
-Plug 'ncm2/ncm2-ultisnips'
-Plug 'roxma/nvim-yarp'                  " Yet Another Remote Plugin Framework (dependency of ncm2)
-Plug 'morhetz/gruvbox'                  " Vim colorscheme
-Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy file search and more
-Plug 'tpope/vim-fugitive'               " Git integration
-Plug 'mhinz/vim-signify'                " Git integration inline
-Plug 'janko-m/vim-test'                 " Run unit tests
-Plug 'tpope/vim-dispatch'               " Dispatch tasks (only using it for unit tests)
-Plug 'w0rp/ale'                         " Asynchronous code linter and anylysis
-Plug 'scrooloose/nerdtree'              " File/directory Tree explorer
 
 call plug#end()
 " set the colorsheme
