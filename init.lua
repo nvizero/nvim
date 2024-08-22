@@ -109,6 +109,8 @@ require('nvim-treesitter.configs').setup {
 --map('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 ---------個人KEY設定
 -- require('neotest').run.run(vim.fn.getcwd())
+--
+
 require("nvimtree")
 require("keys")
 require("format")
@@ -117,5 +119,7 @@ require("golang")
 require("rust")
 require("rust-config")
 require("opts")
+require("php")
+
 --require("custom.lspconfig")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]

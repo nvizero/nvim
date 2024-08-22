@@ -65,7 +65,6 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 
-
 call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
@@ -79,7 +78,7 @@ call plug#end()
 colorscheme onedark
 set guioptions-=e
 
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
+let g:coc_global_extensions = ['coc-phpls','coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
 let g:UltiSnipsExpandTrigger="<c-w>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
@@ -103,7 +102,13 @@ inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
 
 " php
 " 設定自動補全
+
 inoremap <silent><expr> <C-Space> coc#refresh()
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ CheckBackspace() ? "\<TAB>" :
+      \ coc#refresh()
+
 
 " --------------------------------------------------------------------------------------------------------
 " disable linting while typing
