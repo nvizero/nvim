@@ -140,7 +140,8 @@ let g:ale_linters = {
 "-- 配置 vim-gutentags
 " let g:gutentags_ctags_tagfile = '.tags'
 " let g:gutentags_cache_dir = '~/.cache/tags'
-let g:gutentags_add_default_project_roots = 1
+" 至頂 目錄/function
+" let g:gutentags_add_default_project_roots = 1
 let g:gutentags_generate_on_missing = 1
 let g:gutentags_generate_on_write = 1
 let g:gutentags_generate_on_new = 1
