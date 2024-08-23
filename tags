@@ -4,10 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-<C-Space>	config.vim	/^inoremap <silent><expr> <C-Space> coc#refresh()$/;"	m
+<C-Space>	config/php.vim	/^inoremap <silent><expr> <C-Space> coc#refresh()$/;"	m
 <CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
 <TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
-<TAB>	config.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<TAB>	config/php.vim	/^inoremap <silent><expr> <TAB>$/;"	m
 <c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
 <leader>bb	config/bar.vim	/^nnoremap <leader>bb :TagbarToggle<CR>$/;"	m
 <leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
@@ -26,23 +26,23 @@ format 	lua/plug.lua	/^                    format = function(diagnostic)$/;"	f
 g:UltiSnipsExpandTrigger	config.vim	/^let g:UltiSnipsExpandTrigger="<c-w>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-b>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	config.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-e>"$/;"	v
-g:ale_echo_cursor	config.vim	/^let g:ale_echo_cursor = 1$/;"	v
-g:ale_echo_msg_format	config.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
-g:ale_fix_on_save	config.vim	/^let g:ale_fix_on_save = 1$/;"	v
-g:ale_fixers	config.vim	/^let g:ale_fixers = {$/;"	v
-g:ale_keep_list_window_open	config.vim	/^let g:ale_keep_list_window_open=0$/;"	v
-g:ale_lint_on_enter	config.vim	/^let g:ale_lint_on_enter = 0$/;"	v
-g:ale_lint_on_text_changed	config.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
-g:ale_linters	config.vim	/^let g:ale_linters = {$/;"	v
-g:ale_list_window_size	config.vim	/^let g:ale_list_window_size = 3$/;"	v
-g:ale_open_list	config.vim	/^let g:ale_open_list = 0$/;"	v
-g:ale_php_phpcbf_standard	config.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	v
-g:ale_php_phpcs_standard	config.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
-g:ale_php_phpmd_ruleset	config.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
-g:ale_set_quickfix	config.vim	/^let g:ale_set_quickfix = 0$/;"	v
-g:ale_virtualtext	config.vim	/^let g:ale_virtualtext = 1$/;"	v
-g:ale_virtualtext_cursor	config.vim	/^let g:ale_virtualtext_cursor = 1$/;"	v
-g:ale_virtualtext_prefix	config.vim	/^let g:ale_virtualtext_prefix = '===>> '  " 訊息前的前綴符號$/;"	v
+g:ale_echo_cursor	config/php.vim	/^let g:ale_echo_cursor = 1$/;"	v
+g:ale_echo_msg_format	config/php.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
+g:ale_fix_on_save	config/php.vim	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_fixers	config/php.vim	/^let g:ale_fixers = {$/;"	v
+g:ale_keep_list_window_open	config/php.vim	/^let g:ale_keep_list_window_open=0$/;"	v
+g:ale_lint_on_enter	config/php.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	config/php.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_linters	config/php.vim	/^let g:ale_linters = {$/;"	v
+g:ale_list_window_size	config/php.vim	/^let g:ale_list_window_size = 3$/;"	v
+g:ale_open_list	config/php.vim	/^let g:ale_open_list = 0$/;"	v
+g:ale_php_phpcbf_standard	config/php.vim	/^let g:ale_php_phpcbf_standard='PSR2'$/;"	v
+g:ale_php_phpcs_standard	config/php.vim	/^let g:ale_php_phpcs_standard='phpcs.xml.dist'$/;"	v
+g:ale_php_phpmd_ruleset	config/php.vim	/^let g:ale_php_phpmd_ruleset='phpmd.xml'$/;"	v
+g:ale_set_quickfix	config/php.vim	/^let g:ale_set_quickfix = 0$/;"	v
+g:ale_virtualtext	config/php.vim	/^let g:ale_virtualtext = 1$/;"	v
+g:ale_virtualtext_cursor	config/php.vim	/^let g:ale_virtualtext_cursor = 1$/;"	v
+g:ale_virtualtext_prefix	config/php.vim	/^let g:ale_virtualtext_prefix = '===>> '  " 訊息前的前綴符號$/;"	v
 g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-phpls','coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
 g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
 g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
@@ -50,9 +50,9 @@ g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
 g:go_term_mode	config/golang.vim	/^let g:go_term_mode = "vsplit"$/;"	v
 g:go_term_reuse	config/golang.vim	/^let g:go_term_reuse = 1$/;"	v
 g:go_term_width	config/golang.vim	/^let g:go_term_width = 50$/;"	v
-g:gutentags_generate_on_missing	config.vim	/^let g:gutentags_generate_on_missing = 1$/;"	v
-g:gutentags_generate_on_new	config.vim	/^let g:gutentags_generate_on_new = 1$/;"	v
-g:gutentags_generate_on_write	config.vim	/^let g:gutentags_generate_on_write = 1$/;"	v
+g:gutentags_generate_on_missing	config/php.vim	/^let g:gutentags_generate_on_missing = 1$/;"	v
+g:gutentags_generate_on_new	config/php.vim	/^let g:gutentags_generate_on_new = 1$/;"	v
+g:gutentags_generate_on_write	config/php.vim	/^let g:gutentags_generate_on_write = 1$/;"	v
 g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
 if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
 init 	lua/plugins.lua	/^        init = function()$/;"	f
