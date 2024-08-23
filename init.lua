@@ -120,6 +120,7 @@ require("rust")
 require("rust-config")
 require("opts")
 require("php")
+require("tools")
 
 --require("custom.lspconfig")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]

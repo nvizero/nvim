@@ -13,6 +13,9 @@
 <leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
 <s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
 Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+_G.enter_key 	lua/plug.lua	/^            _G.enter_key = function()$/;"	f
+_G.s_tab_complete 	lua/plug.lua	/^            _G.s_tab_complete = function()$/;"	f
+_G.tab_complete 	lua/plug.lua	/^            _G.tab_complete = function()$/;"	f
 buf_set_keymap	lua/php.lua	/^        local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end$/;"	f
 buf_set_option	lua/php.lua	/^        local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end$/;"	f
 callback 	config.lua	/^  callback = function()$/;"	f
@@ -53,14 +56,17 @@ g:gutentags_generate_on_write	config/php.vim	/^let g:gutentags_generate_on_write
 g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
 if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
 init 	lua/plugins.lua	/^        init = function()$/;"	f
+local check_back_space 	lua/plug.lua	/^            local check_back_space = function()$/;"	f
 local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
 local sign 	init.lua	/^local sign = function(opts)$/;"	f
+local t 	lua/plug.lua	/^            local t = function(str)$/;"	f
 ncm2	config.vim	/^augroup ncm2$/;"	a
 on_attach 	lua/php.lua	/^    on_attach = function(client, bufnr)$/;"	f
 on_attach 	lua/rust.lua	/^    on_attach = function(_, bufnr)$/;"	f
 open_fn 	lua/plugins.lua	/^        open_fn = function()$/;"	f
 opts 	lua/plugins.lua	/^        opts = function()$/;"	f
 save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+setup 	lua/plug.lua	/^        setup = function()$/;"	f
 signs 	lua/plug.lua	/^                signs = function(bufnr, client_id)$/;"	f
 time 	plugin/packer_compiled.lua	/^  time = function(chunk, start) end$/;"	f
 time 	plugin/packer_compiled.lua	/^  time = function(chunk, start)$/;"	f

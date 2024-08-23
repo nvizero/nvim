@@ -65,11 +65,16 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 
+
+
+Plug 'rayburgemeestre/phpfolding.vim'
+
 call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 " theme setting
 " set background=dark
+
 
 "let g:rehash256 = 1
 "let g:molokai_original = 1
