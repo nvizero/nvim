@@ -80,9 +80,6 @@ set guioptions-=e
 
 let g:coc_global_extensions = ['coc-phpls','coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
-let g:UltiSnipsExpandTrigger="<c-w>"
-let g:UltiSnipsJumpForwardTrigger="<c-e>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " PHP7
 
 
