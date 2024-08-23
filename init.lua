@@ -4,19 +4,54 @@ require("plug")
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
--- LSP Diagnostics Options Setup
+
 local sign = function(opts)
-    vim.fn.sign_define(opts.name, {
-        texthl = opts.name,
-        text = opts.text,
-        numhl = ''
+    -- 使用新的 vim.diagnostic.config 替代 sign_define
+    vim.diagnostic.config({
+        signs = {
+            severity = {
+                [vim.diagnostic.severity.ERROR] = {
+                    texthl = opts.name,
+                    text = opts.text,
+                    numhl = ''
+                },
+                [vim.diagnostic.severity.WARN] = {
+                    texthl = opts.name,
+                    text = opts.text,
+                    numhl = ''
+                },
+                [vim.diagnostic.severity.INFO] = {
+                    texthl = opts.name,
+                    text = opts.text,
+                    numhl = ''
+                },
+                [vim.diagnostic.severity.HINT] = {
+                    texthl = opts.name,
+                    text = opts.text,
+                    numhl = ''
+                },
+            }
+        },
+        virtual_text = {
+            prefix = '-+---+-->>', -- 设置虚拟文本前缀
+        },
+        underline = true, -- 是否显示下划线
     })
 end
 
-sign({ name = 'DiagnosticSignError', text = '' })
-sign({ name = 'DiagnosticSignWarn', text = '' })
-sign({ name = 'DiagnosticSignHint', text = '' })
-sign({ name = 'DiagnosticSignInfo', text = '' })
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = '>>', -- 设置虚拟文本前缀
+  },
+  signs = true,  -- 是否显示标志
+  underline = true, -- 是否显示下划线
+  update_in_insert = false, -- 是否在插入模式下更新诊断
+})
+
+-- sign({ name = 'DiagnosticSignError', text = '' })
+-- sign({ name = 'DiagnosticSignWarn', text = '' })
+-- sign({ name = 'DiagnosticSignHint', text = '' })
+-- sign({ name = 'DiagnosticSignInfo', text = '' })
 
 vim.diagnostic.config({
     virtual_text = false,
@@ -31,6 +66,7 @@ vim.diagnostic.config({
         prefix = '',
     },
 })
+
 vim.cmd([[
 set foldmethod=manual
 set signcolumn=yes

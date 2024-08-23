@@ -66,14 +66,23 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 
 
-
+" 收合
 Plug 'rayburgemeestre/phpfolding.vim'
+" AI
+Plug 'github/copilot.vim'
 
 call plug#end()
 " set the colorsheme
 " list: https://github.com/rafi/awesome-vim-colorschemes
 " theme setting
 " set background=dark
+" 配置 Copilot 显示提案的延迟时间，默认是 100ms
+"
+let g:copilot_no_tab_map = v:true
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+
+" 映射 <C-J> 为接受 Copilot 提案的快捷键
+imap <C-J> <Plug>(copilot-accept)
 
 
 "let g:rehash256 = 1
@@ -113,6 +122,6 @@ runtime config/format.vim
 runtime config/bar.vim
 runtime config/normal.vim
 runtime config/golang.vim
-runtime config/php.vim
+" runtime config/php.vim
 "runtime config/setting.vim
 hi Visual  guifg=White guibg=LightBlue gui=none
