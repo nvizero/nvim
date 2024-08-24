@@ -157,6 +157,7 @@ require("rust-config")
 require("opts")
 require("php")
 require("phpfloding")
+require("ai")
 
 --require("custom.lspconfig")
 vim.cmd [[source $HOME/.config/nvim/config.vim]]

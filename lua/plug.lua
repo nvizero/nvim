@@ -9,6 +9,18 @@ return require('packer').startup(function()
             require('Comment').setup()
         end
     }
+    use({
+            "jackMort/ChatGPT.nvim",
+            config = function()
+                require("chatgpt").setup()
+            end,
+            requires = {
+                "MunifTanjim/nui.nvim",
+                "nvim-lua/plenary.nvim",
+                "folke/trouble.nvim",
+                "nvim-telescope/telescope.nvim"
+            }
+        })
 
     -- other plugins...
     use 'simrat39/rust-tools.nvim'
