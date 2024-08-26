@@ -33,6 +33,10 @@ vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_file
 -------Lazy Git
 vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', opt)
 
+-- copilot
+vim.keymap.set('n', '<C-m>', ':CopilotChatToggle<CR>', opt)
+-- vim.keymap.set('i', '<M-c>', ':CopilotChatClose<CR>', opt)
+
 --vim.cmd([[
 --noremap <UP> <NOP>
 --noremap <DOWN> <NOP>
