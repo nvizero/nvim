@@ -4,31 +4,619 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+) end)	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^    (callback or function() end)(select(2, ...))$/;"	f
+,,x	pack/copilotchat/start/plenary.nvim/tests/minimal_init.vim	/^nnoremap ,,x :luafile %<CR>$/;"	m
 <C-J>	config.vim	/^imap <C-J> <Plug>(copilot-accept)$/;"	m
 <C-J>	config.vim	/^imap <silent><script><expr> <C-J> copilot#Accept("\\<CR>")$/;"	m
+<C-J>	config/copilot.vim	/^imap <silent><script><expr> <C-J> copilot#Accept("\\<CR>")$/;"	m
+<C-K>	config/copilot.vim	/^imap <silent><script><expr> <C-K> copilot#Suggest()$/;"	m
+<C-L>	config/copilot.vim	/^imap <silent><script><expr> <C-L> copilot#Dismiss()$/;"	m
 <C-Space>	config/php.vim	/^inoremap <silent><expr> <C-Space> coc#refresh()$/;"	m
 <CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
+<Plug>PlenaryTestFile	pack/copilotchat/start/plenary.nvim/plugin/plenary.vim	/^nnoremap <Plug>PlenaryTestFile :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))<CR>$/;"	m
 <TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
 <TAB>	config/php.vim	/^inoremap <silent><expr> <TAB>$/;"	m
 <c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
 <leader>bb	config/bar.vim	/^nnoremap <leader>bb :TagbarToggle<CR>$/;"	m
 <leader>fd	config/format.vim	/^nnoremap <leader>fd :Autoformat<CR>$/;"	m
 <s-tab>	config.vim	/^inoremap <expr> <s-tab> pumvisible() ? "\\<c-p>" : "\\<TAB>"$/;"	m
+ARCH	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^ARCH := $(shell uname -m)$/;"	m
+BUILD_DIR	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^BUILD_DIR := build$/;"	m
+Border._create_lines	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^function Border._create_lines(content_win_id, content_win_options, border_win_options)$/;"	f
+Border:__align_calc_config	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^function Border:__align_calc_config(content_win_options, border_win_options)$/;"	f
+Border:change_title	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^function Border:change_title(new_title, pos)$/;"	f
+Border:move	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^function Border:move(content_win_options, border_win_options)$/;"	f
+Border:new	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^function Border:new(content_bufnr, content_win_id, content_win_options, border_win_options)$/;"	f
+Chat:active	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:active()$/;"	f
+Chat:append	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:append(str)$/;"	f
+Chat:clear	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:clear()$/;"	f
+Chat:close	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:close(bufnr)$/;"	f
+Chat:finish	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:finish(msg)$/;"	f
+Chat:focus	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:focus()$/;"	f
+Chat:follow	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:follow()$/;"	f
+Chat:last	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:last()$/;"	f
+Chat:open	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:open(config)$/;"	f
+Chat:render	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:render()$/;"	f
+Chat:visible	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function Chat:visible()$/;"	f
+CollectObjectReferenceInMemory	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function CollectObjectReferenceInMemory(strName, cObject, cDumpInfoContainer)$/;"	f
+CollectSingleObjectReferenceInMemory	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function CollectSingleObjectReferenceInMemory(strName, cObject, cDumpInfoContainer)$/;"	f
+Condvar.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^function Condvar.new()$/;"	f
+Condvar.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^function Condvar.new()$/;"	f
+Condvar.wait 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^Condvar.wait = a.wrap(function(self, callback)$/;"	f
+Condvar.wait 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^Condvar.wait = a.wrap(function(self, callback)$/;"	f
+Condvar:notify_all	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^function Condvar:notify_all()$/;"	f
+Condvar:notify_all	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^function Condvar:notify_all()$/;"	f
+Condvar:notify_one	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^function Condvar:notify_one()$/;"	f
+Condvar:notify_one	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^function Condvar:notify_one()$/;"	f
+Copilot:ask	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:ask(prompt, opts)$/;"	f
+Copilot:embed	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:embed(inputs, opts)$/;"	f
+Copilot:load	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:load(name, path)$/;"	f
+Copilot:reset	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:reset()$/;"	f
+Copilot:running	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:running()$/;"	f
+Copilot:save	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:save(name, path)$/;"	f
+Copilot:select_model	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:select_model(callback)$/;"	f
+Copilot:stop	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:stop()$/;"	f
+Copilot:with_auth	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^function Copilot:with_auth(on_done, on_error)$/;"	f
+CopilotChatFoldExpr	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^function CopilotChatFoldExpr(lnum, separator)$/;"	f
+CreateObjectReferenceInfoContainer	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function CreateObjectReferenceInfoContainer()$/;"	f
+CreateObjectReferenceInfoContainerFromFile	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function CreateObjectReferenceInfoContainerFromFile(strFilePath)$/;"	f
+CreateSingleObjectReferenceInfoContainer	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function CreateSingleObjectReferenceInfoContainer(strObjectName, cObject)$/;"	f
+Deque.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque.new()$/;"	f
+Deque.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque.new()$/;"	f
+Deque:clear	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:clear()$/;"	f
+Deque:clear	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:clear()$/;"	f
+Deque:ipairs_left	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:ipairs_left()$/;"	f
+Deque:ipairs_left	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:ipairs_left()$/;"	f
+Deque:ipairs_right	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:ipairs_right()$/;"	f
+Deque:ipairs_right	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:ipairs_right()$/;"	f
+Deque:is_empty	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:is_empty()$/;"	f
+Deque:is_empty	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:is_empty()$/;"	f
+Deque:len	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:len()$/;"	f
+Deque:len	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:len()$/;"	f
+Deque:popleft	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:popleft()$/;"	f
+Deque:popleft	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:popleft()$/;"	f
+Deque:popright	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:popright()$/;"	f
+Deque:popright	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:popright()$/;"	f
+Deque:pushleft	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:pushleft(value)$/;"	f
+Deque:pushleft	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:pushleft(value)$/;"	f
+Deque:pushright	pack/copilotchat/start/plenary.nvim/lua/plenary/async/structs.lua	/^function Deque:pushright(value)$/;"	f
+Deque:pushright	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/structs.lua	/^function Deque:pushright(value)$/;"	f
+DumpMemorySnapshot	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function DumpMemorySnapshot(strSavePath, strExtraFileName, nMaxRescords, strRootObjectName, cRootObject)$/;"	f
+DumpMemorySnapshotCompared	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function DumpMemorySnapshotCompared(strSavePath, strExtraFileName, nMaxRescords, cResultBefore, cResultAfter)$/;"	f
+DumpMemorySnapshotComparedFile	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function DumpMemorySnapshotComparedFile(strSavePath, strExtraFileName, nMaxRescords, strResultFilePathBefore, strResultFilePathAfter)$/;"	f
+DumpMemorySnapshotSingleObject	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function DumpMemorySnapshotSingleObject(strSavePath, strExtraFileName, nMaxRescords, strObjectName, cObject)$/;"	f
+EXT	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^    EXT := dylib$/;"	m
+EXT	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^    EXT := so$/;"	m
+Enum.__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^Enum.__index = function(_, key)$/;"	f
+Enum:from_num	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^function Enum:from_num(num)$/;"	f
+Enum:from_str	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^function Enum:from_str(key)$/;"	f
+Enum:has_key	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^function Enum:has_key(key)$/;"	f
+Environment	pack/copilotchat/start/plenary.nvim/scripts/update_vararg.py	/^    from jinja2 import Environment, FileSystemLoader$/;"	i
+FileSystemLoader	pack/copilotchat/start/plenary.nvim/scripts/update_vararg.py	/^    from jinja2 import Environment, FileSystemLoader$/;"	i
+FormatDateTimeNow	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function FormatDateTimeNow()$/;"	f
+GetOriginalToStringResult	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function GetOriginalToStringResult(cObject)$/;"	f
+Iterator:__call	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:__call(param, state)$/;"	f
+Iterator:__tostring	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:__tostring()$/;"	f
+Iterator:all	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:all(fun)$/;"	f
+Iterator:any	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:any(fun)$/;"	f
+Iterator:enumerate	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:enumerate()$/;"	f
+Iterator:filter	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:filter(fun)$/;"	f
+Iterator:find	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:find(val_or_fn)$/;"	f
+Iterator:flatten	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:flatten()$/;"	f
+Iterator:fold	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:fold(init, fun)$/;"	f
+Iterator:for_each	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:for_each(fn)$/;"	f
+Iterator:map	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:map(fun)$/;"	f
+Iterator:stateful	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:stateful()$/;"	f
+Iterator:tolist	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:tolist()$/;"	f
+Iterator:tolistn	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:tolistn()$/;"	f
+Iterator:tomap	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^function Iterator:tomap()$/;"	f
+Job.chain	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job.chain(...)$/;"	f
+Job.chain_status	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job.chain_status(id)$/;"	f
+Job.is_job	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job.is_job(item)$/;"	f
+Job.join	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job.join(...)$/;"	f
+Job:_create_uv_options	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_create_uv_options()$/;"	f
+Job:_execute	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_execute()$/;"	f
+Job:_pipes_are_closed	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_pipes_are_closed(options)$/;"	f
+Job:_prepare_pipes	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_prepare_pipes()$/;"	f
+Job:_reset	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_reset()$/;"	f
+Job:_shutdown	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_shutdown(code, signal)$/;"	f
+Job:_stop	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:_stop()$/;"	f
+Job:add_on_exit_callback	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:add_on_exit_callback(cb)$/;"	f
+Job:after	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:after(fn)$/;"	f
+Job:after_failure	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:after_failure(fn)$/;"	f
+Job:after_success	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:after_success(fn)$/;"	f
+Job:and_then	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then(next_job)$/;"	f
+Job:and_then_on_failure	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then_on_failure(next_job)$/;"	f
+Job:and_then_on_failure_wrap	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then_on_failure_wrap(next_job)$/;"	f
+Job:and_then_on_success	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then_on_success(next_job)$/;"	f
+Job:and_then_on_success_wrap	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then_on_success_wrap(next_job)$/;"	f
+Job:and_then_wrap	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:and_then_wrap(next_job)$/;"	f
+Job:co_wait	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:co_wait(wait_time)$/;"	f
+Job:new	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:new(o)$/;"	f
+Job:pid	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:pid()$/;"	f
+Job:result	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:result()$/;"	f
+Job:send	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:send(data)$/;"	f
+Job:shutdown	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:shutdown(code, signal)$/;"	f
+Job:start	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:start()$/;"	f
+Job:stderr_result	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:stderr_result()$/;"	f
+Job:sync	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:sync(timeout, wait_interval)$/;"	f
+Job:wait	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^function Job:wait(timeout, wait_interval, should_redraw)$/;"	f
+LUA_VERSIONS	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^LUA_VERSIONS := luajit lua51$/;"	m
+List.from_iter	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List.from_iter(iter)$/;"	f
+List.is_list	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List.is_list(tbl)$/;"	f
+List.new	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List.new(tbl)$/;"	f
+List.pack	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List.pack(...)$/;"	f
+List:__concat	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__concat(other)$/;"	f
+List:__eq	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__eq(other)$/;"	f
+List:__index	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__index(key)$/;"	f
+List:__len	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__len()$/;"	f
+List:__mul	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__mul(other)$/;"	f
+List:__tostring	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:__tostring()$/;"	f
+List:concat	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:concat(...)$/;"	f
+List:contains	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:contains(e)$/;"	f
+List:copy	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:copy()$/;"	f
+List:count	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:count(e)$/;"	f
+List:deep_copy	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:deep_copy()$/;"	f
+List:deep_equal	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:deep_equal(other)$/;"	f
+List:equal	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:equal(other)$/;"	f
+List:extend	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:extend(other)$/;"	f
+List:insert	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:insert(idx, other)$/;"	f
+List:iter	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:iter()$/;"	f
+List:join	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:join(sep)$/;"	f
+List:move	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:move(from, len, to, other)$/;"	f
+List:pop	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:pop()$/;"	f
+List:push	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:push(other)$/;"	f
+List:remove	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:remove(idx)$/;"	f
+List:reverse	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:reverse()$/;"	f
+List:riter	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:riter()$/;"	f
+List:slice	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:slice(a, b)$/;"	f
+List:unpack	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^function List:unpack()$/;"	f
+M._original_functions 	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^M._original_functions = {}$/;"	f
+M._original_functions[method] 	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^    M._original_functions[method] = vim.lsp.callbacks[method]$/;"	f
+M.after_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/tests.lua	/^M.after_each = function(async_func)$/;"	f
+M.align_str 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^M.align_str = function(string, width, right_justify)$/;"	f
+M.apcall	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^function M.apcall(async_fn, ...)$/;"	f
+M.arify	pack/copilotchat/start/plenary.nvim/lua/plenary/fun.lua	/^function M.arify(fn, argc)$/;"	f
+M.arshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.arshift(x, disp) -- Lua5.2 inspired$/;"	f
+M.ask	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.ask(prompt, config, source)$/;"	f
+M.async 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.async = function(func)$/;"	f
+M.async_void 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.async_void = function(func)$/;"	f
+M.auth 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^M.auth = function()$/;"	f
+M.available	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^function M.available()$/;"	f
+M.await 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.await = function(future)$/;"	f
+M.await_all 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.await_all = function(futures)$/;"	f
+M.band	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.band(a,b) return ((a+b) - bxor(a,b))\/2 end$/;"	f
+M.before_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/tests.lua	/^M.before_each = function(async_func)$/;"	f
+M.bind 	pack/copilotchat/start/plenary.nvim/lua/plenary/fun.lua	/^M.bind = require("plenary.functional").partial$/;"	f
+M.bit.arshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.arshift(x, n)$/;"	f
+M.bit.bnot	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.bnot(x)$/;"	f
+M.bit.bswap	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.bswap(x)$/;"	f
+M.bit.lshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.lshift(x, n)$/;"	f
+M.bit.rol	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.rol(x, n)$/;"	f
+M.bit.ror	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.ror(x, n)$/;"	f
+M.bit.rshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.rshift(x, n)$/;"	f
+M.bit.tobit	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.tobit(x)$/;"	f
+M.bit.tohex	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bit.tohex(x, ...)$/;"	f
+M.block_on 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.block_on = function(async_function, timeout)$/;"	f
+M.block_on 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.block_on = function(future, timeout)$/;"	f
+M.bnot	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bnot(a)   return MODM - a end$/;"	f
+M.bor	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bor(a,b)  return MODM - band(MODM - a, MODM - b) end$/;"	f
+M.bswap	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.bswap(x)  -- BitOp style$/;"	f
+M.btest	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.btest(x, y) -- Lua5.2 inspired$/;"	f
+M.buf_attach	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.buf_attach(force)$/;"	f
+M.buf_detach	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.buf_detach()$/;"	f
+M.buf_is_attached	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.buf_is_attached(bufnr)$/;"	f
+M.buffer	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.buffer(source)$/;"	f
+M.build_outline	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^function M.build_outline(bufnr)$/;"	f
+M.channel.counter 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^M.channel.counter = function()$/;"	f
+M.channel.counter 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.channel.counter = function()$/;"	f
+M.channel.mpsc 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^M.channel.mpsc = function()$/;"	f
+M.channel.mpsc 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.channel.mpsc = function()$/;"	f
+M.channel.oneshot 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^M.channel.oneshot = function()$/;"	f
+M.channel.oneshot 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.channel.oneshot = function()$/;"	f
+M.check	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/health.lua	/^function M.check()$/;"	f
+M.class	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.class(fn, parent)$/;"	f
+M.clipboard	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.clipboard()$/;"	f
+M.close	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.close()$/;"	f
+M.count	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^function M.count(prompt)$/;"	f
+M.create_wrapper	pack/copilotchat/start/plenary.nvim/lua/plenary/fun.lua	/^function M.create_wrapper(map)$/;"	f
+M.debug	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.debug(debug)$/;"	f
+M.dedent 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^M.dedent = function(str, leave_indent)$/;"	f
+M.describe 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/tests.lua	/^M.describe = function(s, async_func)$/;"	f
+M.describe 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/tests.lua	/^M.describe = function(s, func)$/;"	f
+M.diagnostics	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.diagnostics(source)$/;"	f
+M.encode	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^function M.encode(prompt)$/;"	f
+M.exit_visual_mode	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.exit_visual_mode()$/;"	f
+M.extract	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.extract(n, field, width) -- Lua5.2 inspired$/;"	f
+M.find_for_query	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^function M.find_for_query(copilot, opts)$/;"	f
+M.future 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.future = function(func)$/;"	f
+M.get	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.get()$/;"	f
+M.get_completion_params 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^M.get_completion_params = function(opts)$/;"	f
+M.get_copilot_client 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^M.get_copilot_client = function()$/;"	f
+M.get_copilot_lua_version	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_copilot_lua_version()$/;"	f
+M.get_copilot_path 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^M.get_copilot_path = function()$/;"	f
+M.get_cred 	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^M.get_cred = function()$/;"	f
+M.get_doc	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_doc()$/;"	f
+M.get_doc_params	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_doc_params(overrides)$/;"	f
+M.get_editor_configuration	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_editor_configuration()$/;"	f
+M.get_editor_info	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_editor_info()$/;"	f
+M.get_leaf_function_argc	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  function M.get_leaf_function_argc(async_func)$/;"	f
+M.get_log_file_path	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.get_log_file_path()$/;"	f
+M.get_network_proxy	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_network_proxy()$/;"	f
+M.get_next_id	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.get_next_id()$/;"	f
+M.get_node_version	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.get_node_version()$/;"	f
+M.get_original_function	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^function M.get_original_function(method)$/;"	f
+M.gitdiff	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.gitdiff(source, staged)$/;"	f
+M.help_actions	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/actions.lua	/^function M.help_actions(config)$/;"	f
+M.highlight_selection	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.highlight_selection(clear)$/;"	f
+M.id 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.id = async(function(...)$/;"	f
+M.info_error 	pack/copilotchat/start/plenary.nvim/lua/plenary/errors.lua	/^M.info_error = function(s, func_info, level)$/;"	f
+M.is_attached	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.is_attached()$/;"	f
+M.is_disabled	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.is_disabled()$/;"	f
+M.is_leaf_function	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  function M.is_leaf_function(async_func)$/;"	f
+M.is_stable	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.is_stable()$/;"	f
+M.it 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/tests.lua	/^M.it = function(s, async_func)$/;"	f
+M.it 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/tests.lua	/^M.it = function(s, func)$/;"	f
+M.join	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.join(on_done, fns)$/;"	f
+M.join 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.join = function(async_fns)$/;"	f
+M.join 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.join = M.wrap(function(futures, step)$/;"	f
+M.json_strip_comments	pack/copilotchat/start/plenary.nvim/lua/plenary/json.lua	/^function M.json_strip_comments(jsonString, options)$/;"	f
+M.language_for_file_type	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.language_for_file_type(filetype)$/;"	f
+M.line	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.line(source)$/;"	f
+M.load	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.load(name, history_path)$/;"	f
+M.lrotate	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.lrotate(x, disp)  -- Lua5.2 inspired$/;"	f
+M.lshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.lshift(a,disp) -- Lua5.2 inspired$/;"	f
+M.open	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.open(config, source, no_insert)$/;"	f
+M.override	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^function M.override(method, new_function)$/;"	f
+M.pending 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/tests.lua	/^M.pending = function(async_func)$/;"	f
+M.pick	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/actions.lua	/^function M.pick(pick_actions, opts)$/;"	f
+M.pick	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/fzflua.lua	/^function M.pick(pick_actions, opts)$/;"	f
+M.pick	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/telescope.lua	/^function M.pick(pick_actions, opts)$/;"	f
+M.prompt_actions	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/actions.lua	/^function M.prompt_actions(config)$/;"	f
+M.prompts	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.prompts(skip_system)$/;"	f
+M.protected	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^function M.protected(async_fn)$/;"	f
+M.protected 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.protected = async(function(future)$/;"	f
+M.protected_non_leaf 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.protected_non_leaf = async(function(future)$/;"	f
+M.race 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.race = function(funcs)$/;"	f
+M.replace	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.replace(n, v, field, width) -- Lua5.2 inspired$/;"	f
+M.reset	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.reset()$/;"	f
+M.response	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.response()$/;"	f
+M.rrotate	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.rrotate(x, disp)  -- Lua5.2 inspired$/;"	f
+M.rshift	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.rshift(a,disp) -- Lua5.2 insipred$/;"	f
+M.run 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^M.run = function(async_function, callback)$/;"	f
+M.run 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.run = function(future, callback)$/;"	f
+M.run_all 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.run_all = function(async_fns, callback)$/;"	f
+M.run_all 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.run_all = function(futures, callback)$/;"	f
+M.run_first 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.run_first = a.wrap(function(async_functions, step)$/;"	f
+M.save	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.save(name, history_path)$/;"	f
+M.scope 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.scope = function(func)$/;"	f
+M.select 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.select = M.wrap(function(futures, step)$/;"	f
+M.select_model	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.select_model()$/;"	f
+M.setup	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/debuginfo.lua	/^function M.setup()$/;"	f
+M.setup	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.setup(config)$/;"	f
+M.setup	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^function M.setup()$/;"	f
+M.setup	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^function M.setup(model)$/;"	f
+M.setup	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^function M.setup(client)$/;"	f
+M.setup	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.setup()$/;"	f
+M.setup 	pack/copilotchat/start/copilot.lua/lua/copilot/init.lua	/^M.setup = function(opts)$/;"	f
+M.should_attach	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.should_attach()$/;"	f
+M.signin	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^function M.signin()$/;"	f
+M.signout	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^function M.signout()$/;"	f
+M.sleep 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.sleep = a.wrap(function(ms, callback)$/;"	f
+M.stop	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.stop(reset, no_insert)$/;"	f
+M.strcharpart 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^M.strcharpart = (function()$/;"	f
+M.strdisplaywidth 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^M.strdisplaywidth = (function()$/;"	f
+M.strutf16len	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^function M.strutf16len(str)$/;"	f
+M.table_equals	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.table_equals(a, b)$/;"	f
+M.teardown	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.teardown()$/;"	f
+M.temp_file	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^function M.temp_file(text)$/;"	f
+M.timeout 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.timeout = a.wrap(function(future, ms, callback)$/;"	f
+M.timer 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.timer = function(ms)$/;"	f
+M.tobit	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.tobit(x)$/;"	f
+M.toggle	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^function M.toggle(config, source)$/;"	f
+M.tohex	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^function M.tohex(x, n) -- BitOp style$/;"	f
+M.traceback_error 	pack/copilotchat/start/plenary.nvim/lua/plenary/errors.lua	/^M.traceback_error = function(s, level)$/;"	f
+M.truncate 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^M.truncate = function(str, len, dots, direction)$/;"	f
+M.unnamed	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.unnamed()$/;"	f
+M.use_client	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^function M.use_client(callback)$/;"	f
+M.visual	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^function M.visual(source)$/;"	f
+M.void 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^M.void = function(func)$/;"	f
+M.void 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.void = function(async_func)$/;"	f
+M.will_block 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^M.will_block = function(async_function, timeout)$/;"	f
+M.will_block 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.will_block = async(function(future)$/;"	f
+M.wrap 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^M.wrap = function(func, argc)$/;"	f
+M.wrap 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^M.wrap = function(func, argc)$/;"	f
+M.yield_now 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^M.yield_now = async(function()$/;"	f
+OS	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^    OS := linux$/;"	m
+OS	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^    OS := macOS$/;"	m
+Object:__call	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:__call(...)$/;"	f
+Object:__tostring	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:__tostring()$/;"	f
+Object:extend	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:extend()$/;"	f
+Object:implement	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:implement(...)$/;"	f
+Object:is	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:is(T)$/;"	f
+Object:new	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^function Object:new() end$/;"	f
+OutputFilteredResult	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function OutputFilteredResult(strFilePath, strFilter, bIncludeFilter, bOutputFile)$/;"	f
+OutputMemorySnapshot	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function OutputMemorySnapshot(strSavePath, strExtraFileName, nMaxRescords, strRootObjectName, cRootObject, cDumpInfoResultsBase, cDumpInfoResults)$/;"	f
+OutputMemorySnapshotSingleObject	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^local function OutputMemorySnapshotSingleObject(strSavePath, strExtraFileName, nMaxRescords, cDumpInfoResults)$/;"	f
+Overlay:delete	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:delete()$/;"	f
+Overlay:restore	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:restore(winnr, bufnr)$/;"	f
+Overlay:show	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:show(text, filetype, syntax, winnr)$/;"	f
+Overlay:show_help	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:show_help(msg, offset)$/;"	f
+Overlay:valid	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:valid()$/;"	f
+Overlay:validate	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^function Overlay:validate()$/;"	f
+PanelSolution 	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^  PanelSolution = function(_, result)$/;"	f
+PanelSolutionsDone 	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^  PanelSolutionsDone = function(_, result)$/;"	f
+Path.__concat 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^Path.__concat = function(self, other)$/;"	f
+Path.__div 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^Path.__div = function(self, other)$/;"	f
+Path.__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^Path.__index = function(t, k)$/;"	f
+Path.__tostring 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^Path.__tostring = function(self)$/;"	f
+Path.is_path 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^Path.is_path = function(a)$/;"	f
+Path:_fs_filename	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_fs_filename()$/;"	f
+Path:_read	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_read()$/;"	f
+Path:_read_async	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_read_async(callback)$/;"	f
+Path:_split	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_split()$/;"	f
+Path:_st_mode	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_st_mode()$/;"	f
+Path:_stat	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:_stat()$/;"	f
+Path:absolute	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:absolute()$/;"	f
+Path:close	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:close() end$/;"	f
+Path:copy	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:copy(opts)$/;"	f
+Path:exists	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:exists()$/;"	f
+Path:expand	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:expand()$/;"	f
+Path:find_upwards	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:find_upwards(filename)$/;"	f
+Path:head	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:head(lines)$/;"	f
+Path:is_absolute	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:is_absolute()$/;"	f
+Path:is_dir	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:is_dir()$/;"	f
+Path:is_file	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:is_file()$/;"	f
+Path:iter	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:iter()$/;"	f
+Path:joinpath	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:joinpath(...)$/;"	f
+Path:make_relative	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:make_relative(cwd)$/;"	f
+Path:mkdir	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:mkdir(opts)$/;"	f
+Path:new	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:new(...)$/;"	f
+Path:normalize	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:normalize(cwd)$/;"	f
+Path:open	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:open() end$/;"	f
+Path:parent	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:parent()$/;"	f
+Path:parents	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:parents()$/;"	f
+Path:read	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:read(callback)$/;"	f
+Path:readbyterange	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:readbyterange(offset, length)$/;"	f
+Path:readlines	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:readlines()$/;"	f
+Path:rename	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:rename(opts)$/;"	f
+Path:rm	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:rm(opts)$/;"	f
+Path:rmdir	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:rmdir()$/;"	f
+Path:shorten	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:shorten(len, exclude)$/;"	f
+Path:tail	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:tail(lines)$/;"	f
+Path:touch	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:touch(opts)$/;"	f
+Path:write	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^function Path:write(txt, flag, mode)$/;"	f
+PlenaryBustedDirectory	pack/copilotchat/start/plenary.nvim/plugin/plenary.vim	/^command! -nargs=+ -complete=file PlenaryBustedDirectory$/;"	c
+PlenaryBustedFile	pack/copilotchat/start/plenary.nvim/plugin/plenary.vim	/^command! -nargs=1 -complete=file PlenaryBustedFile$/;"	c
+Receiver.last 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  Receiver.last = function()$/;"	f
+Receiver.last 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  Receiver.last = async(function()$/;"	f
+Receiver.recv 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  Receiver.recv = function()$/;"	f
+Receiver.recv 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  Receiver.recv = async(function()$/;"	f
+Semaphore.acquire 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^Semaphore.acquire = a.wrap(function(self, callback)$/;"	f
+Semaphore.acquire 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^Semaphore.acquire = a.wrap(function(self, callback)$/;"	f
+Semaphore.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^function Semaphore.new(initial_permits)$/;"	f
+Semaphore.new	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^function Semaphore.new(initial_permits)$/;"	f
+Sender.send	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  function Sender.send(...)$/;"	f
+Sender.send	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  function Sender.send(...)$/;"	f
+Sender:send	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  function Sender:send()$/;"	f
+Sender:send	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  function Sender:send()$/;"	f
 Silent	config.vim	/^command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'$/;"	c
+Source:complete	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^function Source:complete(params, callback)$/;"	f
+Source:execute	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^function Source:execute(completion_item, callback)$/;"	f
+Source:get_keyword_pattern	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^function Source:get_keyword_pattern()$/;"	f
+Source:get_trigger_characters	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^function Source:get_trigger_characters()$/;"	f
+Spinner:finish	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/spinner.lua	/^function Spinner:finish()$/;"	f
+Spinner:start	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/spinner.lua	/^function Spinner:start()$/;"	f
+Timing:check	pack/copilotchat/start/plenary.nvim/tests/plenary/async_testing_spec.lua	/^function Timing:check(from, to, min_elapsed)$/;"	f
+Timing:log	pack/copilotchat/start/plenary.nvim/tests/plenary/async_testing_spec.lua	/^function Timing:log(name)$/;"	f
+UNAME	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^UNAME := $(shell uname)$/;"	m
+Variant:__gt	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  function Variant:__gt(o)$/;"	f
+Variant:__lt	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  function Variant:__lt(o)$/;"	f
+Variant:__tostring	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  function Variant:__tostring()$/;"	f
+["copilot/openURL"] 	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^  ["copilot\/openURL"] = function(_, result)$/;"	f
+["function"] 	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^  ["function"] = 5,$/;"	f
+["function"] 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^        ["function"] = function()$/;"	f
+["table"] 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^        ["table"] = function()$/;"	f
+['default'] 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/fzflua.lua	/^      ['default'] = function(selected)$/;"	f
+_ 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  _ = setmetatable({mod=true, callback=function() return true end}, matcher_mt),$/;"	f
 _G.enter_key 	lua/plug.lua	/^            _G.enter_key = function()$/;"	f
 _G.s_tab_complete 	lua/plug.lua	/^            _G.s_tab_complete = function()$/;"	f
 _G.tab_complete 	lua/plug.lua	/^            _G.tab_complete = function()$/;"	f
+__call 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^    __call = function(cls, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  __call = function(self, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  __call = function(self, bool, message, level, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  __call = function(self, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  __call = function(self, value)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^  __call = function(self, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  __call = function(self, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^  __call = function(self)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  __call = function(self, ...)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^  __call = function(_, tbl)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  __call = function(_, tbl)$/;"	f
+__call 	pack/copilotchat/start/plenary.nvim/lua/say.lua	/^  __call = function(self, key, vars)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  __index = function(self, key)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  __index = function(self, key)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/api.lua	/^  __index = function(t, k)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/init.lua	/^  __index = function(t, k)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/api.lua	/^  __index = function(t, k)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/plenary/init.lua	/^  __index = function(t, k)$/;"	f
+__index 	pack/copilotchat/start/plenary.nvim/lua/say.lua	/^  __index = function(self, key)$/;"	f
+__newindex 	pack/copilotchat/start/plenary.nvim/lua/plenary/tbl.lua	/^    __newindex = function()$/;"	f
+_normalize_path	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local function _normalize_path(filename, cwd)$/;"	f
+add	pack/copilotchat/start/plenary.nvim/lua/plenary/async/uv_async.lua	/^local function add(name, argc)$/;"	f
+add	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/uv_async.lua	/^local function add(name, argc)$/;"	f
+add 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  add = function(a, b)$/;"	f
+add_formatter 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  add_formatter = function(self, callback)$/;"	f
+add_leaf_function 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  add_leaf_function = function(async_func, argc)$/;"	f
+add_line	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^  local function add_line(line)$/;"	f
+add_position_config	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^local function add_position_config(win_opts, vim_options, default_opts)$/;"	f
+add_spy 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  add_spy = function(self, spy)$/;"	f
+advance	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function advance(count, ctx)$/;"	f
+all	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/composite.lua	/^local function all(state, arguments, level)$/;"	f
+ame`]	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/prompts.lua	/^Remember that you MUST add links for all referenced symbols from the workspace and fully qualify the symbol name in the link, for example: [`namespace.functionName`](path\/to\/util.ts).$/;"	f
+any	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/composite.lua	/^local function any(state, arguments, level)$/;"	f
+api.notify_accepted(self.client, { uuid 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^  api.notify_accepted(self.client, { uuid = entry.solutionId }, function() end)$/;"	f
+api.notify_rejected(client, { uuids 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^      api.notify_rejected(client, { uuids = uuids }, function() end)$/;"	f
+api.notify_shown(client, { uuid 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^      api.notify_shown(client, { uuid = suggestion.uuid }, function() end)$/;"	f
+append	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function append(str)$/;"	f
+args	pack/copilotchat/start/plenary.nvim/tests/plenary/functional_spec.lua	/^    local function args(...)$/;"	f
+array	pack/copilotchat/start/plenary.nvim/lua/luassert/array.lua	/^local function array(state, args, level)$/;"	f
+assert(_PlenaryLeafTable[async_func] 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^    assert(_PlenaryLeafTable[async_func] == nil, "Async function should not already be in the table")$/;"	f
+assert(type(async_fn) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^    assert(type(async_fn) == "function", "type error :: future must be function")$/;"	f
+assert(type(async_function) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^    assert(type(async_function) == "function", "type error :: future must be function")$/;"	f
+assert(type(callback) 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^      assert(type(callback) == "function")$/;"	f
+assert(type(fun) 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^  assert(type(fun) == "function")$/;"	f
+assert(type(future) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^    assert(type(future) == "function", "type error :: future must be function")$/;"	f
+assert(type(future) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^  assert(type(future) == "function", "type error :: expected func")$/;"	f
+assert(type(future) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^  assert(type(future) == "function", "type error :: expected function to await")$/;"	f
+assert(type(returned_future) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^    assert(type(returned_future) == "function", "type error :: expected func")$/;"	f
+async 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^  async = vim.loop.new_async(function()$/;"	f
+async_function 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^  async_function = M.protected(async_function)$/;"	f
+attach_mappings 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/telescope.lua	/^      attach_mappings = function(prompt_bufnr)$/;"	f
+backward_list_gen	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^local function backward_list_gen(param, state)$/;"	f
+bind_n	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^local function bind_n(fn, n, a, ...)$/;"	f
+bit_band	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function bit_band(a, b, c, ...)$/;"	f
+bit_bor	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function bit_bor(a, b, c, ...)$/;"	f
+bit_bxor	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function bit_bxor(a, b, c, ...)$/;"	f
+bitop	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^  local function bitop(a, b)$/;"	f
+blend_color_with_neovim_bg	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function blend_color_with_neovim_bg(color_name, blend)$/;"	f
 buf_set_keymap	lua/php.lua	/^        local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end$/;"	f
 buf_set_option	lua/php.lua	/^        local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end$/;"	f
 callback 	config.lua	/^  callback = function()$/;"	f
+callback 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/config.lua	/^      callback = function(response, source)$/;"	f
+callback 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^        callback = function(response)$/;"	f
+callback 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^      callback = function(response)$/;"	f
+callback 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^      callback = function(ev)$/;"	f
+callback 	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^    callback = vim.schedule_wrap(function()$/;"	f
+callback 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^      callback = function()$/;"	f
+callback 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^    callback = function()$/;"	f
+callback 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^    callback = callback or function() end$/;"	f
+callback 	pack/copilotchat/start/plenary.nvim/tests/plenary/curl_spec.lua	/^        callback = function(out)$/;"	f
+callback 	pack/copilotchat/start/plenary.nvim/tests/plenary/popup_spec.lua	/^        callback = function(win_id, sel)$/;"	f
+callback_or_next	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^local function callback_or_next(step, thread, callback, ...)$/;"	f
+callback_or_next	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^local function callback_or_next(step, thread, callback, ...)$/;"	f
+callbacks[match_args] 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^        callbacks[match_args] = function()$/;"	f
+callbacks[match_args] 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^        callbacks[match_args] = function(...)$/;"	f
+called	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called(state, arguments, level, compare)$/;"	f
+called 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      called = function(self, times, compare)$/;"	f
+called_at_least	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called_at_least(state, arguments, level)$/;"	f
+called_at_most	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called_at_most(state, arguments, level)$/;"	f
+called_less_than	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called_less_than(state, arguments, level)$/;"	f
+called_more_than	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called_more_than(state, arguments, level)$/;"	f
+called_with	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function called_with(state, arguments, level)$/;"	f
+called_with 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      called_with = function(self, args)$/;"	f
+can call wrapped functions with ignored arguments", function	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^  a.it("void functions can call wrapped functions with ignored arguments", function()$/;"	f
+can call wrapped functions", function	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^  a.it("void functions can call wrapped functions", function()$/;"	f
+cancel_inflight_requests	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function cancel_inflight_requests(ctx)$/;"	f
+chain_gen_r1 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^chain_gen_r1 = function(param, state)$/;"	f
+charRepetition	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^local function charRepetition(n, character)$/;"	f
+check	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  local function check()$/;"	f
+check_keys	pack/copilotchat/start/plenary.nvim/tests/plenary/iterators_spec.lua	/^local function check_keys(tbl, keys)$/;"	f
+clear	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function clear(ctx)$/;"	f
+clear 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^  clear = function(object)$/;"	f
+clear 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      clear = function(self)$/;"	f
+clear_preview	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function clear_preview()$/;"	f
+close_safely	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local function close_safely(j, key)$/;"	f
+complete	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function complete()$/;"	f
+complete	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function complete(callback)$/;"	f
+complete 	pack/copilotchat/start/copilot.lua/plugin/copilot.lua	/^  complete = function(_, cmd_line)$/;"	f
+complete_load	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  local function complete_load()$/;"	f
+concat 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  concat = function(a, b)$/;"	f
 config 	config.lua	/^    config = function()$/;"	f
 config 	lua/custom/plugins.lua	/^    config = function()$/;"	f
-config 	lua/plug.lua	/^            config = function()$/;"	f
 config 	lua/plug.lua	/^        config = function()$/;"	f
 config 	lua/plugins.lua	/^        config = function(_, opts)$/;"	f
+context_manager.open	pack/copilotchat/start/plenary.nvim/lua/plenary/context_manager.lua	/^function context_manager.open(filename, mode)$/;"	f
+context_manager.with	pack/copilotchat/start/plenary.nvim/lua/plenary/context_manager.lua	/^function context_manager.with(obj, callable)$/;"	f
+copilot._copilot_timer 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^  copilot._copilot_timer = vim.fn.timer_start(copilot.debounce, function(timer)$/;"	f
+copy_to_clipboard	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^  local function copy_to_clipboard(str)$/;"	f
+create_autocmds	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function create_autocmds()$/;"	f
+data_ranked_by_relatedness	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^local function data_ranked_by_relatedness(query, data, top_n)$/;"	f
+debug_utils.sourced_filename	pack/copilotchat/start/plenary.nvim/lua/plenary/debug_utils.lua	/^function debug_utils.sourced_filename()$/;"	f
+debug_utils.sourced_filepath	pack/copilotchat/start/plenary.nvim/lua/plenary/debug_utils.lua	/^function debug_utils.sourced_filepath()$/;"	f
+defaultfunc 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^    defaultfunc = function()$/;"	f
+defaultfunc 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^    defaultfunc = function(...)$/;"	f
+define_preview 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/telescope.lua	/^        define_preview = function(self, entry)$/;"	f
+dict_default	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^local function dict_default(options, key, default)$/;"	f
+disabledLanguages 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^    disabledLanguages = vim.tbl_map(function(ft)$/;"	f
+div 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  div = function(a, b)$/;"	f
+do_mock	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^    local function do_mock(object, self, key)$/;"	f
+done	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^  local function done()$/;"	f
+download_release	pack/copilotchat/start/CopilotChat.nvim/Makefile	/^define download_release$/;"	m
+echo	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^local function echo(message)$/;"	f
+elseif "function" 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^			elseif "function" == strKeyType then$/;"	f
+elseif "function" 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^			elseif "function" == strUpValueType then$/;"	f
+elseif "function" 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^	elseif "function" == strType then$/;"	f
+elseif payload and type(payload) 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  elseif payload and type(payload) == "function" then$/;"	f
+elseif type(obj) 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^  elseif type(obj) == "function" then$/;"	f
+elseif type(pattern) 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  elseif type(pattern) == "function" then$/;"	f
+enter 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^      enter = function(self)$/;"	f
+eq 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  eq = function(a, b)$/;"	f
+equals	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function equals(state, arguments, level)$/;"	f
+equals	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function equals(state, arguments, level)$/;"	f
+error_matches	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function error_matches(state, arguments, level)$/;"	f
+exit 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^      exit = function() end,$/;"	f
+exit 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^      exit = function(self)$/;"	f
+expand	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local function expand(path)$/;"	f
 expand 	init.lua	/^        expand = function(args)$/;"	f
+exports.tests.add_globals 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/init.lua	/^exports.tests.add_globals = function()$/;"	f
+exports.tests.add_globals 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/init.lua	/^exports.tests.add_globals = function()$/;"	f
+exports.tests.add_to_env 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/init.lua	/^exports.tests.add_to_env = function()$/;"	f
+exports.tests.add_to_env 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/init.lua	/^exports.tests.add_to_env = function()$/;"	f
+f.all	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.all(fun, iterable)$/;"	f
+f.any	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.any(fun, iterable)$/;"	f
+f.if_nil	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.if_nil(val, was_nil, was_not_nil)$/;"	f
+f.join	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.join(array, sep)$/;"	f
+f.kv_map	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.kv_map(fun, t)$/;"	f
+f.kv_pairs	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.kv_pairs(t)$/;"	f
+f.last	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.last(...)$/;"	f
+f.partial	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.partial(fun, ...)$/;"	f
+f.select_only	pack/copilotchat/start/plenary.nvim/lua/plenary/functional.lua	/^function f.select_only(n)$/;"	f
+failure 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^    failure = f.any(function(_, v)$/;"	f
+falsy	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function falsy(state, arguments, level)$/;"	f
+falsy	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function falsy(state, arguments, level)$/;"	f
+file_exists	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^local function file_exists(name)$/;"	f
+filetype._get_extension_parts 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype._get_extension_parts = function(filename)$/;"	f
+filetype._parse_modeline 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype._parse_modeline = function(tail)$/;"	f
+filetype._parse_shebang 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype._parse_shebang = function(head)$/;"	f
+filetype.add_file 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.add_file = function(filename)$/;"	f
+filetype.add_table 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.add_table = function(new_filetypes)$/;"	f
+filetype.detect 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.detect = function(filepath, opts)$/;"	f
+filetype.detect_from_extension 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.detect_from_extension = function(filepath)$/;"	f
+filetype.detect_from_modeline 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.detect_from_modeline = function(filepath)$/;"	f
+filetype.detect_from_name 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.detect_from_name = function(filepath)$/;"	f
+filetype.detect_from_shebang 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^filetype.detect_from_shebang = function(filepath)$/;"	f
+filterm_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^filterm_gen = function(fun, gen_x, param_x, state_x, ...)$/;"	f
+find_config_path	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function find_config_path()$/;"	f
+find_config_path	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^local function find_config_path()$/;"	f
+find_lines_between_separator	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function find_lines_between_separator(lines, pattern, at_least_one)$/;"	f
+find_next_idx	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  local function find_next_idx(e, i)$/;"	f
+flatten 	pack/copilotchat/start/plenary.nvim/tests/plenary/path_spec.lua	/^      flatten = function(ret, t)$/;"	f
+flatten_gen1 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^  flatten_gen1 = function(state, state_x, ...)$/;"	f
+floordiv 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  floordiv = function(a, b)$/;"	f
+flush_lines	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^  local function flush_lines(last_line, is_off)$/;"	f
+fmt_arglist	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_arglist(arglist)$/;"	f
+fmt_boolean	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_boolean(arg)$/;"	f
+fmt_function	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_function(arg)$/;"	f
+fmt_matcher	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_matcher(arg)$/;"	f
+fmt_msg 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^  fmt_msg = function(is_console, mode_name, src_path, src_line, msg)$/;"	f
+fmt_nil	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_nil(arg)$/;"	f
+fmt_number	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_number(arg)$/;"	f
+fmt_string	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_string(arg)$/;"	f
+fmt_table	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_table(arg, fmtargs)$/;"	f
+fmt_thread	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_thread(arg)$/;"	f
+fmt_userdata	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function fmt_userdata(arg)$/;"	f
+format	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function format(val)$/;"	f
+format	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function format(val)$/;"	f
 format 	init.lua	/^        format = function(entry, item)$/;"	f
 format 	lua/plug.lua	/^                    format = function(diagnostic)$/;"	f
+format 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  format = function(self, args)$/;"	f
+forward_list_gen	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^local function forward_list_gen(param, state)$/;"	f
+from [src/utils/string.ts]	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/prompts.lua	/^You can use the [`joinLines`](src\/utils\/string.ts) function from [src\/utils\/string.ts](src\/utils\/string.ts) to join multiple strings with newlines.$/;"	f
+ft	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^  local function ft(t, l, with_crumbs)$/;"	f
+function	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^  a.run(async_function, function(stat_, ...)$/;"	f
+functionReport	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^local function functionReport(information)$/;"	f
+future	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^    local function future(step)$/;"	f
 g:ale_echo_cursor	config/php.vim	/^let g:ale_echo_cursor = 1$/;"	v
 g:ale_echo_msg_format	config/php.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
 g:ale_fix_on_save	config/php.vim	/^let g:ale_fix_on_save = 1$/;"	v
@@ -48,6 +636,7 @@ g:ale_virtualtext_cursor	config/php.vim	/^let g:ale_virtualtext_cursor = 1$/;"	v
 g:ale_virtualtext_prefix	config/php.vim	/^let g:ale_virtualtext_prefix = '===>> '  " 訊息前的前綴符號$/;"	v
 g:coc_global_extensions	config.vim	/^let g:coc_global_extensions = ['coc-phpls','coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']$/;"	v
 g:copilot_no_tab_map	config.vim	/^let g:copilot_no_tab_map = v:true$/;"	v
+g:copilot_no_tab_map	config/copilot.vim	/^let g:copilot_no_tab_map = v:true$/;"	v
 g:go_debug_windows	config/golang.vim	/^  let g:go_debug_windows = {$/;"	v
 g:go_term_enabled	config/golang.vim	/^let g:go_term_enabled = 1$/;"	v
 g:go_term_height	config/golang.vim	/^let g:go_term_height = 30$/;"	v
@@ -58,22 +647,703 @@ g:gutentags_generate_on_missing	config/php.vim	/^let g:gutentags_generate_on_mis
 g:gutentags_generate_on_new	config/php.vim	/^let g:gutentags_generate_on_new = 1$/;"	v
 g:gutentags_generate_on_write	config/php.vim	/^let g:gutentags_generate_on_write = 1$/;"	v
 g:loaded_ruby_provider	config/format.vim	/^let g:loaded_ruby_provider = 0$/;"	v
+ge 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  ge = function(a, b)$/;"	f
+generate_ask_request	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function generate_ask_request($/;"	f
+generate_embedding_request	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function generate_embedding_request(inputs, model)$/;"	f
+generate_embeddings_message	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function generate_embeddings_message(embeddings)$/;"	f
+generate_file	pack/copilotchat/start/plenary.nvim/scripts/update_vararg.py	/^def generate_file(name, outpath, **kwargs):$/;"	f
+generate_headers	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function generate_headers(token, sessionid, machineid)$/;"	f
+generate_selection_message	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function generate_selection_message(filename, filetype, start_row, end_row, selection)$/;"	f
+get_cache_path	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^local function get_cache_path(fname)$/;"	f
+get_cached_token	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function get_cached_token()$/;"	f
+get_ctx	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function get_ctx(bufnr)$/;"	f
+get_current_suggestion	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function get_current_suggestion(ctx)$/;"	f
+get_display_lines	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^local function get_display_lines(text)$/;"	f
+get_language_id 	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^    get_language_id = function(_, filetype)$/;"	f
+get_level 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  get_level = function(self, level)$/;"	f
+get_outline_lines	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^  local function get_outline_lines(node)$/;"	f
+get_parameter 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  get_parameter = function(self, name)$/;"	f
+get_prompt_kind	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  local function get_prompt_kind(name)$/;"	f
+get_returns	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^    local function get_returns(...)$/;"	f
+get_selection	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function get_selection()$/;"	f
+get_selection_lines	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/select.lua	/^local function get_selection_lines(bufnr, start_line, start_col, finish_line, finish_col, full_line)$/;"	f
+get_sorted_keys	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function get_sorted_keys(t)$/;"	f
+get_suggestions_cycling	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function get_suggestions_cycling(callback, ctx)$/;"	f
+get_suggestions_cycling_callback	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function get_suggestions_cycling_callback(ctx, err, data)$/;"	f
+get_trace	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local function get_trace(element, level, msg)$/;"	f
+geterror	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^local function geterror(assertion_message, failure_message, args)$/;"	f
+gt 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  gt = function(a, b)$/;"	f
+handle_trigger_request	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function handle_trigger_request(err, data)$/;"	f
+handlers.add_handler_callback 	pack/copilotchat/start/copilot.lua/lua/copilot/handlers.lua	/^handlers.add_handler_callback = function(method, panelId, fn)$/;"	f
+handlers.remove_all_name 	pack/copilotchat/start/copilot.lua/lua/copilot/handlers.lua	/^handlers.remove_all_name = function(panelId)$/;"	f
+handlers.remove_handler_callback 	pack/copilotchat/start/copilot.lua/lua/copilot/handlers.lua	/^handlers.remove_handler_callback = function(method, panelId)$/;"	f
+harness._find_files_to_run	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^function harness._find_files_to_run(directory)$/;"	f
+harness._run_path	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^function harness._run_path(test_type, directory)$/;"	f
+harness.test_directory	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^function harness.test_directory(directory, opts)$/;"	f
+harness.test_directory_command	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^function harness.test_directory_command(command)$/;"	f
+harness.test_file	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^function harness.test_file(filepath)$/;"	f
+has_error	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function has_error(state, arguments, level)$/;"	f
+holes	pack/copilotchat/start/plenary.nvim/lua/luassert/array.lua	/^local function holes(state, args, level)$/;"	f
+if M._original_functions[method] 	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^  if M._original_functions[method] == nil then$/;"	f
+if self[k] 	pack/copilotchat/start/plenary.nvim/lua/plenary/class.lua	/^      if self[k] == nil and type(v) == "function" then$/;"	f
+if type(arg) 	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^  if type(arg) == "function" then$/;"	f
+if type(filetype_enabled) 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^  if type(filetype_enabled) == "function" then$/;"	f
+if type(func) ~	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^  if type(func) ~= "function" then$/;"	f
+if type(modifier) 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^  if type(modifier) == "function" then$/;"	f
+if type(obj) 	pack/copilotchat/start/plenary.nvim/lua/plenary/context_manager.lua	/^  if type(obj) == "function" then$/;"	f
+if type(params) 	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^  if type(params) == "function" then$/;"	f
+if type(val_or_fn) 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^  if type(val_or_fn) == "function" then$/;"	f
+if type(w) 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^      if type(w) == "function" then$/;"	f
 if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
+in ipairs	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^  for _, async_function in ipairs(async_functions) do$/;"	f
 init 	lua/plugins.lua	/^        init = function()$/;"	f
+input 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^    input = vim.tbl_map(function(input)$/;"	f
+intdiv 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  intdiv = function(a, b)$/;"	f
+invokes 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^      invokes = function(func)$/;"	f
+is	pack/copilotchat/start/plenary.nvim/lua/luassert/modifiers.lua	/^local function is(state)$/;"	f
+is_boolean	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_boolean(state, arguments, level)  return is_type(state, arguments, level, "boolean")  end$/;"	f
+is_boolean	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_boolean(state, arguments, level)  return is_type(state, arguments, level, "boolean")  end$/;"	f
+is_callable	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^local function is_callable(fn)$/;"	f
+is_enabled	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function is_enabled()$/;"	f
+is_enum	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^local function is_enum(tbl)$/;"	f
+is_false	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_false(state, arguments, level)$/;"	f
+is_false	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_false(state, arguments, level)$/;"	f
+is_ft_disabled	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^local function is_ft_disabled(ft, filetypes)$/;"	f
+is_function	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_function(state, arguments, level) return is_type(state, arguments, level, "function") end$/;"	f
+is_function	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_function(state, arguments, level) return is_type(state, arguments, level, "function") end$/;"	f
+is_in_array_part	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function is_in_array_part(key, length)$/;"	f
+is_matcher 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  is_matcher = function(object)$/;"	f
+is_nil	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_nil(state, arguments, level)      return is_type(state, arguments, level, "nil")      end$/;"	f
+is_nil	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_nil(state, arguments, level)      return is_type(state, arguments, level, "nil")      end$/;"	f
+is_not	pack/copilotchat/start/plenary.nvim/lua/luassert/modifiers.lua	/^local function is_not(state)$/;"	f
+is_number	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_number(state, arguments, level)   return is_type(state, arguments, level, "number")   end$/;"	f
+is_number	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_number(state, arguments, level)   return is_type(state, arguments, level, "number")   end$/;"	f
+is_panel_uri	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^local function is_panel_uri(bufname)$/;"	f
+is_ref_matcher 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  is_ref_matcher = function(object)$/;"	f
+is_root	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local function is_root(pathname)$/;"	f
+is_spy 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  is_spy = function(object)$/;"	f
+is_string	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_string(state, arguments, level)   return is_type(state, arguments, level, "string")   end$/;"	f
+is_string	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_string(state, arguments, level)   return is_type(state, arguments, level, "string")   end$/;"	f
+is_table	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_table(state, arguments, level)    return is_type(state, arguments, level, "table")    end$/;"	f
+is_table	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_table(state, arguments, level)    return is_type(state, arguments, level, "table")    end$/;"	f
+is_thread	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_thread(state, arguments, level)   return is_type(state, arguments, level, "thread")   end$/;"	f
+is_thread	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_thread(state, arguments, level)   return is_type(state, arguments, level, "thread")   end$/;"	f
+is_true	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_true(state, arguments, level)$/;"	f
+is_true	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_true(state, arguments, level)$/;"	f
+is_type	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_type(state, arguments, level, etype)$/;"	f
+is_type	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_type(state, arguments, level, etype)$/;"	f
+is_userdata	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function is_userdata(state, arguments, level) return is_type(state, arguments, level, "userdata") end$/;"	f
+is_userdata	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function is_userdata(state, arguments, level) return is_type(state, arguments, level, "userdata") end$/;"	f
+it("should work for ext	pack/copilotchat/start/plenary.nvim/tests/plenary/filetype_spec.lua	/^    it("should work for ext==ft even without a table value", function()$/;"	f
+items 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  items = vim.tbl_filter(function(item)$/;"	f
+iter 	pack/copilotchat/start/plenary.nvim/tests/plenary/scandir_spec.lua	/^        iter = function()$/;"	f
+job_opts.on_exit 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^  job_opts.on_exit = function(j, code)$/;"	f
+jobs[#jobs]._user_on_exit 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^  jobs[#jobs]._user_on_exit = function(self, err, data)$/;"	f
+json_body	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^local function json_body(response)$/;"	f
+key_comparator	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^  local function key_comparator(key1, key2)$/;"	f
+key_stack 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^    key_stack = key_stack:gsub("%[builtin#(%d+)%]", function(x)$/;"	f
+key_to_info	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function key_to_info(name, key)$/;"	f
+l", function	pack/copilotchat/start/plenary.nvim/tests/plenary/functional_spec.lua	/^describe("functional", function()$/;"	f
+land 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  land = function(a, b)$/;"	f
+le 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  le = function(a, b)$/;"	f
+leaf	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  local function leaf(...)$/;"	f
+len 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  len = function(a)$/;"	f
+length 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  length = function(a)$/;"	f
+level 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  level = function(self, level)$/;"	f
+lines	pack/copilotchat/start/plenary.nvim/tests/plenary/strings_spec.lua	/^    local function lines(t)$/;"	f
+lnot 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  lnot = function(a)$/;"	f
+load_tiktoken_data	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/tiktoken.lua	/^local function load_tiktoken_data(done, model)$/;"	f
+local Chat 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^local Chat = class(function(self, help, on_buf_create)$/;"	f
+local Copilot 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local Copilot = class(function(self, proxy, allow_insecure)$/;"	f
+local F 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^local F = require "plenary.functional"$/;"	f
+local F 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local F = require "plenary.functional"$/;"	f
+local F 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local F = require "plenary.functional"$/;"	f
+local F 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local F = require "plenary.functional"$/;"	f
+local Overlay 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^local Overlay = class(function(self, name, hl_ns, help, on_buf_create)$/;"	f
+local Spinner 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/spinner.lua	/^local Spinner = class(function(self, bufnr)$/;"	f
+local _, has_nvim_0_10_x 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local _, has_nvim_0_10_x = pcall(function()$/;"	f
+local _, id 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^      local _, id = api.get_completions_cycling(client, ctx.params, function(err, data)$/;"	f
+local _get_parent 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local _get_parent = (function()$/;"	f
+local _split_by_separator 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local _split_by_separator = (function()$/;"	f
+local add_description 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local add_description = function(desc)$/;"	f
+local add_extension 	pack/copilotchat/start/plenary.nvim/scripts/update_filetypes_from_github.lua	/^  local add_extension = function(ext, filetype, priority)$/;"	f
+local add_filename 	pack/copilotchat/start/plenary.nvim/scripts/update_filetypes_from_github.lua	/^  local add_filename = function(filename, filetype)$/;"	f
+local add_new_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local add_new_each = function()$/;"	f
+local append 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^  local append = function(v)$/;"	f
+local async_functions 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^  local async_functions = vim.tbl_map(function(func)$/;"	f
+local async_functions 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/util_spec.lua	/^      local async_functions = vim.tbl_map(function(num)$/;"	f
+local band 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local band = function(reg, value)$/;"	f
+local bench 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^local bench = function(name, opts)$/;"	f
+local blocking 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/semaphore_spec.lua	/^    local blocking = function()$/;"	f
+local cOutputer 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/memory_profiler.lua	/^	local cOutputer = function (strContent)$/;"	f
+local calc_left_start 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^local calc_left_start = function(title_pos, title_len, total_width)$/;"	f
+local call_if_not_empty 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local call_if_not_empty = function(fun, state_x, ...)$/;"	f
+local call_inner 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local call_inner = function(desc, func)$/;"	f
+local callback 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^    local callback = function(...)$/;"	f
+local callback 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^    local callback = function(...)$/;"	f
+local cb 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^    local cb = function(...)$/;"	f
+local chain 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local chain = function(...)$/;"	f
+local chain_gen_r2 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local chain_gen_r2 = function(param, state, state_x, ...)$/;"	f
+local checkAdd 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/cmp.lua	/^  local checkAdd = function(word)$/;"	f
 local check_back_space 	lua/plug.lua	/^            local check_back_space = function()$/;"	f
+local check_link 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  local check_link = function(per, file)$/;"	f
+local check_self 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local check_self = function(self)$/;"	f
+local clean 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local clean = function(pathname)$/;"	f
+local clear_buf_on_leave 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^local clear_buf_on_leave = function(bufnr)$/;"	f
+local clear_last_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local clear_last_each = function()$/;"	f
+local co 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^    local co = function()$/;"	f
+local color_string 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local color_string = function(color, str)$/;"	f
+local compare 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^          local compare = compare or function(count, expected) return count == expected end$/;"	f
+local concat 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^  local concat = function(a, b, dir)$/;"	f
+local concat_paths 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local concat_paths = function(...)$/;"	f
+local contains 	pack/copilotchat/start/plenary.nvim/tests/plenary/scandir_spec.lua	/^local contains = function(tbl, str)$/;"	f
+local contains_match 	pack/copilotchat/start/plenary.nvim/tests/plenary/scandir_spec.lua	/^local contains_match = function(tbl, str)$/;"	f
+local conv_to_octal 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  local conv_to_octal = function(nr)$/;"	f
+local create_cmds 	pack/copilotchat/start/copilot.lua/lua/copilot/init.lua	/^local create_cmds = function ()$/;"	f
+local create_horizontal_line 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^local create_horizontal_line = function(title, pos, width, left_char, mid_char, right_char)$/;"	f
+local cursor_relative_pos 	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^  local cursor_relative_pos = function(pos_str, dim)$/;"	f
+local defaultfunc 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  local defaultfunc = fn or function()$/;"	f
+local defer_swapped 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^local defer_swapped = function(timeout, callback)$/;"	f
+local dirname 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local dirname = function(p)$/;"	f
+local disabled_filetypes 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^  local disabled_filetypes = vim.tbl_filter(function(ft)$/;"	f
+local duplicate 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local duplicate = function(...)$/;"	f
+local duplicate_fun_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local duplicate_fun_gen = function(param_x, state_x)$/;"	f
+local duplicate_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local duplicate_gen = function(param_x, state_x)$/;"	f
+local duplicate_table_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local duplicate_table_gen = function(param_x, state_x)$/;"	f
+local eq 	pack/copilotchat/start/plenary.nvim/tests/plenary/rotate_spec.lua	/^local eq = function(a, b)$/;"	f
+local evens, odds 	pack/copilotchat/start/plenary.nvim/tests/plenary/py_list_spec.lua	/^    local evens, odds = l:iter():partition(function(e)$/;"	f
+local execute 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^local execute = function(async_function, callback, ...)$/;"	f
+local execute 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^local execute = function(future, callback)$/;"	f
+local extend_tbl_with_ext_eq_ft_entries 	pack/copilotchat/start/plenary.nvim/lua/plenary/filetype.lua	/^local extend_tbl_with_ext_eq_ft_entries = function()$/;"	f
+local extra_indent 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^  local extra_indent = math.min(unpack(vim.tbl_map(function(line)$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^local f = require "plenary.functional"$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^local f = require "plenary.functional"$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local f = require "plenary.functional"$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^local f = require "plenary.functional"$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/tests/plenary/functional_spec.lua	/^local f = require "plenary.functional"$/;"	f
+local f 	pack/copilotchat/start/plenary.nvim/tests/plenary/iterators_spec.lua	/^local f = require "plenary.functional"$/;"	f
+local fallback 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^  local fallback = function(filename)$/;"	f
+local fallback 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  local fallback = function(tbl, id)$/;"	f
+local fallback 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^  local fallback = function(str, col)$/;"	f
+local fallback 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^  local fallback = function(str, nchar, charlen)$/;"	f
+local ffi_func 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^    local ffi_func = function(filename)$/;"	f
+local ffi_func 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^    local ffi_func = function(tbl, id)$/;"	f
+local ffi_func 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^    local ffi_func = function(str, col)$/;"	f
+local filter1_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local filter1_gen = function(fun, gen_x, param_x, state_x, a)$/;"	f
+local filter_detect 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local filter_detect = function(fun, gen_x, param_x, state_x, ...)$/;"	f
+local filter_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local filter_gen = function(param, state_x)$/;"	f
+local filterm_gen_shrink 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local filterm_gen_shrink = function(fun, gen_x, param_x, state_x)$/;"	f
+local find_filetype 	pack/copilotchat/start/plenary.nvim/scripts/update_filetypes_from_github.lua	/^local find_filetype = function(name, linguist_info, filetype_set)$/;"	f
+local first 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/condvar_spec.lua	/^    local first = function()$/;"	f
+local fix_reserved_words 	pack/copilotchat/start/plenary.nvim/scripts/generate_luassert_types.lua	/^local fix_reserved_words = function(word)$/;"	f
+local flatten_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local flatten_gen = function(_, state)$/;"	f
+local fn 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/util_spec.lua	/^      local fn = function()$/;"	f
+local format 	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/binarystring.lua	/^local format = function (str)$/;"	f
+local from_fun 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local from_fun = function(fun)$/;"	f
+local funcReport 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^    local funcReport = functionReport(information)$/;"	f
+local gen_date 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local gen_date = (function()$/;"	f
+local gen_ls 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local gen_ls = function(data, path, opts)$/;"	f
+local gen_permissions 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local gen_permissions = (function()$/;"	f
+local gen_search_pat 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local gen_search_pat = function(pattern)$/;"	f
+local gen_size 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local gen_size = (function()$/;"	f
+local get_best_fmt 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^  local get_best_fmt = function(time)$/;"	f
+local get_groupname 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local get_groupname = (function()$/;"	f
+local get_leading 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^  local get_leading = function(time)$/;"	f
+local get_lua_version 	pack/copilotchat/start/plenary.nvim/lua/plenary/nvim_meta.lua	/^local get_lua_version = function()$/;"	f
+local get_max_len 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local get_max_len = function(tbl)$/;"	f
+local get_nvim_output 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^local get_nvim_output = function(job_id)$/;"	f
+local get_output 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^local get_output = function(index, res, runs)$/;"	f
+local get_stats 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^local get_stats = function(results)$/;"	f
+local get_summary 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^local get_summary = function(res)$/;"	f
+local get_type_by_args 	pack/copilotchat/start/plenary.nvim/scripts/generate_luassert_types.lua	/^local get_type_by_args = function(assertion)$/;"	f
+local get_username 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local get_username = (function()$/;"	f
+local handle_depth 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local handle_depth = function(base_paths, entry, depth)$/;"	f
+local has_all_executables 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^local has_all_executables = function(execs)$/;"	f
+local height, width 	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^    local height, width = #lines, math.max(unpack(vim.tbl_map(function(line)$/;"	f
+local id 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^  local id = string.gsub("xxxx4xxx", "[xy]", function(l)$/;"	f
+local incl 	pack/copilotchat/start/plenary.nvim/tests/plenary/curl_spec.lua	/^local incl = function(p, s)$/;"	f
+local indent 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local indent = function(msg, spaces)$/;"	f
+local initiate_setup 	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^  local initiate_setup = coroutine.wrap(function()$/;"	f
+local insert_in_results 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  local insert_in_results = (function()$/;"	f
+local isEscaped 	pack/copilotchat/start/plenary.nvim/lua/plenary/json.lua	/^local isEscaped = function(jsonString, quotePosition)$/;"	f
+local is_absolute 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local is_absolute = function(filename, sep)$/;"	f
+local is_uri 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local is_uri = function(filename)$/;"	f
+local isobject 	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^  local isobject = (argtype == "table" or argtype == "function" or argtype == "thread" or argtype == "userdata")$/;"	f
+local it 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^  local it = function(new_iter, state_x, ...)$/;"	f
+local iter 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local iter = function(obj, param, state)$/;"	f
+local jobs 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^  local jobs = vim.tbl_map(function(p)$/;"	f
+local lines 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local lines = function(input)$/;"	f
+local log_at_level 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^  local log_at_level = function(level, level_config, message_maker, ...)$/;"	f
+local log_to_console 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^      local log_to_console = function()$/;"	f
+local make_gitignore 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local make_gitignore = function(basepath)$/;"	f
+local make_string 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^  local make_string = function(...)$/;"	f
+local map_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local map_gen = function(map, key)$/;"	f
+local map_gen2 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local map_gen2 = function(param, state)$/;"	f
+local matches_any_import 	pack/copilotchat/start/plenary.nvim/tests/plenary/popup_requires_spec.lua	/^  local matches_any_import = function(line)$/;"	f
+local nargs 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/util.lua	/^  local nargs = a.get_leaf_function_argc(async_fn)$/;"	f
+local nil_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local nil_gen = function(_param, _state)$/;"	f
 local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
+local nonleaf 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/util_spec.lua	/^      local nonleaf = function()$/;"	f
+local numargs 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local numargs = function(...)$/;"	f
+local ok, _ 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^    local ok, _ = pcall(function()$/;"	f
+local ok, choice 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^  local ok, choice = pcall(function()$/;"	f
+local ok, err 	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^    local ok, err = pcall(function()$/;"	f
+local ok, msg 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^  local ok, msg = xpcall(func, function(msg)$/;"	f
+local onDebugHook 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^local onDebugHook = function(hookType)$/;"	f
+local on_output 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local on_output = function(self, result_key, cb)$/;"	f
+local ones 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local ones = function()$/;"	f
+local op2 	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^  local op2 = memoize(function(a)$/;"	f
+local options 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^    local options = vim.tbl_map(function(file)$/;"	f
+local pack 	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^local pack = function(...) return { n = select("#", ...), ... } end$/;"	f
+local parse_file 	pack/copilotchat/start/plenary.nvim/scripts/update_filetypes_from_github.lua	/^local parse_file = function()$/;"	f
+local partial 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^  local partial = function(method)$/;"	f
+local pcall_wrap 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^local pcall_wrap = function(func)$/;"	f
+local plugin_version_ok, plugin_version 	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^    local plugin_version_ok, plugin_version = pcall(function()$/;"	f
+local pop_description 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local pop_description = function()$/;"	f
+local print_output 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^local print_output = vim.schedule_wrap(function(_, ...)$/;"	f
+local process_item 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^local process_item = function(opts, name, typ, current_dir, next_dir, bp, data, giti, msp)$/;"	f
+local rands 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local rands = function(n, m)$/;"	f
+local rands_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local rands_gen = function(param_x, _state_x)$/;"	f
+local rands_nil_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local rands_nil_gen = function(_param_x, _state_x)$/;"	f
+local range 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local range = function(start, stop, step)$/;"	f
+local range_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local range_gen = function(param, state)$/;"	f
+local range_rev_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local range_rev_gen = function(param, state)$/;"	f
+local rawiter 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local rawiter = function(obj, param, state)$/;"	f
+local receiver 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  local receiver = a.wrap(function(callback)$/;"	f
+local receiver 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  local receiver = a.wrap(function(callback)$/;"	f
+local request 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^local request = function(specs)$/;"	f
+local result 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  local result = string.gsub(prompt, [[\/[%w_]+]], function(match)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/util_spec.lua	/^      local result = a.util.run_first(async_functions)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^    local result = with(co, function(obj)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^    local result = with(obj_manager, function(obj)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^    local result = with(open(README_STR_PATH), function(reader)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/context_manager_spec.lua	/^    local result = with(open(p), function(reader)$/;"	f
+local result 	pack/copilotchat/start/plenary.nvim/tests/plenary/iterators_spec.lua	/^    local result = i.iter(numbers):fold(0, function(a, v)$/;"	f
+local return_if_not_empty 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local return_if_not_empty = function(state_x, ...)$/;"	f
+local returned_function 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^    local returned_function = f.second(...)$/;"	f
+local round 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^  local round = function(x, increment)$/;"	f
+local run_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^local run_each = function(tbl)$/;"	f
+local s 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  local s = spy.on(object, key)   -- create a spy on top of the stub function$/;"	f
+local second 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/condvar_spec.lua	/^    local second = function()$/;"	f
+local sender 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  local sender = function(...)$/;"	f
+local sender 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  local sender = function(...)$/;"	f
+local set_counter_to_one 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/test_spec.lua	/^  local set_counter_to_one = a.wrap(function(callback)$/;"	f
+local set_title_highlights 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/border.lua	/^local set_title_highlights = function(bufnr, ranges, hl)$/;"	f
+local shorten 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local shorten = (function()$/;"	f
+local shutdown_factory 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local shutdown_factory = function(child, options)$/;"	f
 local sign 	init.lua	/^local sign = function(opts)$/;"	f
+local silent_is_file 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^    local silent_is_file = function()$/;"	f
+local split 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local split = function(input, sep)$/;"	f
+local split_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local split_gen = function(param, state)$/;"	f
+local split_without_disk_name 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^    local split_without_disk_name = function(filename_local)$/;"	f
+local spy_revert 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  local spy_revert = s.revert     -- keep created revert function$/;"	f
+local start_shutdown_check 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^local start_shutdown_check = function(child, options, code, signal)$/;"	f
+local status 	pack/copilotchat/start/plenary.nvim/tests/plenary/path_spec.lua	/^      local status = xpcall(function()$/;"	f
+local string_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local string_gen = function(param, state)$/;"	f
+local stripWithWhitespace 	pack/copilotchat/start/plenary.nvim/lua/plenary/json.lua	/^local stripWithWhitespace = function(str, from, to)$/;"	f
+local stripWithoutWhitespace 	pack/copilotchat/start/plenary.nvim/lua/plenary/json.lua	/^local stripWithoutWhitespace = function()$/;"	f
+local stubfunc 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  local stubfunc = function(...)$/;"	f
 local t 	lua/plug.lua	/^            local t = function(str)$/;"	f
+local tables_equal 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^local tables_equal = function(t1, t2)$/;"	f
+local test_border 	pack/copilotchat/start/plenary.nvim/tests/plenary/popup_spec.lua	/^    local test_border = function(name, borderchars, expected)$/;"	f
+local tester_function 	pack/copilotchat/start/plenary.nvim/tests/plenary/simple_busted_spec.lua	/^local tester_function = function()$/;"	f
+local third 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/condvar_spec.lua	/^    local third = function()$/;"	f
+local thread 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  local thread = co.create(async_function)$/;"	f
+local timeout_callback 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  local timeout_callback = function(...)$/;"	f
+local truncate 	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^local truncate = function(str, len, dots, direction)$/;"	f
+local unpack 	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^local unpack = function(t, i, j) return _unpack(t, i or 1, j or t.n or #t) end$/;"	f
+local unwrap 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local unwrap = function(self)$/;"	f
+local upper 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^  local upper = function(str)$/;"	f
+local voided 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^    local voided = a.void(function(arg)$/;"	f
+local wait_for_result 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^local wait_for_result = function(job, result)$/;"	f
+local wait_result 	pack/copilotchat/start/plenary.nvim/lua/plenary/job.lua	/^  local wait_result = vim.wait(timeout, function()$/;"	f
+local words 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local words = function(input)$/;"	f
+local wrapped 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^    local wrapped = a.wrap(function(inc, callback)$/;"	f
+local wrapped 	pack/copilotchat/start/plenary.nvim/tests/plenary/async/async_spec.lua	/^    local wrapped = a.wrap(function(inc, nil1, nil2, callback)$/;"	f
+local write_file 	pack/copilotchat/start/plenary.nvim/scripts/update_filetypes_from_github.lua	/^local write_file = function(path, string)$/;"	f
+local zeros 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local zeros = function()$/;"	f
+local zip 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local zip = function(...)$/;"	f
+local zip_gen 	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local zip_gen = function(param, state)$/;"	f
+log.new 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^log.new = function(config, standalone)$/;"	f
+lor 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  lor = function(a, b)$/;"	f
+lsp_start 	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^  lsp_start = function(lsp_config)$/;"	f
+lt 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  lt = function(a, b)$/;"	f
+lualib_installed	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/health.lua	/^local function lualib_installed(lib_name)$/;"	f
+m.flatten 	pack/copilotchat/start/plenary.nvim/lua/plenary/compat.lua	/^m.flatten = (function()$/;"	f
+m.ls 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^m.ls = function(path, opts)$/;"	f
+m.ls_async 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^m.ls_async = function(path, opts)$/;"	f
+m.scan_dir 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^m.scan_dir = function(path, opts)$/;"	f
+m.scan_dir_async 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^m.scan_dir_async = function(path, opts)$/;"	f
+machine_id	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function machine_id()$/;"	f
+make_bitop	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function make_bitop(t)$/;"	f
+make_bitop_uncached	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function make_bitop_uncached(t, m)$/;"	f
+make_enum	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^local function make_enum(tbl)$/;"	f
+map_key	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function map_key(key, bufnr, fn)$/;"	f
+matcharg	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^local function matcharg(args, argrefs, specs)$/;"	f
+matcher 	pack/copilotchat/start/plenary.nvim/lua/plenary/reload.lua	/^    matcher = function(pack)$/;"	f
+matches	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function matches(state, arguments, level)$/;"	f
+matches	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function matches(state, arguments, level)$/;"	f
+memoize	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^local function memoize(f)$/;"	f
+mock_apply	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^local function mock_apply(object, action)$/;"	f
+mod 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  mod = function(a, b)$/;"	f
+mod.accept	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.accept()$/;"	f
+mod.accept	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.accept(modifier)$/;"	f
+mod.accept_line	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.accept_line()$/;"	f
+mod.accept_word	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.accept_word()$/;"	f
+mod.after_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.after_each = function(fn)$/;"	f
+mod.attach	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.attach(opts)$/;"	f
+mod.before_each 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.before_each = function(fn)$/;"	f
+mod.check_status	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.check_status(client, params, callback)$/;"	f
+mod.clear 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.clear = function()$/;"	f
+mod.describe 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.describe = function(desc, func)$/;"	f
+mod.detach	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.detach()$/;"	f
+mod.disable	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.disable()$/;"	f
+mod.dismiss	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.dismiss()$/;"	f
+mod.enable	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.enable()$/;"	f
+mod.format_results 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.format_results = function(res)$/;"	f
+mod.get	pack/copilotchat/start/copilot.lua/lua/copilot/config.lua	/^function mod.get(key)$/;"	f
+mod.get_completions	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.get_completions(client, params, callback)$/;"	f
+mod.get_completions_cycling	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.get_completions_cycling(client, params, callback)$/;"	f
+mod.get_panel_completions	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.get_panel_completions(client, params, callback)$/;"	f
+mod.get_version	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.get_version(client, callback)$/;"	f
+mod.inner_describe 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.inner_describe = function(desc, func)$/;"	f
+mod.is_visible	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.is_visible()$/;"	f
+mod.it 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.it = function(desc, func)$/;"	f
+mod.jump_next	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.jump_next()$/;"	f
+mod.jump_prev	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.jump_prev()$/;"	f
+mod.next	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.next()$/;"	f
+mod.notify	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.notify(client, method, params)$/;"	f
+mod.notify_accepted	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.notify_accepted(client, params, callback)$/;"	f
+mod.notify_change_configuration	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.notify_change_configuration(client, params)$/;"	f
+mod.notify_rejected	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.notify_rejected(client, params, callback)$/;"	f
+mod.notify_shown	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.notify_shown(client, params, callback)$/;"	f
+mod.open	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.open(layout)$/;"	f
+mod.pending 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.pending = function(desc, func)$/;"	f
+mod.prev	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.prev()$/;"	f
+mod.refresh	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.refresh()$/;"	f
+mod.register_panel_handlers	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.register_panel_handlers(panelId, handlers)$/;"	f
+mod.register_status_notification_handler	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.register_status_notification_handler(handler)$/;"	f
+mod.request	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.request(client, method, params, callback)$/;"	f
+mod.run 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^mod.run = function(file)$/;"	f
+mod.set_editor_info	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.set_editor_info(client, params, callback)$/;"	f
+mod.setup	pack/copilotchat/start/copilot.lua/lua/copilot/config.lua	/^function mod.setup(opts)$/;"	f
+mod.setup	pack/copilotchat/start/copilot.lua/lua/copilot/highlight.lua	/^function mod.setup()$/;"	f
+mod.setup	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.setup()$/;"	f
+mod.setup	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.setup()$/;"	f
+mod.sign_in_confirm	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.sign_in_confirm(client, params, callback)$/;"	f
+mod.sign_in_initiate	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.sign_in_initiate(client, callback)$/;"	f
+mod.sign_out	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.sign_out(client, callback)$/;"	f
+mod.status	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.status()$/;"	f
+mod.teardown	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function mod.teardown()$/;"	f
+mod.teardown	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.teardown()$/;"	f
+mod.toggle	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.toggle(opts)$/;"	f
+mod.toggle_auto_trigger	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^function mod.toggle_auto_trigger()$/;"	f
+mod.unregister_panel_handlers	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.unregister_panel_handlers(panelId)$/;"	f
+mod.unregister_status_notification_handler	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^function mod.unregister_status_notification_handler(handler)$/;"	f
+mod.version	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^function mod.version()$/;"	f
+mode 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^  mode = mode:gsub("%-?%d+", function(s) prof_depth = tonumber(s); return "" end)$/;"	f
+mode 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^  mode = mode:gsub("i%d*", function(s) interval = s; return "" end)$/;"	f
+mode 	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^  mode = mode:gsub("m(%d+)", function(s) prof_min = tonumber(s); return "" end)$/;"	f
+module.attachPrintFunction	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^function module.attachPrintFunction(fn, verbose)$/;"	f
+module.report	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^function module.report(filename)$/;"	f
+module.start	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^function module.start()$/;"	f
+module.stop	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^function module.stop()$/;"	f
+mt:__index	pack/copilotchat/start/plenary.nvim/lua/plenary/bit.lua	/^  function mt:__index(k)$/;"	f
+mul 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  mul = function(a, b)$/;"	f
 ncm2	config.vim	/^augroup ncm2$/;"	a
+ne 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  ne = function(a, b)$/;"	f
+near	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function near(state, arguments, level)$/;"	f
+near	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function near(state, arguments, level)$/;"	f
+neq 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  neq = function(a)$/;"	f
+new 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^  new = function(object, dostub, func, self, key)$/;"	f
+new 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  new = function(callback)$/;"	f
+newVariant	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^  local function newVariant(i)$/;"	f
+new_deque	pack/copilotchat/start/plenary.nvim/tests/plenary/async/deque_spec.lua	/^local function new_deque()$/;"	f
+node_version_warning	pack/copilotchat/start/copilot.lua/lua/copilot/command.lua	/^local function node_version_warning(node_version)$/;"	f
+none	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/composite.lua	/^local function none(state, arguments, level)$/;"	f
+none 	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^    none = function(c) return c end$/;"	f
+oauth_save	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^local function oauth_save(oauth_token)$/;"	f
+oauth_user	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^local function oauth_user(token)$/;"	f
+obj[("file_%s"):format(x.name)] 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^    obj[("file_%s"):format(x.name)] = function(vals, override)$/;"	f
+obj[("fmt_%s"):format(x.name)] 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^    obj[("fmt_%s"):format(x.name)] = function(...)$/;"	f
+obj[("lazy_%s"):format(x.name)] 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^    obj[("lazy_%s"):format(x.name)] = function()$/;"	f
+obj[x.name] 	pack/copilotchat/start/plenary.nvim/lua/plenary/log.lua	/^    obj[x.name] = function(...)$/;"	f
+object[key] 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  object[key] = stubfunc          -- set the stubfunction$/;"	f
+on 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  on = function(target_table, target_key)$/;"	f
 on_attach 	lua/php.lua	/^    on_attach = function(client, bufnr)$/;"	f
 on_attach 	lua/rust.lua	/^    on_attach = function(_, bufnr)$/;"	f
+on_buf_enter	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_buf_enter()$/;"	f
+on_buf_leave	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_buf_leave()$/;"	f
+on_buf_unload	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_buf_unload(info)$/;"	f
+on_complete_changed	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_complete_changed()$/;"	f
+on_cursor_moved_i	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_cursor_moved_i()$/;"	f
+on_done 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^        on_done = function(query_out)$/;"	f
+on_done 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^    on_done = function(out)$/;"	f
+on_done 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^        on_done = function(response, token_count)$/;"	f
+on_done 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^    on_done = function(embeddings)$/;"	f
+on_error	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  local function on_error(err)$/;"	f
+on_error 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^        on_error = function(err)$/;"	f
+on_error 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^      on_error = function(err)$/;"	f
+on_exit 	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^    on_exit = function(code, _signal, client_id)$/;"	f
+on_exit 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^      on_exit = vim.schedule_wrap(function(j_self, _, _)$/;"	f
+on_exit 	pack/copilotchat/start/plenary.nvim/tests/plenary/async_testing_spec.lua	/^      on_exit = function(_, exit_status)$/;"	f
+on_exit 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^        on_exit = function(...)$/;"	f
+on_init 	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^    on_init = function(client, initialize_result)$/;"	f
+on_insert 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^      on_insert = function(file)$/;"	f
+on_insert 	pack/copilotchat/start/plenary.nvim/tests/plenary/scandir_spec.lua	/^        on_insert = function()$/;"	f
+on_insert_enter	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_insert_enter()$/;"	f
+on_insert_leave	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_insert_leave()$/;"	f
+on_progress 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^        on_progress = function(token)$/;"	f
+on_solution 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^    on_solution = function(result)$/;"	f
+on_solutions_done 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^    on_solutions_done = function(result)$/;"	f
+on_stderr 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^      on_stderr = function(_, data)$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^      on_stdout = function(_, data)$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/tests/manual/large_job_spec.lua	/^  on_stdout = function(_, data)$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/tests/plenary/async_testing_spec.lua	/^      on_stdout = function(_, data)$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^        on_stdout = function()$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^        on_stdout = function(_, data)$/;"	f
+on_stdout 	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^        on_stdout = function(_, line)$/;"	f
+on_text_changed_p	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_text_changed_p()$/;"	f
+on_vim_leave_pre	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function on_vim_leave_pre()$/;"	f
 open_fn 	lua/plugins.lua	/^        open_fn = function()$/;"	f
+open_signin_popup	pack/copilotchat/start/copilot.lua/lua/copilot/auth.lua	/^  local function open_signin_popup(code, url)$/;"	f
 opts 	lua/plugins.lua	/^        opts = function()$/;"	f
+opts.fun 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/init.lua	/^  opts.fun = type(opts.fun) == "function" and { opts.fun } or opts.fun$/;"	f
+opts_copy.on_exit 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  opts_copy.on_exit = function(data)$/;"	f
+or callable elements", util.errorlevel	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      error("Cannot spy on type '" .. type(callback) .. "', only on functions or callable elements", util.errorlevel())$/;"	f
+or callable object", type	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^  assert(util.callable(func), s("assertion.internal.badargtype", { 1, "error", "function or callable object", type(func) }), level)$/;"	f
+or callable object", type	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^  assert(util.callable(func), s("assertion.internal.badargtype", { 1, "error_matches", "function or callable object", type(func) }), level)$/;"	f
+os	pack/copilotchat/start/plenary.nvim/scripts/update_vararg.py	/^import os$/;"	i
+out 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^      out = vim.tbl_filter(function(item)$/;"	f
+out.new	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/utils.lua	/^  function out.new(...)$/;"	f
+outline 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^  outline = vim.tbl_filter(function(item)$/;"	f
+panel:accept	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:accept()$/;"	f
+panel:add_entry	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:add_entry(item)$/;"	f
+panel:clear	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:clear()$/;"	f
+panel:close	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:close()$/;"	f
+panel:ensure_bufnr	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:ensure_bufnr()$/;"	f
+panel:ensure_winid	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:ensure_winid()$/;"	f
+panel:get_entry	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:get_entry(dir)$/;"	f
+panel:init	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:init()$/;"	f
+panel:jump	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:jump(dir)$/;"	f
+panel:lock	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:lock()$/;"	f
+panel:refresh	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:refresh()$/;"	f
+panel:refresh_header	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:refresh_header()$/;"	f
+panel:unlock	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^function panel:unlock()$/;"	f
+panel_uri_from_doc_uri	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^local function panel_uri_from_doc_uri(doc_uri)$/;"	f
+panel_uri_to_doc_uri	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^local function panel_uri_to_doc_uri(panel_uri)$/;"	f
+parse.accept_header 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.accept_header = function(s)$/;"	f
+parse.auth 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.auth = function(xs)$/;"	f
+parse.curl_query 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.curl_query = function(t)$/;"	f
+parse.data_body 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.data_body = function(t)$/;"	f
+parse.file 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.file = function(p)$/;"	f
+parse.form 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.form = function(t)$/;"	f
+parse.headers 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.headers = function(t)$/;"	f
+parse.http_version 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.http_version = function(s)$/;"	f
+parse.method 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.method = function(s)$/;"	f
+parse.raw_body 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.raw_body = function(xs)$/;"	f
+parse.request 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.request = function(opts)$/;"	f
+parse.response 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.response = function(lines, dump_path, code)$/;"	f
+parse.url 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^parse.url = function(xs, q)$/;"	f
+partition	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^local function partition(self, predicate)$/;"	f
+path.root 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^path.root = (function()$/;"	f
+path.sep 	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^path.sep = (function()$/;"	f
+paths 	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^    paths = vim.tbl_map(function(p)$/;"	f
+permit.forget 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/control.lua	/^  permit.forget = function(self_permit)$/;"	f
+permit.forget 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/util.lua	/^  permit.forget = function(self_permit)$/;"	f
+popup._callbacks[bufnr] 	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^    popup._callbacks[bufnr] = function()$/;"	f
+popup.create	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^function popup.create(what, vim_options)$/;"	f
+popup.execute_callback	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^function popup.execute_callback(bufnr)$/;"	f
+popup.move	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/init.lua	/^function popup.move(win_id, vim_options)$/;"	f
+pow 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  pow = function(a, b)$/;"	f
+prepare_client_config	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^local function prepare_client_config(overrides)$/;"	f
+preview 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/integrations/fzflua.lua	/^    preview = fzflua.shell.raw_preview_action_cmd(function(items)$/;"	f
+print 	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^print = function(...)$/;"	f
+prof_annotate	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function prof_annotate(count1, samples)$/;"	f
+prof_cb	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function prof_cb(th, samples, vmmode)$/;"	f
+prof_finish	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function prof_finish()$/;"	f
+prof_start	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function prof_start(mode)$/;"	f
+prof_top	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function prof_top(count1, count2, samples, indent)$/;"	f
+profile.benchmark	pack/copilotchat/start/plenary.nvim/lua/plenary/profile.lua	/^function profile.benchmark(iterations, f, ...)$/;"	f
+profile.start	pack/copilotchat/start/plenary.nvim/lua/plenary/profile.lua	/^function profile.start(out, opts)$/;"	f
+read_dir 	pack/copilotchat/start/plenary.nvim/lua/plenary/scandir.lua	/^  read_dir = function(err, fd)$/;"	f
+ref	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function ref(state, arguments, level)$/;"	f
+register 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  register = function(self, nspace, name, callback, positive_message, negative_message)$/;"	f
+reject	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function reject(bufnr)$/;"	f
+relative_path	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^local function relative_path(absolute)$/;"	f
+reload.reload_module 	pack/copilotchat/start/plenary.nvim/lua/plenary/reload.lua	/^reload.reload_module = function(module_name, starts_with_only)$/;"	f
+remove_formatter 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  remove_formatter = function(self, fmtr)$/;"	f
+reset_ctx	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function reset_ctx(ctx)$/;"	f
+resolve_filetype_enabled	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^local function resolve_filetype_enabled(filetype_enabled)$/;"	f
+resolve_splitcmd	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^  local function resolve_splitcmd()$/;"	f
+result 	pack/copilotchat/start/plenary.nvim/tests/plenary/iterators_spec.lua	/^    result = i.iter(strings):fold("", function(a, v)$/;"	f
+return called(state, arguments, level, function(count, expected) return count <	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  return called(state, arguments, level, function(count, expected) return count <= expected end)$/;"	f
+return called(state, arguments, level, function(count, expected) return count >	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^  return called(state, arguments, level, function(count, expected) return count >= expected end)$/;"	f
+return type(fn) 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  return type(fn) == "function" or (type(fn) == "table" and type(getmetatable(fn)["__call"]) == "function")$/;"	f
+return type(object) 	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^  return type(object) == "function" or type((debug.getmetatable(object) or {}).__call) == "function"$/;"	f
+return type(object) 	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^  return type(object) == "string" or type((debug.getmetatable(object) or {}).__tostring) == "function"$/;"	f
+returned_arguments	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function returned_arguments(state, arguments, level)$/;"	f
+returned_with	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function returned_with(state, arguments, level)$/;"	f
+returned_with 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      returned_with = function(self, args)$/;"	f
+returns 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^      returns = function(...)$/;"	f
+reuse_client	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^  local function reuse_client(client, conf)$/;"	f
+revert 	pack/copilotchat/start/plenary.nvim/lua/luassert/mock.lua	/^  revert = function(object)$/;"	f
+revert 	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^      revert = function(self)$/;"	f
+rotate	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^local function rotate(nargs, ...)$/;"	f
+rotate	pack/copilotchat/start/plenary.nvim/scripts/vararg/rotate.lua	/^local function rotate(nargs, ...)$/;"	f
+rotate_lookup[10] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[10] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)$/;"	f
+rotate_lookup[11] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[11] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)$/;"	f
+rotate_lookup[12] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[12] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11)$/;"	f
+rotate_lookup[13] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[13] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12)$/;"	f
+rotate_lookup[14] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[14] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13)$/;"	f
+rotate_lookup[15] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[15] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14)$/;"	f
+rotate_lookup[1] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[1] = function(A0)$/;"	f
+rotate_lookup[2] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[2] = function(A0, A1)$/;"	f
+rotate_lookup[3] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[3] = function(A0, A1, A2)$/;"	f
+rotate_lookup[4] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[4] = function(A0, A1, A2, A3)$/;"	f
+rotate_lookup[5] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[5] = function(A0, A1, A2, A3, A4)$/;"	f
+rotate_lookup[6] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[6] = function(A0, A1, A2, A3, A4, A5)$/;"	f
+rotate_lookup[7] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[7] = function(A0, A1, A2, A3, A4, A5, A6)$/;"	f
+rotate_lookup[8] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[8] = function(A0, A1, A2, A3, A4, A5, A6, A7)$/;"	f
+rotate_lookup[9] 	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^rotate_lookup[9] = function(A0, A1, A2, A3, A4, A5, A6, A7, A8)$/;"	f
+rotate_lookup[{{n}}] 	pack/copilotchat/start/plenary.nvim/scripts/vararg/rotate.lua	/^  rotate_lookup[{{n}}] = function ({% for n in range(n) %} A{{n}} {{ ", " if not loop.last else "" }} {% endfor %})$/;"	f
+rotate_n	pack/copilotchat/start/plenary.nvim/lua/plenary/vararg/rotate.lua	/^local function rotate_n(first, ...)$/;"	f
+rotate_n	pack/copilotchat/start/plenary.nvim/scripts/vararg/rotate.lua	/^local function rotate_n(first, ...)$/;"	f
+run.with_displayed_output 	pack/copilotchat/start/plenary.nvim/lua/plenary/run.lua	/^run.with_displayed_output = function(title_text, cmd, opts)$/;"	f
+run_command	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/health.lua	/^local function run_command(executable, command)$/;"	f
+s.invokes 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  s.invokes = function(func)$/;"	f
+s.on_call_with 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  s.on_call_with = function(...)$/;"	f
+s.returns 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  s.returns = function(...)$/;"	f
+s.revert 	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^  s.revert = function(self)       -- wrap revert function to restore original element$/;"	f
+same	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function same(state, arguments, level)$/;"	f
+same	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function same(state, arguments, level)$/;"	f
 save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+schedule	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function schedule(ctx)$/;"	f
+search_pattern 	pack/copilotchat/start/plenary.nvim/tests/plenary/scandir_spec.lua	/^        search_pattern = function(entry)$/;"	f
+selection 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/config.lua	/^      selection = function(source)$/;"	f
+selection 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/config.lua	/^  selection = function(source)$/;"	f
+selections 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^        selections = vim.tbl_filter(function(model)$/;"	f
+self.buf_create 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/chat.lua	/^  self.buf_create = function()$/;"	f
+self.buf_create 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^  self.buf_create = function()$/;"	f
+self.winid 	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^  self.winid = vim.api.nvim_win_call(0, function()$/;"	f
+set 	pack/copilotchat/start/plenary.nvim/lua/say.lua	/^  set = function(self, key, value)$/;"	f
+set_failure_message	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function set_failure_message(state, message)$/;"	f
+set_fallback 	pack/copilotchat/start/plenary.nvim/lua/say.lua	/^  set_fallback = function(self, namespace)$/;"	f
+set_keymap	pack/copilotchat/start/copilot.lua/lua/copilot/panel.lua	/^local function set_keymap(bufnr)$/;"	f
+set_keymap	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function set_keymap(keymap)$/;"	f
+set_message	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function set_message(state, arguments, level)$/;"	f
+set_namespace 	pack/copilotchat/start/plenary.nvim/lua/say.lua	/^  set_namespace = function(self, namespace)$/;"	f
+set_parameter 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  set_parameter = function(self, name, value)$/;"	f
+set_spy	pack/copilotchat/start/plenary.nvim/lua/luassert/spy.lua	/^local function set_spy(state, arguments, level)$/;"	f
+set_stub	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^local function set_stub(state, arguments)$/;"	f
 setup 	lua/plug.lua	/^        setup = function()$/;"	f
+shorten_len	pack/copilotchat/start/plenary.nvim/lua/plenary/path.lua	/^local function shorten_len(filename, len, exclude)$/;"	f
+should_auto_trigger	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function should_auto_trigger()$/;"	f
+should_fail	pack/copilotchat/start/plenary.nvim/tests/plenary/enum_spec.lua	/^local function should_fail(fun)$/;"	f
+should_fail	pack/copilotchat/start/plenary.nvim/tests/plenary/tbl_spec.lua	/^local function should_fail(fun)$/;"	f
 signs 	lua/plug.lua	/^                signs = function(bufnr, client_id)$/;"	f
+singleSearchReturn	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/lua_profiler.lua	/^local function singleSearchReturn(str, search)$/;"	f
+sleep	pack/copilotchat/start/plenary.nvim/tests/plenary/async/util_spec.lua	/^  local function sleep(msec)$/;"	f
+slice	pack/copilotchat/start/plenary.nvim/lua/plenary/json.lua	/^local function slice(str, from, to)$/;"	f
+snapshot 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  snapshot = function(self)$/;"	f
+spatial_distance_cosine	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/context.lua	/^local function spatial_distance_cosine(a, b)$/;"	f
+start	pack/copilotchat/start/plenary.nvim/lua/plenary/profile/p.lua	/^local function start(mode, outfile)$/;"	f
+stat.maxmin 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/stat.lua	/^stat.maxmin = function(t)$/;"	f
+stat.mean 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/stat.lua	/^stat.mean = function(t)$/;"	f
+stat.median 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/stat.lua	/^stat.median = function(t)$/;"	f
+stat.std_dev 	pack/copilotchat/start/plenary.nvim/lua/plenary/benchmark/stat.lua	/^stat.std_dev = function(t)$/;"	f
+state 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  state = function() return setmetatable({mod=true, tokens={}}, __state_meta) end,$/;"	f
+state 	pack/copilotchat/start/plenary.nvim/lua/luassert/match.lua	/^  state = function() return setmetatable({mod=true, tokens={}}, state_mt) end,$/;"	f
+state.add_formatter 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.add_formatter = function(callback)$/;"	f
+state.add_spy 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.add_spy = function(spy)$/;"	f
+state.chat 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  state.chat = Chat(chat_help, function(bufnr)$/;"	f
+state.diff 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  state.diff = Overlay('copilot-diff', hl_ns, diff_help, function(bufnr)$/;"	f
+state.format_argument 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.format_argument = function(val, s, fmtargs)$/;"	f
+state.get_parameter 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.get_parameter = function(name, s)$/;"	f
+state.remove_formatter 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.remove_formatter = function(callback, s)$/;"	f
+state.revert 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.revert = function(self)$/;"	f
+state.set_parameter 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.set_parameter = function(name, value)$/;"	f
+state.snapshot 	pack/copilotchat/start/plenary.nvim/lua/luassert/state.lua	/^state.snapshot = function()$/;"	f
+state.system_prompt 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  state.system_prompt = Overlay('copilot-system-prompt', hl_ns, overlay_help, function(bufnr)$/;"	f
+state.user_selection 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^  state.user_selection = Overlay('copilot-user-selection', hl_ns, overlay_help, function(bufnr)$/;"	f
+statusNotification 	pack/copilotchat/start/copilot.lua/lua/copilot/api.lua	/^  statusNotification = function(_, result, ctx)$/;"	f
+step 	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^  step = function(...)$/;"	f
+step 	pack/copilotchat/start/plenary.nvim/lua/plenary/async_lib/async.lua	/^  step = function(...)$/;"	f
+stop_timer	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function stop_timer()$/;"	f
+store_client_id	pack/copilotchat/start/copilot.lua/lua/copilot/client.lua	/^local function store_client_id(id)$/;"	f
+str 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^    str = str:gsub("([^%w%-%.%_%~ ])", function(c)$/;"	f
+stream 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^        stream = function(err, line)$/;"	f
+stub.new	pack/copilotchat/start/plenary.nvim/lua/luassert/stub.lua	/^function stub.new(object, key, ...)$/;"	f
+sub 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  sub = function(a, b)$/;"	f
+subprocess	pack/copilotchat/start/plenary.nvim/scripts/update_vararg.py	/^import subprocess$/;"	i
+tbl.apply_defaults	pack/copilotchat/start/plenary.nvim/lua/plenary/tbl.lua	/^function tbl.apply_defaults(original, defaults)$/;"	f
+tbl.freeze	pack/copilotchat/start/plenary.nvim/lua/plenary/tbl.lua	/^function tbl.freeze(t)$/;"	f
+tbl.pack	pack/copilotchat/start/plenary.nvim/lua/plenary/tbl.lua	/^function tbl.pack(...)$/;"	f
+tbl.unpack	pack/copilotchat/start/plenary.nvim/lua/plenary/tbl.lua	/^function tbl.unpack(t, i, j)$/;"	f
+test_paths	pack/copilotchat/start/plenary.nvim/lua/plenary/test_harness.lua	/^local function test_paths(paths, opts)$/;"	f
 time 	plugin/packer_compiled.lua	/^  time = function(chunk, start) end$/;"	f
 time 	plugin/packer_compiled.lua	/^  time = function(chunk, start)$/;"	f
+tostr	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^local function tostr(arg)$/;"	f
+treesitter_parser_available	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/health.lua	/^local function treesitter_parser_available(ft)$/;"	f
+trigger	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function trigger(bufnr, timer)$/;"	f
+trimTrace	pack/copilotchat/start/plenary.nvim/lua/plenary/busted.lua	/^  local function trimTrace(info)$/;"	f
+truediv 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  truediv = function(a, b)$/;"	f
+truth 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  truth = function(a)$/;"	f
+truthy	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function truthy(state, arguments, level)$/;"	f
+truthy	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function truthy(state, arguments, level)$/;"	f
 try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+unique	pack/copilotchat/start/plenary.nvim/lua/luassert/assertions.lua	/^local function unique(state, arguments, level)$/;"	f
+unique	pack/copilotchat/start/plenary.nvim/lua/luassert/matchers/core.lua	/^local function unique(state, arguments, level)$/;"	f
+unm 	pack/copilotchat/start/plenary.nvim/lua/plenary/operators.lua	/^  unm = function(a)$/;"	f
+unpack 	pack/copilotchat/start/plenary.nvim/lua/luassert/compatibility.lua	/^  unpack = function(...)$/;"	f
+unregister 	pack/copilotchat/start/plenary.nvim/lua/luassert/assert.lua	/^  unregister = function(self, nspace, name)$/;"	f
+unset_keymap	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function unset_keymap(keymap)$/;"	f
+update_preview	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function update_preview(ctx)$/;"	f
+update_prompts	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^local function update_prompts(prompt, system_prompt)$/;"	f
+url_decode	pack/copilotchat/start/copilot.lua/lua/copilot/util.lua	/^local function url_decode(str)$/;"	f
 use { "akinsho/toggleterm.nvim", tag 	lua/plug.lua	/^    use { "akinsho\/toggleterm.nvim", tag = '*', config = function()$/;"	f
+utf_ptr2len	pack/copilotchat/start/plenary.nvim/lua/plenary/strings.lua	/^    local function utf_ptr2len(str)$/;"	f
+util.callable	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.callable(object)$/;"	f
+util.cleararglist	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.cleararglist(arglist)$/;"	f
+util.copyargs	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.copyargs(args)$/;"	f
+util.deepcompare	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.deepcompare(t1,t2,ignore_mt,cycles,thresh1,thresh2)$/;"	f
+util.deepcopy	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.deepcopy(t, deepmt, cache)$/;"	f
+util.errorlevel	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.errorlevel(level)$/;"	f
+util.extract_keys	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.extract_keys(nspace, tokens)$/;"	f
+util.gen_dump_path 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^util.gen_dump_path = function()$/;"	f
+util.hastostring	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.hastostring(object)$/;"	f
+util.is_arglist	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.is_arglist(object)$/;"	f
+util.kv_to_list 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^util.kv_to_list = function(kv, prefix, sep)$/;"	f
+util.kv_to_str 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^util.kv_to_str = function(kv, sep, kvsep)$/;"	f
+util.make_arglist	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.make_arglist(...)$/;"	f
+util.matchargs	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.matchargs(invocations_list, specs)$/;"	f
+util.matchoncalls	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.matchoncalls(oncalls, args)$/;"	f
+util.shallowcopy	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.shallowcopy(t)$/;"	f
+util.tinsert	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.tinsert(...)$/;"	f
+util.tremove	pack/copilotchat/start/plenary.nvim/lua/luassert/util.lua	/^function util.tremove(t, pos)$/;"	f
+util.url_encode 	pack/copilotchat/start/plenary.nvim/lua/plenary/curl.lua	/^util.url_encode = function(str)$/;"	f
+utils.apply_defaults 	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/utils.lua	/^utils.apply_defaults = function(original, defaults)$/;"	f
+utils.bounded 	pack/copilotchat/start/plenary.nvim/lua/plenary/popup/utils.lua	/^utils.bounded = function(value, min, max)$/;"	f
+uuid	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/copilot.lua	/^local function uuid()$/;"	f
+validate_member_name	pack/copilotchat/start/plenary.nvim/lua/plenary/enum.lua	/^local function validate_member_name(name)$/;"	f
+vararg.rotate	pack/copilotchat/start/plenary.nvim/lua/plenary/async/async.lua	/^    returned_function(vararg.rotate(nargs, step, select(4, ...)))$/;"	f
+vim.lsp.callbacks[method] 	pack/copilotchat/start/plenary.nvim/lua/plenary/lsp/override.lua	/^  vim.lsp.callbacks[method] = new_function$/;"	f
+virt_lines 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/overlay.lua	/^    virt_lines = vim.tbl_map(function(t)$/;"	f
+virt_text 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/spinner.lua	/^          virt_text = vim.tbl_map(function(t)$/;"	f
+when using after", function	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^    it("should run all normal functions when using after", function()$/;"	f
+when using after_failure", function	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^    it("should run only on failure normal functions when using after_failure", function()$/;"	f
+when using after_success", function	pack/copilotchat/start/plenary.nvim/tests/plenary/job_spec.lua	/^    it("should run only on success normal functions when using after_success", function()$/;"	f
+win_float.centered	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^function win_float.centered(options)$/;"	f
+win_float.centered_with_top_win	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^function win_float.centered_with_top_win(top_text, options)$/;"	f
+win_float.clear	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^function win_float.clear(bufnr)$/;"	f
+win_float.default_opts	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^function win_float.default_opts(options)$/;"	f
+win_float.percentage_range_window	pack/copilotchat/start/plenary.nvim/lua/plenary/window/float.lua	/^function win_float.percentage_range_window(col_range, row_range, win_opts, border_opts)$/;"	f
+window.close_related_win 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/init.lua	/^window.close_related_win = function(parent_win_id, child_win_id)$/;"	f
+window.try_close 	pack/copilotchat/start/plenary.nvim/lua/plenary/window/init.lua	/^window.try_close = function(win_id, force)$/;"	f
+with_client	pack/copilotchat/start/copilot.lua/lua/copilot/suggestion.lua	/^local function with_client(fn)$/;"	f
+wrap	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local function wrap(gen, param, state)$/;"	f
+wrap 	pack/copilotchat/start/CopilotChat.nvim/lua/CopilotChat/init.lua	/^    wrap = function(fn)$/;"	f
+wrap_iter	pack/copilotchat/start/plenary.nvim/lua/plenary/collections/py_list.lua	/^local function wrap_iter(f, l, n)$/;"	f
+zip_gen_r	pack/copilotchat/start/plenary.nvim/lua/plenary/iterators.lua	/^local function zip_gen_r(param, state, state_new, ...)$/;"	f
 { name 	init.lua	/^        { name = 'nvim_lsp_signature_help' },                    -- display function signatures with current parameter emphasized$/;"	f
+},{ __index 	pack/copilotchat/start/plenary.nvim/lua/luassert/formatters/init.lua	/^  },{ __index = function(self, key)$/;"	f

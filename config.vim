@@ -68,8 +68,12 @@ Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 
 " 收合
 Plug 'rayburgemeestre/phpfolding.vim'
+
 " AI
 Plug 'github/copilot.vim'
+Plug 'zbirenbaum/copilot.lua'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 call plug#end()
 " set the colorsheme
@@ -117,11 +121,13 @@ command! -nargs=1 Silent execute ':silent !'.<q-args> | execute ':redraw!'
 map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>
 
 
+
 "runtime config/go.vim
 runtime config/format.vim
 runtime config/bar.vim
 runtime config/normal.vim
 runtime config/golang.vim
 " runtime config/php.vim
+runtime config/copilot.vim
 "runtime config/setting.vim
 hi Visual  guifg=White guibg=LightBlue gui=none

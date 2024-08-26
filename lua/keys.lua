@@ -25,10 +25,8 @@ vim.keymap.set('n', '<S-h>', '<Cmd>BufferPrevious<CR>', opt)
 vim.keymap.set('n', '<S-l>', '<Cmd>BufferNext<CR>', opt)
 vim.keymap.set('n', '<S-c>', '<Cmd>BufferClose<CR>', opt)
 
-vim.keymap.set('n', '<C-.>', '<C-w>>x5', opt)
-vim.keymap.set('n', '<C-,>', '<C-w><x5', opt)
---vim.keymap.set('n', '<leader>f', ':FZF<CR>' , opt)
-
+vim.keymap.set('n', '<M-Left>', '<C-w>>5', opt)
+vim.keymap.set('n', '<M-RigHt>', '<C-w><5', opt)
 
 vim.keymap.set('n', '<leader>fg', ':lua require(\'telescope.builtin\').live_grep()<cr>', opt)
 vim.keymap.set('n', '<leader>ff', ':lua require(\'telescope.builtin\').find_files()<cr>', opt)

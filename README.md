@@ -40,3 +40,11 @@ https://www.baeldung.com/linux/vim-install-neovim-plugins
 npm install -g intelephense
 
 ```
+
+## Copilot
+
+```
+
+https://github.com/CopilotC-Nvim/CopilotChat.nvim
+
+```
