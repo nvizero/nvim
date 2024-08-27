@@ -14,7 +14,9 @@
 <C-Space>	config/php.vim	/^inoremap <silent><expr> <C-Space> coc#refresh()$/;"	m
 <CR>	config.vim	/^inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\\<CR>", 'n') : "\\<CR>")$/;"	m
 <Plug>PlenaryTestFile	pack/copilotchat/start/plenary.nvim/plugin/plenary.vim	/^nnoremap <Plug>PlenaryTestFile :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))<CR>$/;"	m
+<S-TAB>	config/normal.vim	/^inoremap <silent><expr> <S-TAB> pumvisible() ? "\\<C-p>" : "\\<S-TAB>"$/;"	m
 <TAB>	config.vim	/^inoremap <expr> <TAB> pumvisible() ? "\\<c-n>" : "\\<TAB>"$/;"	m
+<TAB>	config/normal.vim	/^inoremap <silent><expr> <TAB> pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m
 <TAB>	config/php.vim	/^inoremap <silent><expr> <TAB>$/;"	m
 <c-s>	config.vim	/^map <c-s> <esc>:w<cr>:Silent php-cs-fixer fix %:p --level=symfony<cr>$/;"	m
 <leader>bb	config/bar.vim	/^nnoremap <leader>bb :TagbarToggle<CR>$/;"	m
