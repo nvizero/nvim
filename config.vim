@@ -58,21 +58,21 @@ Plug 'preservim/tagbar'
 
 
 "php
-
+Plug 'StanAngeloff/php.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mattn/emmet-vim'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 
-
-" 收合
+" 代码折叠
 Plug 'rayburgemeestre/phpfolding.vim'
 
+" https://github.com/CopilotC-Nvim/CopilotChat.nvim
 " AI
+Plug 'nvim-lua/plenary.nvim'
 Plug 'github/copilot.vim'
 Plug 'zbirenbaum/copilot.lua'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 call plug#end()
