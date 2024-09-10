@@ -28,14 +28,9 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/trouble.nvim'
 
 "theme
-"Plug 'dikiaap/minimalist'
-"Plug 'fatih/molokai'
+Plug 'dikiaap/minimalist'
+Plug 'fatih/molokai'
 "golang
-Plug 'fatih/vim-go'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'SirVer/ultisnips'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/goyo.vim'
 
 "old
 Plug 'https://github.com/neoclide/coc.nvim'
